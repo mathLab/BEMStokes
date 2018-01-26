@@ -1,0 +1,59 @@
+Test that the BEM is able to recover the Fundamental Solution
+Testing for degree = 1
+6
+We have a tria of 6 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Cycle : 0 2
+There are 78 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+12.3522 12.3522
+The Mass (Surface) of the entire system is : 12.3522
+The Mass (Surface) error of the entire system is : 0.0170433
+Using 0 0 0 as force pole.
+Center of mass position = -1.41931e-17 -1.13602e-17 -2.35564e-17
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.000839366
+Check on the V operator Norm (should be zero) pure: 0.000839366
+Corrected V
+Check on the V operator Norm post (should be one) pure: 0.000531455
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+0.304121 0.110436
+   Iterations needed to solve DN:         0
+Cycle : 1 2
+There are 294 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+12.5506 12.5506
+The Mass (Surface) of the entire system is : 12.5506
+The Mass (Surface) error of the entire system is : 0.00125342
+Using 0 0 0 as force pole.
+Center of mass position = 1.77886e-17 1.8599e-17 8.35788e-19
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 5.6066e-05
+Check on the V operator Norm (should be zero) pure: 5.6066e-05
+Corrected V
+Check on the V operator Norm post (should be one) pure: -3.49054e-05
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+0.588454 0.13926
+   Iterations needed to solve DN:         0
+cells dofs    u_Linfty         u_L2           u_H1      
+    6   78 7.485e-02    - 1.555e-01    - 4.371e-01    - 
+   24  294 7.350e-02 0.03 6.574e-02 1.24 4.173e-01 0.07 

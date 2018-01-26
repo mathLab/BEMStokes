@@ -1,0 +1,44 @@
+Minimum Test for the assemble of the double layer and the solid angle alpha
+6
+We have a tria of 6 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Check on V_matrix
+ 6.586e-01 -1.579e-03 -1.579e-03 
+-1.579e-03  6.586e-01  1.579e-03 
+-1.579e-03  1.579e-03  6.586e-01 
+Check on K_matrix
+-4.596e-01  2.009e-02  2.009e-02 
+ 2.009e-02 -4.596e-01 -2.009e-02 
+ 2.009e-02 -2.009e-02 -4.596e-01 
+Test on V 
+0.658619 -0.00157873 -0.00157873 
+-0.00157873 0.658619 0.00157873 
+-0.00157873 0.00157873 0.658619 
+Test on K 
+-0.459563 0.0200893 0.0200893 
+0.0200893 -0.459563 -0.0200893 
+0.0200893 -0.0200893 -0.459563 
+78
+6
+We have a tria of 6 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Check on V_matrix
+ 6.586e-01 -1.579e-03 -1.579e-03 
+-1.579e-03  6.586e-01  1.579e-03 
+-1.579e-03  1.579e-03  6.586e-01 
+Check on K_matrix
+-4.596e-01  2.009e-02  2.009e-02 
+ 2.009e-02 -4.596e-01 -2.009e-02 
+ 2.009e-02 -2.009e-02 -4.596e-01 
+OK permutation on V matrix
+OK permutation on K matrix
+Test on V 
+0.658619 -0.00157873 -0.00157873 
+-0.00157873 0.658619 0.00157873 
+-0.00157873 0.00157873 0.658619 
+Test on K 
+-0.459563 0.0200893 0.0200893 
+0.0200893 -0.459563 -0.0200893 
+0.0200893 -0.0200893 -0.459563 

@@ -1,0 +1,62 @@
+106
+We have a tria of 106 cells.
+Computing the euler vector for the reference grid
+Creating the box
+There are 324 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+10.3923 : 10.3923
+Analyzing frame = 1 over 120
+10.3923 : 10.3923
+
+Computing the center of mass of our system for the frame 0
+12.1766 12.1766
+The Mass (Surface) of the entire system is : 12.1766
+The Mass (Surface) error of the entire system is : 0.031013
+Using 0 0 0 as force pole.
+Center of mass position = -0.000144065 -0.00129566 -0.000692987
+   Iterations needed to solve mass matrix:         1
+Test on DoubleLayer in 3D
+Test on the 0th rigid mode
+The rigid mode is = 1 0 0
+Interior Point at [0.1, 0.1, 0.1], expected [1, 0, 0]
+OK interior point
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point
+Test on the 1th rigid mode
+The rigid mode is = 0 1 0
+Interior Point at [0.1, 0.1, 0.1], expected [0, 1, 0]
+OK interior point
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point
+Test on the 2th rigid mode
+The rigid mode is = 0 0 1
+Interior Point at [0.1, 0.1, 0.1], expected [0, 0, 1]
+OK interior point
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point
+Test on the 3th rigid mode
+The rigid mode is = 0 -0.999955 0.00931797
+Interior Point at [0.1, 0.1, 0.1], expected [0, -0.999955, 0.00931797]
+ux = 2.9972e-15
+uy = -0.1
+uz = 0.1 0.818142
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point
+Test on the 4th rigid mode
+The rigid mode is = 0.999955 0 0.00178022
+Interior Point at [0.1, 0.1, 0.1], expected [0.999955, 0, 0.00178022]
+ux = 0.1
+uy = 2.19037e-15
+uz = -0.1 0.820278
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point
+Test on the 5th rigid mode
+The rigid mode is = -0.00931797 -0.00178022 0
+Interior Point at [0.1, 0.1, 0.1], expected [-0.00931797, -0.00178022, 0]
+ux = -0.1
+uy = 0.1
+uz = -5.14686e-15 0.0185824
+Exterior Point at [4, 4, 4], expected [0, 0, 0]
+OK exterior point

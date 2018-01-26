@@ -1,0 +1,95 @@
+Test for the Motility tensor of a sphere in free space
+There are 324 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+12.1766 12.1766
+The Mass (Surface) of the entire system is : 12.1766
+The Mass (Surface) error of the entire system is : 0.031013
+Using 0 0 0 as force pole.
+Center of mass position = -0.000144065 -0.00129566 -0.000692987
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.00231049
+Check on the V operator Norm (should be zero) pure: 0.00231049
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.7033e-12 : 1.60892e-11
+FINAL CHECK 1 1.7033e-12 : 1.60014e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.81697e-12 : 2.28492e-11
+FINAL CHECK 1 1.81697e-12 : 2.27182e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.82154e-12 : 2.27161e-11
+FINAL CHECK 1 1.82154e-12 : 2.25957e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 4.82869e-12 : 3.16171e-11
+FINAL CHECK 1 4.82869e-12 : 3.13884e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 4.4833e-12 : 3.85194e-11
+FINAL CHECK 1 4.4833e-12 : 3.8277e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 4.51061e-12 : 3.78291e-11
+FINAL CHECK 1 4.51061e-12 : 3.75808e-11
+Transforming velocities from center of mass G to origin O
+solved system
+OK
+OK
+OK
+OK
+OK

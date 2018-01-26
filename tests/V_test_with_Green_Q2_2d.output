@@ -1,0 +1,106 @@
+Test that the BEM is able to recover the Fundamental Solution
+Testing for degree = 1
+We have a tria of 10 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Cycle : 0 4
+There are 40 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.2822 6.2822
+The Mass (Surface) of the entire system is : 6.2822
+The Mass (Surface) error of the entire system is : 0.500079
+Using 0 0 as force pole.
+Center of mass position = 2.21662e-17 1.10453e-17
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 7.84297e-05
+Check on the V operator Norm (should be zero) pure: 7.84297e-05
+Corrected V
+Check on the V operator Norm post (should be one) pure: -0.000111967
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.274378 0.113706
+   Iterations needed to solve DN:         0
+Cycle : 1 4
+There are 80 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.28312 6.28312
+The Mass (Surface) of the entire system is : 6.28312
+The Mass (Surface) error of the entire system is : 0.500005
+Using 0 0 as force pole.
+Center of mass position = 6.27598e-18 -1.64275e-17
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 3.79241e-05
+Check on the V operator Norm (should be zero) pure: 3.79241e-05
+Corrected V
+Check on the V operator Norm post (should be one) pure: -5.77929e-05
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.388028 0.113757
+   Iterations needed to solve DN:         0
+Cycle : 2 4
+There are 160 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.28318 6.28318
+The Mass (Surface) of the entire system is : 6.28318
+The Mass (Surface) error of the entire system is : 0.5
+Using 0 0 as force pole.
+Center of mass position = 2.74296e-17 4.83157e-19
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 1.88281e-05
+Check on the V operator Norm (should be zero) pure: 1.88281e-05
+Corrected V
+Check on the V operator Norm post (should be one) pure: -2.83699e-05
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.548755 0.115056
+   Iterations needed to solve DN:         0
+Cycle : 3 4
+There are 320 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.28319 6.28319
+The Mass (Surface) of the entire system is : 6.28319
+The Mass (Surface) error of the entire system is : 0.5
+Using 0 0 as force pole.
+Center of mass position = 8.22973e-17 -9.31803e-18
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 9.39893e-06
+Check on the V operator Norm (should be zero) pure: 9.39893e-06
+Corrected V
+Check on the V operator Norm post (should be one) pure: -1.41814e-05
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.776057 0.115056
+   Iterations needed to solve DN:         0
+cells dofs    u_Linfty         u_L2           u_H1      
+   10   40 4.222e-02    - 5.006e-02    - 1.643e-01    - 
+   20   80 9.939e-03 2.09 1.023e-02 2.29 8.312e-02 0.98 
+   40  160 2.394e-03 2.05 2.386e-03 2.10 4.302e-02 0.95 
+   80  320 5.720e-04 2.07 5.723e-04 2.06 2.055e-02 1.07 

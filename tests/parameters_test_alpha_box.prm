@@ -1,0 +1,208 @@
+# Listing of Parameters
+# ---------------------
+
+subsection BEMStokes::BEMProblem<3>
+  set Consider rigid displacement to move the swimmer   = false
+  set Consider rigid displacement x to move the swimmer = false
+  set Consider rigid displacement y to move the swimmer = false
+  set Consider rigid displacement z to move the swimmer = false
+  set Consider rigid rotations                          = true
+  set Create a bounding box                             = true
+  set Delta between frames                              = 1
+  # Minimum distance from center you want to refine on the wall.
+  set Distance for wall refinement                      = 5.
+  set First wall index to create the box                = 0
+  set Galerkin Resolution Strategy                      = false
+  set Grid                                              = ImposedForce
+  set Initial quaternion value q[0]                     = 1
+  set Initial quaternion value q[1]                     = 0
+  set Initial quaternion value q[2]                     = 0
+  set Initial quaternion value q[3]                     = 0
+  set Input grid base name                              = sphere_mesh_3d_
+  set Input path to grid                                = ../../../debug_grids/
+  set Input grid format                                 = msh
+  set Monolithic resolurion strategy                    = true
+  set Number of convergence iterations                  = 3
+  set Number of cycles                                  = 4
+  set Print extra debug information                     = false
+  set Reflect the kernel                                = false
+  set Use alpha for the internal problem                = true
+  set Singular quadrature order                         = 10
+  set Total number of frames                            = 120
+  set Use state from previous frame                     = false
+
+  # Bool set to create wall 0.
+  set Wall 0 bool                                       = true
+
+  # List of the spans of the wall 0. If -1 we intend infinite.
+  set Wall 0 spans                                      = 80,0,80
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 0 type                                       = free_surface
+
+  # Bool set to create wall 1.
+  set Wall 1 bool                                       = true
+
+  # List of the spans of the wall 1. If -1 we intend infinite.
+  set Wall 1 spans                                      = 80,0,80
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 1 type                                       = do_nothing
+
+  # Bool set to create wall 2.
+  set Wall 2 bool                                       = true
+
+  # List of the spans of the wall 2. If -1 we intend infinite.
+  set Wall 2 spans                                      = 80,80,0
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 2 type                                       = do_nothing
+
+  # Bool set to create wall 3.
+  set Wall 3 bool                                       = true
+
+  # List of the spans of the wall 3. If -1 we intend infinite.
+  set Wall 3 spans                                      = 80,80,0
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 3 type                                       = do_nothing
+
+  # Bool set to create wall 4.
+  set Wall 4 bool                                       = true
+
+  # List of the spans of the wall 4. If -1 we intend infinite.
+  set Wall 4 spans                                      = 0,80,80
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 4 type                                       = do_nothing
+
+  # Bool set to create wall 5.
+  set Wall 5 bool                                       = true
+
+  # List of the spans of the wall 5. If -1 we intend infinite.
+  set Wall 5 spans                                      = 0,80,80
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 5 type                                       = do_nothing
+
+  # Bool set to create wall 6.
+  set Wall 6 bool                                       = false
+
+  # List of the spans of the wall 6. If -1 we intend infinite.
+  set Wall 6 spans                                      = 1,1,-1
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 6 type                                       = no_slip
+
+  # Bool set to create wall 7.
+  set Wall 7 bool                                       = false
+
+  # List of the spans of the wall 7. If -1 we intend infinite.
+  set Wall 7 spans                                      = 1,1,-1
+
+  # List of walls, only no slip, free surface or do nothing.
+  set Wall 7 type                                       = no_slip
+
+  # Minimum diameter you want for the wall at its center.
+  set Wall Refinement Threshold                         = 10
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 0                       = 0,1.4,0
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 1                       = 0,-158.6,0
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 2                       = 0,-78.6,-80
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 3                       = 0,-78.6,80
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 4                       = 80,-78.6,0
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 5                       = -80,-78.6,0
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 6                       = 0,10,0
+
+  # List of the positions of all the centers of the walls.
+  set Wall center position wall 7                       = 0,10,0
+
+
+  subsection Solver
+    set Log frequency = 1
+    set Log history   = false
+    set Log result    = true
+    set Max steps     = 1000000
+    set Tolerance     = 1.e-10
+  end
+
+end
+
+
+
+
+subsection External Quadrature
+  # In one space dimension, the given base formula is copied and scaled onto a
+  # given number of subintervals of length 1/repetitions. In more than one
+  # space dimension, the resulting quadrature formula is constructed in the
+  # usual way by building the tensor product of the respective iterated
+  # quadrature formula in one space dimension.
+  set Number of repetitions  = 1
+
+  # The number of quadrature points in each coordinate direction. (Avaible
+  # only for gauss otherwise it should be 0)
+  set Quadrature order       = 3
+
+  # Quadrature rule:gauss|midpoint|milne|simpson|trapez|weddle
+  set Quadrature to generate = gauss
+end
+
+
+subsection Finite Element Mapping
+  # How to partition the finite element. This information can be used to
+  # construct block matrices and vectors, as well as to create names for
+  # solution vectors, or error tables. A repeated component is interpreted as
+  # a vector field, with dimension equal to the number of repetitions (up to
+  # 3). This is used in conjunction with a ParsedFiniteElement class, to
+  # generate arbitrary finite dimensional spaces.
+  set Blocking of the finite element = u,u,u
+
+  # The finite element space to use. For vector finite elements use the
+  # notation FESystem[FE_Q(2)^2-FE_DGP(1)] (e.g. Navier-Stokes).
+  set Finite element space           = FESystem<2,3>[FE_Q<2,3>(1)^3]
+end
+
+
+subsection Finite Element Stokes
+  # How to partition the finite element. This information can be used to
+  # construct block matrices and vectors, as well as to create names for
+  # solution vectors, or error tables. A repeated component is interpreted as
+  # a vector field, with dimension equal to the number of repetitions (up to
+  # 3). This is used in conjunction with a ParsedFiniteElement class, to
+  # generate arbitrary finite dimensional spaces.
+  set Blocking of the finite element = u,u,u
+
+  # The finite element space to use. For vector finite elements use the
+  # notation FESystem[FE_Q(2)^2-FE_DGP(1)] (e.g. Navier-Stokes).
+  set Finite element space           = FESystem<2,3>[FE_Q<2,3>(1)^3]
+end
+
+
+subsection Internal Quadrature
+  # In one space dimension, the given base formula is copied and scaled onto a
+  # given number of subintervals of length 1/repetitions. In more than one
+  # space dimension, the resulting quadrature formula is constructed in the
+  # usual way by building the tensor product of the respective iterated
+  # quadrature formula in one space dimension.
+  set Number of repetitions  = 1
+
+  # The number of quadrature points in each coordinate direction. (Avaible
+  # only for gauss otherwise it should be 0)
+  set Quadrature order       = 8
+
+  # Quadrature rule:gauss|midpoint|milne|simpson|trapez|weddle
+  set Quadrature to generate = gauss
+end

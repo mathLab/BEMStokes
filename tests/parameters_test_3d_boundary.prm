@@ -1,0 +1,82 @@
+# Listing of Parameters
+# ---------------------
+set Total number of frames 	    = 120
+set Input grid base name	    = ../../../debug_grids/sphere_
+set Input grid format		    = inp
+set Extend solution on the -2,2 box = true
+set External refinement             = 6
+set Number of cycles                = 1
+set Run 2d simulation               = false
+set Run 3d simulation               = true
+
+
+subsection Exact solution 2d
+  # Any constant used inside the function which is not a variable name.
+  set Function constants  =
+
+  # Separate vector valued expressions by ';' as ',' is used internally by the
+  # function parser.
+  set Function expression = x+y   # default: 0
+
+  # The name of the variables as they will be used in the function, separated
+  # by ','.
+  set Variable names      = x,y,t
+end
+
+
+subsection Exact solution 3d
+  # Any constant used inside the function which is not a variable name.
+  set Function constants  =
+
+  # Separate vector valued expressions by ';' as ',' is used internally by the
+  # function parser.
+  set Function expression = 0.5*(x+y+z)
+
+  # The name of the variables as they will be used in the function, separated
+  # by ','.
+  set Variable names      = x,y,z,t
+end
+
+
+subsection Quadrature rules
+  set Quadrature order          = 4
+  set Quadrature type           = gauss
+  set Singular quadrature order = 5
+end
+
+
+subsection Solver
+  set Log frequency = 1
+  set Log history   = false
+  set Log result    = true
+  set Max steps     = 100000
+  set Tolerance     = 1.e-10
+end
+
+
+subsection Velocity function 2d
+  # Any constant used inside the function which is not a variable name.
+  set Function constants  =
+
+  # Separate vector valued expressions by ';' as ',' is used internally by the
+  # function parser.
+  set Function expression = 1; 0  # default: 0; 0
+
+  # The name of the variables as they will be used in the function, separated
+  # by ','.
+  set Variable names      = x,y,t
+end
+
+
+subsection Velocity function 3d
+  # Any constant used inside the function which is not a variable name.
+  set Function constants  =
+
+  # Separate vector valued expressions by ';' as ',' is used internally by the
+  # function parser.
+  set Function expression = 1; 0; 0
+
+  # The name of the variables as they will be used in the function, separated
+  # by ','.
+  set Variable names      = x,y,z,t
+end

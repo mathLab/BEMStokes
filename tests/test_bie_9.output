@@ -1,0 +1,33 @@
+We have a tria of 10 cells.
+Computing the euler vector for the reference grid
+Creating the box
+There are 20 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+3.16228 : 3.16228
+Analyzing frame = 1 over 120
+3.16228 : 3.16228
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = 3.63135e-18 3.92958e-18
+   Iterations needed to solve mass matrix:         1
+Test on the assembling of the Single Layer and the tangential projector
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.000256497
+Check on the V operator Norm (should be zero) pure: 0.000256497
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1.66667
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+OK Index Sets for the tests
+OK test on tangential projector
+OK test on Single Layer kernel post correction
+Grid written to grid-3.vtk

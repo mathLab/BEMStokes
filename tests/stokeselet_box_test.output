@@ -1,0 +1,41 @@
+Test that the BEM is able to recover the Fundamental Solution
+Minimum Test for the preconditioner with interior problem and the monolithic system
+We consider the wall to have normal parallel to the i axis
+8
+Creating a coarse no_slip
+Creating a coarse no_slip
+Creating a coarse no_slip
+Creating a coarse no_slip
+Creating a coarse no_slip
+Creating a coarse no_slip
+-100
+-100
+-100
+-100
+-200
+0
+There are 270 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+240000 240000
+The Mass (Surface) of the entire system is : 240000
+The Mass (Surface) error of the entire system is : 19097.6
+Using 0 0 0 as force pole.
+Center of mass position = -4.22687e-15 -100 -1.87052e-15
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 6.77329
+Check on the V operator Norm (should be zero) pure: 6.77329
+Corrected V
+Check on the V operator Norm post (should be one) pure: 0.651204
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 2.54524e-16
+check with versor vector : 1 l_infty : 5.34132e-16
+check with versor vector : 2 l_infty : 2.55907e-16
+monolithic building
+0.0155352 0.00287812
+   Iterations needed to solve DN:         0
+Error L2 : 0.000684081 , error Linfty : 0.000134394

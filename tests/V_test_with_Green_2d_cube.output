@@ -1,0 +1,106 @@
+Test that the BEM is able to recover the Fundamental Solution
+Testing for degree = 1
+We have a tria of 10 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Cycle : 0 4
+There are 20 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = 3.63135e-18 3.92958e-18
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.000256497
+Check on the V operator Norm (should be zero) pure: 0.000256497
+Corrected V
+Check on the V operator Norm post (should be one) pure: 0.000402932
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.193741 0.113706
+   Iterations needed to solve DN:         0
+Cycle : 1 4
+There are 40 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = 2.5608e-17 1.12274e-18
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.00205872
+Check on the V operator Norm (should be zero) pure: 0.00205872
+Corrected V
+Check on the V operator Norm post (should be one) pure: -0.000533138
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.281675 0.113706
+   Iterations needed to solve DN:         0
+Cycle : 2 4
+There are 80 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = -2.15162e-17 1.09467e-17
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.000920745
+Check on the V operator Norm (should be zero) pure: 0.000920745
+Corrected V
+Check on the V operator Norm post (should be one) pure: -0.000763474
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.400583 0.119163
+   Iterations needed to solve DN:         0
+Cycle : 3 4
+There are 160 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = -8.17917e-18 -3.78924e-18
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.000437615
+Check on the V operator Norm (should be zero) pure: 0.000437615
+Corrected V
+Check on the V operator Norm post (should be one) pure: -0.000487636
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+monolithic building
+0.567302 0.119163
+   Iterations needed to solve DN:         0
+cells dofs    u_Linfty          u_L2           u_H1       
+   10   20 7.704e-02     - 1.431e-01    - 2.572e-01     - 
+   20   40 2.604e-02  1.56 5.359e-02 1.42 1.293e-01  0.99 
+   40   80 1.824e-02  0.51 2.882e-02 0.89 1.286e-01  0.01 
+   80  160 2.233e-02 -0.29 1.855e-02 0.64 1.734e-01 -0.43 

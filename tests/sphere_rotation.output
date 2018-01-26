@@ -1,0 +1,41 @@
+Test for the Motility tensor of a sphere in free space
+There are 294 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+14.1424 : 14.1424
+
+Computing the center of mass of our system for the frame 0
+12.6044 12.6044
+The Mass (Surface) of the entire system is : 12.6044
+Using 0 0 0 as force pole.
+Center of mass position = -1.00224 1.52067e-16 1.35024e-16
+   Iterations needed to solve mass matrix:         1
+Analyzing frame = 1 over 120
+14.1424 : 14.1424
+Projecting shape velocities for non isoparametric BEMs
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.0020007
+Check on the V operator Norm (should be zero) pure: 0.0020007
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 8.04912e-13 : 6.64224e-12
+FINAL CHECK 1 8.04948e-13 : 6.62085e-12
+Transforming velocities from center of mass G to origin O
+solved system
+OK rigid translation 0
+OK rigid translation 1
+OK rigid translation 2
+OK rigid rotation 3
+OK rigid rotation 4
+OK rigid rotation 5
+saving

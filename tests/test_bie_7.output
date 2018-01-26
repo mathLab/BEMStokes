@@ -1,0 +1,31 @@
+We have a tria of 10 cells.
+Computing the euler vector for the reference grid
+Creating the box
+There are 80 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Fixed euler vector with exact norm of support points
+6.32456 : 6.32456
+
+Computing the center of mass of our system for the frame 0
+6.27673 6.27673
+The Mass (Surface) of the entire system is : 6.27673
+The Mass (Surface) error of the entire system is : 0.500514
+Using 0 0 as force pole.
+Center of mass position = -4.03171e-18 7.73847e-18
+Fixed euler vector with exact norm of support points
+6.32456 : 6.32456
+Test on the boundary in 2D for the Double Layer
+Test on the 0th rigid mode
+The rigid mode is = 1 0
+Boundary Point at 0 1 , expected [0.5, 0 ]
+OK boundary point
+Test on the 1th rigid mode
+The rigid mode is = 0 1
+Boundary Point at 0 1 , expected [0, 0.5 ]
+OK boundary point
+Test on the 2th rigid mode
+The rigid mode is = -1 0
+Boundary Point at 0 1 , expected [-0.5, 0 ]
+OK boundary point
+Grid written to grid-dim.vtk

@@ -1,0 +1,74 @@
+Test for the Motility tensor of a sphere in free space
+There are 558 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+20.1413 : 20.1413
+
+Computing the center of mass of our system for the frame 0
+1.06457 1.06457
+The Mass (Surface) of the entire system is : 1.06457
+The Mass (Surface) error of the entire system is : 0.915284
+Using 0 0 0 as force pole.
+Center of mass position = 1.25003 1.7444e-05 0.00276803
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.00267342
+Check on the V operator Norm (should be zero) pure: 0.00267342
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+FINAL CHECK 0 5.27356e-16 : 2.80638e-15
+FINAL CHECK 1 5.27356e-16 : 2.80638e-15
+Transforming velocities from center of mass G to origin O
+solved system
+saving
+preparing for new time
+Analyzing frame = 30 over 120
+20.1413 : 20.1413
+Analyzing frame = 30 over 120
+20.1413 : 20.1413
+
+Computing the center of mass of our system for the frame 0
+1.06461 1.06461
+The Mass (Surface) of the entire system is : 1.06461
+The Mass (Surface) error of the entire system is : 0.915281
+Using 0 0 0 as force pole.
+Center of mass position = 1.25003 0.00279688 -5.12943e-05
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.00268588
+Check on the V operator Norm (should be zero) pure: 0.00268588
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+FINAL CHECK 0 4.71845e-16 : 2.54725e-15
+FINAL CHECK 1 4.71845e-16 : 2.54725e-15
+Transforming velocities from center of mass G to origin O
+solved system
+saving
+-3.204e-01 1.061e-01 1.216e-04 
+7.728e-01 4.735e-01 1.324e-01 
+    1   -0    0
+    02.2e-16    1
+   -0   -12.2e-16
+-3.204e-01 1.216e-04 -1.061e-01 
+7.728e-01 1.324e-01 -4.735e-01 
+-0.320428 : -0.320388 --- 0 : 0
+-0.0012972 : 0.000121646 --- 0 : 0
+-0.105967 : -0.106135 --- 0 : 0
+0.772878 : 0.772757 --- 1 : 1
+0.125931 : 0.132352 --- 0 : 0
+-0.475881 : -0.47352 --- 0 : 0

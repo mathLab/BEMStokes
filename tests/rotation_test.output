@@ -1,0 +1,6004 @@
+Minimum Test for the rotation with quaternions
+1.000e+00 0.000e+00 0.000e+00 
+Testing j = 0
+OK : OK : OK : 
+Testing j = 1000
+OK : OK : OK : 
+Testing j = 2000
+OK : OK : OK : 
+Testing j = 3000
+OK : OK : OK : 
+Testing j = 4000
+OK : OK : OK : 
+Testing j = 5000
+OK : OK : OK : 
+Testing j = 6000
+OK : OK : OK : 
+Testing j = 7000
+OK : OK : OK : 
+Testing j = 8000
+OK : OK : OK : 
+Testing j = 9000
+OK : OK : OK : 
+Testing j = 10000
+OK : OK : OK : 
+Testing j = 11000
+OK : OK : OK : 
+Testing j = 12000
+OK : OK : OK : 
+Testing j = 13000
+OK : OK : OK : 
+Testing j = 14000
+OK : OK : OK : 
+Testing j = 15000
+OK : OK : OK : 
+Testing j = 16000
+OK : OK : OK : 
+Testing j = 17000
+OK : OK : OK : 
+Testing j = 18000
+OK : OK : OK : 
+Testing j = 19000
+OK : OK : OK : 
+Testing j = 20000
+OK : OK : OK : 
+Testing j = 21000
+OK : OK : OK : 
+Testing j = 22000
+OK : OK : OK : 
+Testing j = 23000
+OK : OK : OK : 
+Testing j = 24000
+OK : OK : OK : 
+Testing j = 25000
+OK : OK : OK : 
+Testing j = 26000
+OK : OK : OK : 
+Testing j = 27000
+OK : OK : OK : 
+Testing j = 28000
+OK : OK : OK : 
+Testing j = 29000
+OK : OK : OK : 
+Testing j = 30000
+OK : OK : OK : 
+Testing j = 31000
+OK : OK : OK : 
+Testing j = 32000
+OK : OK : OK : 
+Testing j = 33000
+OK : OK : OK : 
+Testing j = 34000
+OK : OK : OK : 
+Testing j = 35000
+OK : OK : OK : 
+Testing j = 36000
+OK : OK : OK : 
+Testing j = 37000
+OK : OK : OK : 
+Testing j = 38000
+OK : OK : OK : 
+Testing j = 39000
+OK : OK : OK : 
+Testing j = 40000
+OK : OK : OK : 
+Testing j = 41000
+OK : OK : OK : 
+Testing j = 42000
+OK : OK : OK : 
+Testing j = 43000
+OK : OK : OK : 
+Testing j = 44000
+OK : OK : OK : 
+Testing j = 45000
+OK : OK : OK : 
+Testing j = 46000
+OK : OK : OK : 
+Testing j = 47000
+OK : OK : OK : 
+Testing j = 48000
+OK : OK : OK : 
+Testing j = 49000
+OK : OK : OK : 
+Testing j = 50000
+OK : OK : OK : 
+Testing j = 51000
+OK : OK : OK : 
+Testing j = 52000
+OK : OK : OK : 
+Testing j = 53000
+OK : OK : OK : 
+Testing j = 54000
+OK : OK : OK : 
+Testing j = 55000
+OK : OK : OK : 
+Testing j = 56000
+OK : OK : OK : 
+Testing j = 57000
+OK : OK : OK : 
+Testing j = 58000
+OK : OK : OK : 
+Testing j = 59000
+OK : OK : OK : 
+Testing j = 60000
+OK : OK : OK : 
+Testing j = 61000
+OK : OK : OK : 
+Testing j = 62000
+OK : OK : OK : 
+Testing j = 63000
+OK : OK : OK : 
+Testing j = 64000
+OK : OK : OK : 
+Testing j = 65000
+OK : OK : OK : 
+Testing j = 66000
+OK : OK : OK : 
+Testing j = 67000
+OK : OK : OK : 
+Testing j = 68000
+OK : OK : OK : 
+Testing j = 69000
+OK : OK : OK : 
+Testing j = 70000
+OK : OK : OK : 
+Testing j = 71000
+OK : OK : OK : 
+Testing j = 72000
+OK : OK : OK : 
+Testing j = 73000
+OK : OK : OK : 
+Testing j = 74000
+OK : OK : OK : 
+Testing j = 75000
+OK : OK : OK : 
+Testing j = 76000
+OK : OK : OK : 
+Testing j = 77000
+OK : OK : OK : 
+Testing j = 78000
+OK : OK : OK : 
+Testing j = 79000
+OK : OK : OK : 
+Testing j = 80000
+OK : OK : OK : 
+Testing j = 81000
+OK : OK : OK : 
+Testing j = 82000
+OK : OK : OK : 
+Testing j = 83000
+OK : OK : OK : 
+Testing j = 84000
+OK : OK : OK : 
+Testing j = 85000
+OK : OK : OK : 
+Testing j = 86000
+OK : OK : OK : 
+Testing j = 87000
+OK : OK : OK : 
+Testing j = 88000
+OK : OK : OK : 
+Testing j = 89000
+OK : OK : OK : 
+Testing j = 90000
+OK : OK : OK : 
+Testing j = 91000
+OK : OK : OK : 
+Testing j = 92000
+OK : OK : OK : 
+Testing j = 93000
+OK : OK : OK : 
+Testing j = 94000
+OK : OK : OK : 
+Testing j = 95000
+OK : OK : OK : 
+Testing j = 96000
+OK : OK : OK : 
+Testing j = 97000
+OK : OK : OK : 
+Testing j = 98000
+OK : OK : OK : 
+Testing j = 99000
+OK : OK : OK : 
+Testing j = 100000
+OK : OK : OK : 
+Testing j = 101000
+OK : OK : OK : 
+Testing j = 102000
+OK : OK : OK : 
+Testing j = 103000
+OK : OK : OK : 
+Testing j = 104000
+OK : OK : OK : 
+Testing j = 105000
+OK : OK : OK : 
+Testing j = 106000
+OK : OK : OK : 
+Testing j = 107000
+OK : OK : OK : 
+Testing j = 108000
+OK : OK : OK : 
+Testing j = 109000
+OK : OK : OK : 
+Testing j = 110000
+OK : OK : OK : 
+Testing j = 111000
+OK : OK : OK : 
+Testing j = 112000
+OK : OK : OK : 
+Testing j = 113000
+OK : OK : OK : 
+Testing j = 114000
+OK : OK : OK : 
+Testing j = 115000
+OK : OK : OK : 
+Testing j = 116000
+OK : OK : OK : 
+Testing j = 117000
+OK : OK : OK : 
+Testing j = 118000
+OK : OK : OK : 
+Testing j = 119000
+OK : OK : OK : 
+Testing j = 120000
+OK : OK : OK : 
+Testing j = 121000
+OK : OK : OK : 
+Testing j = 122000
+OK : OK : OK : 
+Testing j = 123000
+OK : OK : OK : 
+Testing j = 124000
+OK : OK : OK : 
+Testing j = 125000
+OK : OK : OK : 
+Testing j = 126000
+OK : OK : OK : 
+Testing j = 127000
+OK : OK : OK : 
+Testing j = 128000
+OK : OK : OK : 
+Testing j = 129000
+OK : OK : OK : 
+Testing j = 130000
+OK : OK : OK : 
+Testing j = 131000
+OK : OK : OK : 
+Testing j = 132000
+OK : OK : OK : 
+Testing j = 133000
+OK : OK : OK : 
+Testing j = 134000
+OK : OK : OK : 
+Testing j = 135000
+OK : OK : OK : 
+Testing j = 136000
+OK : OK : OK : 
+Testing j = 137000
+OK : OK : OK : 
+Testing j = 138000
+OK : OK : OK : 
+Testing j = 139000
+OK : OK : OK : 
+Testing j = 140000
+OK : OK : OK : 
+Testing j = 141000
+OK : OK : OK : 
+Testing j = 142000
+OK : OK : OK : 
+Testing j = 143000
+OK : OK : OK : 
+Testing j = 144000
+OK : OK : OK : 
+Testing j = 145000
+OK : OK : OK : 
+Testing j = 146000
+OK : OK : OK : 
+Testing j = 147000
+OK : OK : OK : 
+Testing j = 148000
+OK : OK : OK : 
+Testing j = 149000
+OK : OK : OK : 
+Testing j = 150000
+OK : OK : OK : 
+Testing j = 151000
+OK : OK : OK : 
+Testing j = 152000
+OK : OK : OK : 
+Testing j = 153000
+OK : OK : OK : 
+Testing j = 154000
+OK : OK : OK : 
+Testing j = 155000
+OK : OK : OK : 
+Testing j = 156000
+OK : OK : OK : 
+Testing j = 157000
+OK : OK : OK : 
+Testing j = 158000
+OK : OK : OK : 
+Testing j = 159000
+OK : OK : OK : 
+Testing j = 160000
+OK : OK : OK : 
+Testing j = 161000
+OK : OK : OK : 
+Testing j = 162000
+OK : OK : OK : 
+Testing j = 163000
+OK : OK : OK : 
+Testing j = 164000
+OK : OK : OK : 
+Testing j = 165000
+OK : OK : OK : 
+Testing j = 166000
+OK : OK : OK : 
+Testing j = 167000
+OK : OK : OK : 
+Testing j = 168000
+OK : OK : OK : 
+Testing j = 169000
+OK : OK : OK : 
+Testing j = 170000
+OK : OK : OK : 
+Testing j = 171000
+OK : OK : OK : 
+Testing j = 172000
+OK : OK : OK : 
+Testing j = 173000
+OK : OK : OK : 
+Testing j = 174000
+OK : OK : OK : 
+Testing j = 175000
+OK : OK : OK : 
+Testing j = 176000
+OK : OK : OK : 
+Testing j = 177000
+OK : OK : OK : 
+Testing j = 178000
+OK : OK : OK : 
+Testing j = 179000
+OK : OK : OK : 
+Testing j = 180000
+OK : OK : OK : 
+Testing j = 181000
+OK : OK : OK : 
+Testing j = 182000
+OK : OK : OK : 
+Testing j = 183000
+OK : OK : OK : 
+Testing j = 184000
+OK : OK : OK : 
+Testing j = 185000
+OK : OK : OK : 
+Testing j = 186000
+OK : OK : OK : 
+Testing j = 187000
+OK : OK : OK : 
+Testing j = 188000
+OK : OK : OK : 
+Testing j = 189000
+OK : OK : OK : 
+Testing j = 190000
+OK : OK : OK : 
+Testing j = 191000
+OK : OK : OK : 
+Testing j = 192000
+OK : OK : OK : 
+Testing j = 193000
+OK : OK : OK : 
+Testing j = 194000
+OK : OK : OK : 
+Testing j = 195000
+OK : OK : OK : 
+Testing j = 196000
+OK : OK : OK : 
+Testing j = 197000
+OK : OK : OK : 
+Testing j = 198000
+OK : OK : OK : 
+Testing j = 199000
+OK : OK : OK : 
+Testing j = 200000
+OK : OK : OK : 
+Testing j = 201000
+OK : OK : OK : 
+Testing j = 202000
+OK : OK : OK : 
+Testing j = 203000
+OK : OK : OK : 
+Testing j = 204000
+OK : OK : OK : 
+Testing j = 205000
+OK : OK : OK : 
+Testing j = 206000
+OK : OK : OK : 
+Testing j = 207000
+OK : OK : OK : 
+Testing j = 208000
+OK : OK : OK : 
+Testing j = 209000
+OK : OK : OK : 
+Testing j = 210000
+OK : OK : OK : 
+Testing j = 211000
+OK : OK : OK : 
+Testing j = 212000
+OK : OK : OK : 
+Testing j = 213000
+OK : OK : OK : 
+Testing j = 214000
+OK : OK : OK : 
+Testing j = 215000
+OK : OK : OK : 
+Testing j = 216000
+OK : OK : OK : 
+Testing j = 217000
+OK : OK : OK : 
+Testing j = 218000
+OK : OK : OK : 
+Testing j = 219000
+OK : OK : OK : 
+Testing j = 220000
+OK : OK : OK : 
+Testing j = 221000
+OK : OK : OK : 
+Testing j = 222000
+OK : OK : OK : 
+Testing j = 223000
+OK : OK : OK : 
+Testing j = 224000
+OK : OK : OK : 
+Testing j = 225000
+OK : OK : OK : 
+Testing j = 226000
+OK : OK : OK : 
+Testing j = 227000
+OK : OK : OK : 
+Testing j = 228000
+OK : OK : OK : 
+Testing j = 229000
+OK : OK : OK : 
+Testing j = 230000
+OK : OK : OK : 
+Testing j = 231000
+OK : OK : OK : 
+Testing j = 232000
+OK : OK : OK : 
+Testing j = 233000
+OK : OK : OK : 
+Testing j = 234000
+OK : OK : OK : 
+Testing j = 235000
+OK : OK : OK : 
+Testing j = 236000
+OK : OK : OK : 
+Testing j = 237000
+OK : OK : OK : 
+Testing j = 238000
+OK : OK : OK : 
+Testing j = 239000
+OK : OK : OK : 
+Testing j = 240000
+OK : OK : OK : 
+Testing j = 241000
+OK : OK : OK : 
+Testing j = 242000
+OK : OK : OK : 
+Testing j = 243000
+OK : OK : OK : 
+Testing j = 244000
+OK : OK : OK : 
+Testing j = 245000
+OK : OK : OK : 
+Testing j = 246000
+OK : OK : OK : 
+Testing j = 247000
+OK : OK : OK : 
+Testing j = 248000
+OK : OK : OK : 
+Testing j = 249000
+OK : OK : OK : 
+Testing j = 250000
+OK : OK : OK : 
+Testing j = 251000
+OK : OK : OK : 
+Testing j = 252000
+OK : OK : OK : 
+Testing j = 253000
+OK : OK : OK : 
+Testing j = 254000
+OK : OK : OK : 
+Testing j = 255000
+OK : OK : OK : 
+Testing j = 256000
+OK : OK : OK : 
+Testing j = 257000
+OK : OK : OK : 
+Testing j = 258000
+OK : OK : OK : 
+Testing j = 259000
+OK : OK : OK : 
+Testing j = 260000
+OK : OK : OK : 
+Testing j = 261000
+OK : OK : OK : 
+Testing j = 262000
+OK : OK : OK : 
+Testing j = 263000
+OK : OK : OK : 
+Testing j = 264000
+OK : OK : OK : 
+Testing j = 265000
+OK : OK : OK : 
+Testing j = 266000
+OK : OK : OK : 
+Testing j = 267000
+OK : OK : OK : 
+Testing j = 268000
+OK : OK : OK : 
+Testing j = 269000
+OK : OK : OK : 
+Testing j = 270000
+OK : OK : OK : 
+Testing j = 271000
+OK : OK : OK : 
+Testing j = 272000
+OK : OK : OK : 
+Testing j = 273000
+OK : OK : OK : 
+Testing j = 274000
+OK : OK : OK : 
+Testing j = 275000
+OK : OK : OK : 
+Testing j = 276000
+OK : OK : OK : 
+Testing j = 277000
+OK : OK : OK : 
+Testing j = 278000
+OK : OK : OK : 
+Testing j = 279000
+OK : OK : OK : 
+Testing j = 280000
+OK : OK : OK : 
+Testing j = 281000
+OK : OK : OK : 
+Testing j = 282000
+OK : OK : OK : 
+Testing j = 283000
+OK : OK : OK : 
+Testing j = 284000
+OK : OK : OK : 
+Testing j = 285000
+OK : OK : OK : 
+Testing j = 286000
+OK : OK : OK : 
+Testing j = 287000
+OK : OK : OK : 
+Testing j = 288000
+OK : OK : OK : 
+Testing j = 289000
+OK : OK : OK : 
+Testing j = 290000
+OK : OK : OK : 
+Testing j = 291000
+OK : OK : OK : 
+Testing j = 292000
+OK : OK : OK : 
+Testing j = 293000
+OK : OK : OK : 
+Testing j = 294000
+OK : OK : OK : 
+Testing j = 295000
+OK : OK : OK : 
+Testing j = 296000
+OK : OK : OK : 
+Testing j = 297000
+OK : OK : OK : 
+Testing j = 298000
+OK : OK : OK : 
+Testing j = 299000
+OK : OK : OK : 
+Testing j = 300000
+OK : OK : OK : 
+Testing j = 301000
+OK : OK : OK : 
+Testing j = 302000
+OK : OK : OK : 
+Testing j = 303000
+OK : OK : OK : 
+Testing j = 304000
+OK : OK : OK : 
+Testing j = 305000
+OK : OK : OK : 
+Testing j = 306000
+OK : OK : OK : 
+Testing j = 307000
+OK : OK : OK : 
+Testing j = 308000
+OK : OK : OK : 
+Testing j = 309000
+OK : OK : OK : 
+Testing j = 310000
+OK : OK : OK : 
+Testing j = 311000
+OK : OK : OK : 
+Testing j = 312000
+OK : OK : OK : 
+Testing j = 313000
+OK : OK : OK : 
+Testing j = 314000
+OK : OK : OK : 
+Testing j = 315000
+OK : OK : OK : 
+Testing j = 316000
+OK : OK : OK : 
+Testing j = 317000
+OK : OK : OK : 
+Testing j = 318000
+OK : OK : OK : 
+Testing j = 319000
+OK : OK : OK : 
+Testing j = 320000
+OK : OK : OK : 
+Testing j = 321000
+OK : OK : OK : 
+Testing j = 322000
+OK : OK : OK : 
+Testing j = 323000
+OK : OK : OK : 
+Testing j = 324000
+OK : OK : OK : 
+Testing j = 325000
+OK : OK : OK : 
+Testing j = 326000
+OK : OK : OK : 
+Testing j = 327000
+OK : OK : OK : 
+Testing j = 328000
+OK : OK : OK : 
+Testing j = 329000
+OK : OK : OK : 
+Testing j = 330000
+OK : OK : OK : 
+Testing j = 331000
+OK : OK : OK : 
+Testing j = 332000
+OK : OK : OK : 
+Testing j = 333000
+OK : OK : OK : 
+Testing j = 334000
+OK : OK : OK : 
+Testing j = 335000
+OK : OK : OK : 
+Testing j = 336000
+OK : OK : OK : 
+Testing j = 337000
+OK : OK : OK : 
+Testing j = 338000
+OK : OK : OK : 
+Testing j = 339000
+OK : OK : OK : 
+Testing j = 340000
+OK : OK : OK : 
+Testing j = 341000
+OK : OK : OK : 
+Testing j = 342000
+OK : OK : OK : 
+Testing j = 343000
+OK : OK : OK : 
+Testing j = 344000
+OK : OK : OK : 
+Testing j = 345000
+OK : OK : OK : 
+Testing j = 346000
+OK : OK : OK : 
+Testing j = 347000
+OK : OK : OK : 
+Testing j = 348000
+OK : OK : OK : 
+Testing j = 349000
+OK : OK : OK : 
+Testing j = 350000
+OK : OK : OK : 
+Testing j = 351000
+OK : OK : OK : 
+Testing j = 352000
+OK : OK : OK : 
+Testing j = 353000
+OK : OK : OK : 
+Testing j = 354000
+OK : OK : OK : 
+Testing j = 355000
+OK : OK : OK : 
+Testing j = 356000
+OK : OK : OK : 
+Testing j = 357000
+OK : OK : OK : 
+Testing j = 358000
+OK : OK : OK : 
+Testing j = 359000
+OK : OK : OK : 
+Testing j = 360000
+OK : OK : OK : 
+Testing j = 361000
+OK : OK : OK : 
+Testing j = 362000
+OK : OK : OK : 
+Testing j = 363000
+OK : OK : OK : 
+Testing j = 364000
+OK : OK : OK : 
+Testing j = 365000
+OK : OK : OK : 
+Testing j = 366000
+OK : OK : OK : 
+Testing j = 367000
+OK : OK : OK : 
+Testing j = 368000
+OK : OK : OK : 
+Testing j = 369000
+OK : OK : OK : 
+Testing j = 370000
+OK : OK : OK : 
+Testing j = 371000
+OK : OK : OK : 
+Testing j = 372000
+OK : OK : OK : 
+Testing j = 373000
+OK : OK : OK : 
+Testing j = 374000
+OK : OK : OK : 
+Testing j = 375000
+OK : OK : OK : 
+Testing j = 376000
+OK : OK : OK : 
+Testing j = 377000
+OK : OK : OK : 
+Testing j = 378000
+OK : OK : OK : 
+Testing j = 379000
+OK : OK : OK : 
+Testing j = 380000
+OK : OK : OK : 
+Testing j = 381000
+OK : OK : OK : 
+Testing j = 382000
+OK : OK : OK : 
+Testing j = 383000
+OK : OK : OK : 
+Testing j = 384000
+OK : OK : OK : 
+Testing j = 385000
+OK : OK : OK : 
+Testing j = 386000
+OK : OK : OK : 
+Testing j = 387000
+OK : OK : OK : 
+Testing j = 388000
+OK : OK : OK : 
+Testing j = 389000
+OK : OK : OK : 
+Testing j = 390000
+OK : OK : OK : 
+Testing j = 391000
+OK : OK : OK : 
+Testing j = 392000
+OK : OK : OK : 
+Testing j = 393000
+OK : OK : OK : 
+Testing j = 394000
+OK : OK : OK : 
+Testing j = 395000
+OK : OK : OK : 
+Testing j = 396000
+OK : OK : OK : 
+Testing j = 397000
+OK : OK : OK : 
+Testing j = 398000
+OK : OK : OK : 
+Testing j = 399000
+OK : OK : OK : 
+Testing j = 400000
+OK : OK : OK : 
+Testing j = 401000
+OK : OK : OK : 
+Testing j = 402000
+OK : OK : OK : 
+Testing j = 403000
+OK : OK : OK : 
+Testing j = 404000
+OK : OK : OK : 
+Testing j = 405000
+OK : OK : OK : 
+Testing j = 406000
+OK : OK : OK : 
+Testing j = 407000
+OK : OK : OK : 
+Testing j = 408000
+OK : OK : OK : 
+Testing j = 409000
+OK : OK : OK : 
+Testing j = 410000
+OK : OK : OK : 
+Testing j = 411000
+OK : OK : OK : 
+Testing j = 412000
+OK : OK : OK : 
+Testing j = 413000
+OK : OK : OK : 
+Testing j = 414000
+OK : OK : OK : 
+Testing j = 415000
+OK : OK : OK : 
+Testing j = 416000
+OK : OK : OK : 
+Testing j = 417000
+OK : OK : OK : 
+Testing j = 418000
+OK : OK : OK : 
+Testing j = 419000
+OK : OK : OK : 
+Testing j = 420000
+OK : OK : OK : 
+Testing j = 421000
+OK : OK : OK : 
+Testing j = 422000
+OK : OK : OK : 
+Testing j = 423000
+OK : OK : OK : 
+Testing j = 424000
+OK : OK : OK : 
+Testing j = 425000
+OK : OK : OK : 
+Testing j = 426000
+OK : OK : OK : 
+Testing j = 427000
+OK : OK : OK : 
+Testing j = 428000
+OK : OK : OK : 
+Testing j = 429000
+OK : OK : OK : 
+Testing j = 430000
+OK : OK : OK : 
+Testing j = 431000
+OK : OK : OK : 
+Testing j = 432000
+OK : OK : OK : 
+Testing j = 433000
+OK : OK : OK : 
+Testing j = 434000
+OK : OK : OK : 
+Testing j = 435000
+OK : OK : OK : 
+Testing j = 436000
+OK : OK : OK : 
+Testing j = 437000
+OK : OK : OK : 
+Testing j = 438000
+OK : OK : OK : 
+Testing j = 439000
+OK : OK : OK : 
+Testing j = 440000
+OK : OK : OK : 
+Testing j = 441000
+OK : OK : OK : 
+Testing j = 442000
+OK : OK : OK : 
+Testing j = 443000
+OK : OK : OK : 
+Testing j = 444000
+OK : OK : OK : 
+Testing j = 445000
+OK : OK : OK : 
+Testing j = 446000
+OK : OK : OK : 
+Testing j = 447000
+OK : OK : OK : 
+Testing j = 448000
+OK : OK : OK : 
+Testing j = 449000
+OK : OK : OK : 
+Testing j = 450000
+OK : OK : OK : 
+Testing j = 451000
+OK : OK : OK : 
+Testing j = 452000
+OK : OK : OK : 
+Testing j = 453000
+OK : OK : OK : 
+Testing j = 454000
+OK : OK : OK : 
+Testing j = 455000
+OK : OK : OK : 
+Testing j = 456000
+OK : OK : OK : 
+Testing j = 457000
+OK : OK : OK : 
+Testing j = 458000
+OK : OK : OK : 
+Testing j = 459000
+OK : OK : OK : 
+Testing j = 460000
+OK : OK : OK : 
+Testing j = 461000
+OK : OK : OK : 
+Testing j = 462000
+OK : OK : OK : 
+Testing j = 463000
+OK : OK : OK : 
+Testing j = 464000
+OK : OK : OK : 
+Testing j = 465000
+OK : OK : OK : 
+Testing j = 466000
+OK : OK : OK : 
+Testing j = 467000
+OK : OK : OK : 
+Testing j = 468000
+OK : OK : OK : 
+Testing j = 469000
+OK : OK : OK : 
+Testing j = 470000
+OK : OK : OK : 
+Testing j = 471000
+OK : OK : OK : 
+Testing j = 472000
+OK : OK : OK : 
+Testing j = 473000
+OK : OK : OK : 
+Testing j = 474000
+OK : OK : OK : 
+Testing j = 475000
+OK : OK : OK : 
+Testing j = 476000
+OK : OK : OK : 
+Testing j = 477000
+OK : OK : OK : 
+Testing j = 478000
+OK : OK : OK : 
+Testing j = 479000
+OK : OK : OK : 
+Testing j = 480000
+OK : OK : OK : 
+Testing j = 481000
+OK : OK : OK : 
+Testing j = 482000
+OK : OK : OK : 
+Testing j = 483000
+OK : OK : OK : 
+Testing j = 484000
+OK : OK : OK : 
+Testing j = 485000
+OK : OK : OK : 
+Testing j = 486000
+OK : OK : OK : 
+Testing j = 487000
+OK : OK : OK : 
+Testing j = 488000
+OK : OK : OK : 
+Testing j = 489000
+OK : OK : OK : 
+Testing j = 490000
+OK : OK : OK : 
+Testing j = 491000
+OK : OK : OK : 
+Testing j = 492000
+OK : OK : OK : 
+Testing j = 493000
+OK : OK : OK : 
+Testing j = 494000
+OK : OK : OK : 
+Testing j = 495000
+OK : OK : OK : 
+Testing j = 496000
+OK : OK : OK : 
+Testing j = 497000
+OK : OK : OK : 
+Testing j = 498000
+OK : OK : OK : 
+Testing j = 499000
+OK : OK : OK : 
+Testing j = 500000
+OK : OK : OK : 
+Testing j = 501000
+OK : OK : OK : 
+Testing j = 502000
+OK : OK : OK : 
+Testing j = 503000
+OK : OK : OK : 
+Testing j = 504000
+OK : OK : OK : 
+Testing j = 505000
+OK : OK : OK : 
+Testing j = 506000
+OK : OK : OK : 
+Testing j = 507000
+OK : OK : OK : 
+Testing j = 508000
+OK : OK : OK : 
+Testing j = 509000
+OK : OK : OK : 
+Testing j = 510000
+OK : OK : OK : 
+Testing j = 511000
+OK : OK : OK : 
+Testing j = 512000
+OK : OK : OK : 
+Testing j = 513000
+OK : OK : OK : 
+Testing j = 514000
+OK : OK : OK : 
+Testing j = 515000
+OK : OK : OK : 
+Testing j = 516000
+OK : OK : OK : 
+Testing j = 517000
+OK : OK : OK : 
+Testing j = 518000
+OK : OK : OK : 
+Testing j = 519000
+OK : OK : OK : 
+Testing j = 520000
+OK : OK : OK : 
+Testing j = 521000
+OK : OK : OK : 
+Testing j = 522000
+OK : OK : OK : 
+Testing j = 523000
+OK : OK : OK : 
+Testing j = 524000
+OK : OK : OK : 
+Testing j = 525000
+OK : OK : OK : 
+Testing j = 526000
+OK : OK : OK : 
+Testing j = 527000
+OK : OK : OK : 
+Testing j = 528000
+OK : OK : OK : 
+Testing j = 529000
+OK : OK : OK : 
+Testing j = 530000
+OK : OK : OK : 
+Testing j = 531000
+OK : OK : OK : 
+Testing j = 532000
+OK : OK : OK : 
+Testing j = 533000
+OK : OK : OK : 
+Testing j = 534000
+OK : OK : OK : 
+Testing j = 535000
+OK : OK : OK : 
+Testing j = 536000
+OK : OK : OK : 
+Testing j = 537000
+OK : OK : OK : 
+Testing j = 538000
+OK : OK : OK : 
+Testing j = 539000
+OK : OK : OK : 
+Testing j = 540000
+OK : OK : OK : 
+Testing j = 541000
+OK : OK : OK : 
+Testing j = 542000
+OK : OK : OK : 
+Testing j = 543000
+OK : OK : OK : 
+Testing j = 544000
+OK : OK : OK : 
+Testing j = 545000
+OK : OK : OK : 
+Testing j = 546000
+OK : OK : OK : 
+Testing j = 547000
+OK : OK : OK : 
+Testing j = 548000
+OK : OK : OK : 
+Testing j = 549000
+OK : OK : OK : 
+Testing j = 550000
+OK : OK : OK : 
+Testing j = 551000
+OK : OK : OK : 
+Testing j = 552000
+OK : OK : OK : 
+Testing j = 553000
+OK : OK : OK : 
+Testing j = 554000
+OK : OK : OK : 
+Testing j = 555000
+OK : OK : OK : 
+Testing j = 556000
+OK : OK : OK : 
+Testing j = 557000
+OK : OK : OK : 
+Testing j = 558000
+OK : OK : OK : 
+Testing j = 559000
+OK : OK : OK : 
+Testing j = 560000
+OK : OK : OK : 
+Testing j = 561000
+OK : OK : OK : 
+Testing j = 562000
+OK : OK : OK : 
+Testing j = 563000
+OK : OK : OK : 
+Testing j = 564000
+OK : OK : OK : 
+Testing j = 565000
+OK : OK : OK : 
+Testing j = 566000
+OK : OK : OK : 
+Testing j = 567000
+OK : OK : OK : 
+Testing j = 568000
+OK : OK : OK : 
+Testing j = 569000
+OK : OK : OK : 
+Testing j = 570000
+OK : OK : OK : 
+Testing j = 571000
+OK : OK : OK : 
+Testing j = 572000
+OK : OK : OK : 
+Testing j = 573000
+OK : OK : OK : 
+Testing j = 574000
+OK : OK : OK : 
+Testing j = 575000
+OK : OK : OK : 
+Testing j = 576000
+OK : OK : OK : 
+Testing j = 577000
+OK : OK : OK : 
+Testing j = 578000
+OK : OK : OK : 
+Testing j = 579000
+OK : OK : OK : 
+Testing j = 580000
+OK : OK : OK : 
+Testing j = 581000
+OK : OK : OK : 
+Testing j = 582000
+OK : OK : OK : 
+Testing j = 583000
+OK : OK : OK : 
+Testing j = 584000
+OK : OK : OK : 
+Testing j = 585000
+OK : OK : OK : 
+Testing j = 586000
+OK : OK : OK : 
+Testing j = 587000
+OK : OK : OK : 
+Testing j = 588000
+OK : OK : OK : 
+Testing j = 589000
+OK : OK : OK : 
+Testing j = 590000
+OK : OK : OK : 
+Testing j = 591000
+OK : OK : OK : 
+Testing j = 592000
+OK : OK : OK : 
+Testing j = 593000
+OK : OK : OK : 
+Testing j = 594000
+OK : OK : OK : 
+Testing j = 595000
+OK : OK : OK : 
+Testing j = 596000
+OK : OK : OK : 
+Testing j = 597000
+OK : OK : OK : 
+Testing j = 598000
+OK : OK : OK : 
+Testing j = 599000
+OK : OK : OK : 
+Testing j = 600000
+OK : OK : OK : 
+Testing j = 601000
+OK : OK : OK : 
+Testing j = 602000
+OK : OK : OK : 
+Testing j = 603000
+OK : OK : OK : 
+Testing j = 604000
+OK : OK : OK : 
+Testing j = 605000
+OK : OK : OK : 
+Testing j = 606000
+OK : OK : OK : 
+Testing j = 607000
+OK : OK : OK : 
+Testing j = 608000
+OK : OK : OK : 
+Testing j = 609000
+OK : OK : OK : 
+Testing j = 610000
+OK : OK : OK : 
+Testing j = 611000
+OK : OK : OK : 
+Testing j = 612000
+OK : OK : OK : 
+Testing j = 613000
+OK : OK : OK : 
+Testing j = 614000
+OK : OK : OK : 
+Testing j = 615000
+OK : OK : OK : 
+Testing j = 616000
+OK : OK : OK : 
+Testing j = 617000
+OK : OK : OK : 
+Testing j = 618000
+OK : OK : OK : 
+Testing j = 619000
+OK : OK : OK : 
+Testing j = 620000
+OK : OK : OK : 
+Testing j = 621000
+OK : OK : OK : 
+Testing j = 622000
+OK : OK : OK : 
+Testing j = 623000
+OK : OK : OK : 
+Testing j = 624000
+OK : OK : OK : 
+Testing j = 625000
+OK : OK : OK : 
+Testing j = 626000
+OK : OK : OK : 
+Testing j = 627000
+OK : OK : OK : 
+Testing j = 628000
+OK : OK : OK : 
+Testing j = 629000
+OK : OK : OK : 
+Testing j = 630000
+OK : OK : OK : 
+Testing j = 631000
+OK : OK : OK : 
+Testing j = 632000
+OK : OK : OK : 
+Testing j = 633000
+OK : OK : OK : 
+Testing j = 634000
+OK : OK : OK : 
+Testing j = 635000
+OK : OK : OK : 
+Testing j = 636000
+OK : OK : OK : 
+Testing j = 637000
+OK : OK : OK : 
+Testing j = 638000
+OK : OK : OK : 
+Testing j = 639000
+OK : OK : OK : 
+Testing j = 640000
+OK : OK : OK : 
+Testing j = 641000
+OK : OK : OK : 
+Testing j = 642000
+OK : OK : OK : 
+Testing j = 643000
+OK : OK : OK : 
+Testing j = 644000
+OK : OK : OK : 
+Testing j = 645000
+OK : OK : OK : 
+Testing j = 646000
+OK : OK : OK : 
+Testing j = 647000
+OK : OK : OK : 
+Testing j = 648000
+OK : OK : OK : 
+Testing j = 649000
+OK : OK : OK : 
+Testing j = 650000
+OK : OK : OK : 
+Testing j = 651000
+OK : OK : OK : 
+Testing j = 652000
+OK : OK : OK : 
+Testing j = 653000
+OK : OK : OK : 
+Testing j = 654000
+OK : OK : OK : 
+Testing j = 655000
+OK : OK : OK : 
+Testing j = 656000
+OK : OK : OK : 
+Testing j = 657000
+OK : OK : OK : 
+Testing j = 658000
+OK : OK : OK : 
+Testing j = 659000
+OK : OK : OK : 
+Testing j = 660000
+OK : OK : OK : 
+Testing j = 661000
+OK : OK : OK : 
+Testing j = 662000
+OK : OK : OK : 
+Testing j = 663000
+OK : OK : OK : 
+Testing j = 664000
+OK : OK : OK : 
+Testing j = 665000
+OK : OK : OK : 
+Testing j = 666000
+OK : OK : OK : 
+Testing j = 667000
+OK : OK : OK : 
+Testing j = 668000
+OK : OK : OK : 
+Testing j = 669000
+OK : OK : OK : 
+Testing j = 670000
+OK : OK : OK : 
+Testing j = 671000
+OK : OK : OK : 
+Testing j = 672000
+OK : OK : OK : 
+Testing j = 673000
+OK : OK : OK : 
+Testing j = 674000
+OK : OK : OK : 
+Testing j = 675000
+OK : OK : OK : 
+Testing j = 676000
+OK : OK : OK : 
+Testing j = 677000
+OK : OK : OK : 
+Testing j = 678000
+OK : OK : OK : 
+Testing j = 679000
+OK : OK : OK : 
+Testing j = 680000
+OK : OK : OK : 
+Testing j = 681000
+OK : OK : OK : 
+Testing j = 682000
+OK : OK : OK : 
+Testing j = 683000
+OK : OK : OK : 
+Testing j = 684000
+OK : OK : OK : 
+Testing j = 685000
+OK : OK : OK : 
+Testing j = 686000
+OK : OK : OK : 
+Testing j = 687000
+OK : OK : OK : 
+Testing j = 688000
+OK : OK : OK : 
+Testing j = 689000
+OK : OK : OK : 
+Testing j = 690000
+OK : OK : OK : 
+Testing j = 691000
+OK : OK : OK : 
+Testing j = 692000
+OK : OK : OK : 
+Testing j = 693000
+OK : OK : OK : 
+Testing j = 694000
+OK : OK : OK : 
+Testing j = 695000
+OK : OK : OK : 
+Testing j = 696000
+OK : OK : OK : 
+Testing j = 697000
+OK : OK : OK : 
+Testing j = 698000
+OK : OK : OK : 
+Testing j = 699000
+OK : OK : OK : 
+Testing j = 700000
+OK : OK : OK : 
+Testing j = 701000
+OK : OK : OK : 
+Testing j = 702000
+OK : OK : OK : 
+Testing j = 703000
+OK : OK : OK : 
+Testing j = 704000
+OK : OK : OK : 
+Testing j = 705000
+OK : OK : OK : 
+Testing j = 706000
+OK : OK : OK : 
+Testing j = 707000
+OK : OK : OK : 
+Testing j = 708000
+OK : OK : OK : 
+Testing j = 709000
+OK : OK : OK : 
+Testing j = 710000
+OK : OK : OK : 
+Testing j = 711000
+OK : OK : OK : 
+Testing j = 712000
+OK : OK : OK : 
+Testing j = 713000
+OK : OK : OK : 
+Testing j = 714000
+OK : OK : OK : 
+Testing j = 715000
+OK : OK : OK : 
+Testing j = 716000
+OK : OK : OK : 
+Testing j = 717000
+OK : OK : OK : 
+Testing j = 718000
+OK : OK : OK : 
+Testing j = 719000
+OK : OK : OK : 
+Testing j = 720000
+OK : OK : OK : 
+Testing j = 721000
+OK : OK : OK : 
+Testing j = 722000
+OK : OK : OK : 
+Testing j = 723000
+OK : OK : OK : 
+Testing j = 724000
+OK : OK : OK : 
+Testing j = 725000
+OK : OK : OK : 
+Testing j = 726000
+OK : OK : OK : 
+Testing j = 727000
+OK : OK : OK : 
+Testing j = 728000
+OK : OK : OK : 
+Testing j = 729000
+OK : OK : OK : 
+Testing j = 730000
+OK : OK : OK : 
+Testing j = 731000
+OK : OK : OK : 
+Testing j = 732000
+OK : OK : OK : 
+Testing j = 733000
+OK : OK : OK : 
+Testing j = 734000
+OK : OK : OK : 
+Testing j = 735000
+OK : OK : OK : 
+Testing j = 736000
+OK : OK : OK : 
+Testing j = 737000
+OK : OK : OK : 
+Testing j = 738000
+OK : OK : OK : 
+Testing j = 739000
+OK : OK : OK : 
+Testing j = 740000
+OK : OK : OK : 
+Testing j = 741000
+OK : OK : OK : 
+Testing j = 742000
+OK : OK : OK : 
+Testing j = 743000
+OK : OK : OK : 
+Testing j = 744000
+OK : OK : OK : 
+Testing j = 745000
+OK : OK : OK : 
+Testing j = 746000
+OK : OK : OK : 
+Testing j = 747000
+OK : OK : OK : 
+Testing j = 748000
+OK : OK : OK : 
+Testing j = 749000
+OK : OK : OK : 
+Testing j = 750000
+OK : OK : OK : 
+Testing j = 751000
+OK : OK : OK : 
+Testing j = 752000
+OK : OK : OK : 
+Testing j = 753000
+OK : OK : OK : 
+Testing j = 754000
+OK : OK : OK : 
+Testing j = 755000
+OK : OK : OK : 
+Testing j = 756000
+OK : OK : OK : 
+Testing j = 757000
+OK : OK : OK : 
+Testing j = 758000
+OK : OK : OK : 
+Testing j = 759000
+OK : OK : OK : 
+Testing j = 760000
+OK : OK : OK : 
+Testing j = 761000
+OK : OK : OK : 
+Testing j = 762000
+OK : OK : OK : 
+Testing j = 763000
+OK : OK : OK : 
+Testing j = 764000
+OK : OK : OK : 
+Testing j = 765000
+OK : OK : OK : 
+Testing j = 766000
+OK : OK : OK : 
+Testing j = 767000
+OK : OK : OK : 
+Testing j = 768000
+OK : OK : OK : 
+Testing j = 769000
+OK : OK : OK : 
+Testing j = 770000
+OK : OK : OK : 
+Testing j = 771000
+OK : OK : OK : 
+Testing j = 772000
+OK : OK : OK : 
+Testing j = 773000
+OK : OK : OK : 
+Testing j = 774000
+OK : OK : OK : 
+Testing j = 775000
+OK : OK : OK : 
+Testing j = 776000
+OK : OK : OK : 
+Testing j = 777000
+OK : OK : OK : 
+Testing j = 778000
+OK : OK : OK : 
+Testing j = 779000
+OK : OK : OK : 
+Testing j = 780000
+OK : OK : OK : 
+Testing j = 781000
+OK : OK : OK : 
+Testing j = 782000
+OK : OK : OK : 
+Testing j = 783000
+OK : OK : OK : 
+Testing j = 784000
+OK : OK : OK : 
+Testing j = 785000
+OK : OK : OK : 
+Testing j = 786000
+OK : OK : OK : 
+Testing j = 787000
+OK : OK : OK : 
+Testing j = 788000
+OK : OK : OK : 
+Testing j = 789000
+OK : OK : OK : 
+Testing j = 790000
+OK : OK : OK : 
+Testing j = 791000
+OK : OK : OK : 
+Testing j = 792000
+OK : OK : OK : 
+Testing j = 793000
+OK : OK : OK : 
+Testing j = 794000
+OK : OK : OK : 
+Testing j = 795000
+OK : OK : OK : 
+Testing j = 796000
+OK : OK : OK : 
+Testing j = 797000
+OK : OK : OK : 
+Testing j = 798000
+OK : OK : OK : 
+Testing j = 799000
+OK : OK : OK : 
+Testing j = 800000
+OK : OK : OK : 
+Testing j = 801000
+OK : OK : OK : 
+Testing j = 802000
+OK : OK : OK : 
+Testing j = 803000
+OK : OK : OK : 
+Testing j = 804000
+OK : OK : OK : 
+Testing j = 805000
+OK : OK : OK : 
+Testing j = 806000
+OK : OK : OK : 
+Testing j = 807000
+OK : OK : OK : 
+Testing j = 808000
+OK : OK : OK : 
+Testing j = 809000
+OK : OK : OK : 
+Testing j = 810000
+OK : OK : OK : 
+Testing j = 811000
+OK : OK : OK : 
+Testing j = 812000
+OK : OK : OK : 
+Testing j = 813000
+OK : OK : OK : 
+Testing j = 814000
+OK : OK : OK : 
+Testing j = 815000
+OK : OK : OK : 
+Testing j = 816000
+OK : OK : OK : 
+Testing j = 817000
+OK : OK : OK : 
+Testing j = 818000
+OK : OK : OK : 
+Testing j = 819000
+OK : OK : OK : 
+Testing j = 820000
+OK : OK : OK : 
+Testing j = 821000
+OK : OK : OK : 
+Testing j = 822000
+OK : OK : OK : 
+Testing j = 823000
+OK : OK : OK : 
+Testing j = 824000
+OK : OK : OK : 
+Testing j = 825000
+OK : OK : OK : 
+Testing j = 826000
+OK : OK : OK : 
+Testing j = 827000
+OK : OK : OK : 
+Testing j = 828000
+OK : OK : OK : 
+Testing j = 829000
+OK : OK : OK : 
+Testing j = 830000
+OK : OK : OK : 
+Testing j = 831000
+OK : OK : OK : 
+Testing j = 832000
+OK : OK : OK : 
+Testing j = 833000
+OK : OK : OK : 
+Testing j = 834000
+OK : OK : OK : 
+Testing j = 835000
+OK : OK : OK : 
+Testing j = 836000
+OK : OK : OK : 
+Testing j = 837000
+OK : OK : OK : 
+Testing j = 838000
+OK : OK : OK : 
+Testing j = 839000
+OK : OK : OK : 
+Testing j = 840000
+OK : OK : OK : 
+Testing j = 841000
+OK : OK : OK : 
+Testing j = 842000
+OK : OK : OK : 
+Testing j = 843000
+OK : OK : OK : 
+Testing j = 844000
+OK : OK : OK : 
+Testing j = 845000
+OK : OK : OK : 
+Testing j = 846000
+OK : OK : OK : 
+Testing j = 847000
+OK : OK : OK : 
+Testing j = 848000
+OK : OK : OK : 
+Testing j = 849000
+OK : OK : OK : 
+Testing j = 850000
+OK : OK : OK : 
+Testing j = 851000
+OK : OK : OK : 
+Testing j = 852000
+OK : OK : OK : 
+Testing j = 853000
+OK : OK : OK : 
+Testing j = 854000
+OK : OK : OK : 
+Testing j = 855000
+OK : OK : OK : 
+Testing j = 856000
+OK : OK : OK : 
+Testing j = 857000
+OK : OK : OK : 
+Testing j = 858000
+OK : OK : OK : 
+Testing j = 859000
+OK : OK : OK : 
+Testing j = 860000
+OK : OK : OK : 
+Testing j = 861000
+OK : OK : OK : 
+Testing j = 862000
+OK : OK : OK : 
+Testing j = 863000
+OK : OK : OK : 
+Testing j = 864000
+OK : OK : OK : 
+Testing j = 865000
+OK : OK : OK : 
+Testing j = 866000
+OK : OK : OK : 
+Testing j = 867000
+OK : OK : OK : 
+Testing j = 868000
+OK : OK : OK : 
+Testing j = 869000
+OK : OK : OK : 
+Testing j = 870000
+OK : OK : OK : 
+Testing j = 871000
+OK : OK : OK : 
+Testing j = 872000
+OK : OK : OK : 
+Testing j = 873000
+OK : OK : OK : 
+Testing j = 874000
+OK : OK : OK : 
+Testing j = 875000
+OK : OK : OK : 
+Testing j = 876000
+OK : OK : OK : 
+Testing j = 877000
+OK : OK : OK : 
+Testing j = 878000
+OK : OK : OK : 
+Testing j = 879000
+OK : OK : OK : 
+Testing j = 880000
+OK : OK : OK : 
+Testing j = 881000
+OK : OK : OK : 
+Testing j = 882000
+OK : OK : OK : 
+Testing j = 883000
+OK : OK : OK : 
+Testing j = 884000
+OK : OK : OK : 
+Testing j = 885000
+OK : OK : OK : 
+Testing j = 886000
+OK : OK : OK : 
+Testing j = 887000
+OK : OK : OK : 
+Testing j = 888000
+OK : OK : OK : 
+Testing j = 889000
+OK : OK : OK : 
+Testing j = 890000
+OK : OK : OK : 
+Testing j = 891000
+OK : OK : OK : 
+Testing j = 892000
+OK : OK : OK : 
+Testing j = 893000
+OK : OK : OK : 
+Testing j = 894000
+OK : OK : OK : 
+Testing j = 895000
+OK : OK : OK : 
+Testing j = 896000
+OK : OK : OK : 
+Testing j = 897000
+OK : OK : OK : 
+Testing j = 898000
+OK : OK : OK : 
+Testing j = 899000
+OK : OK : OK : 
+Testing j = 900000
+OK : OK : OK : 
+Testing j = 901000
+OK : OK : OK : 
+Testing j = 902000
+OK : OK : OK : 
+Testing j = 903000
+OK : OK : OK : 
+Testing j = 904000
+OK : OK : OK : 
+Testing j = 905000
+OK : OK : OK : 
+Testing j = 906000
+OK : OK : OK : 
+Testing j = 907000
+OK : OK : OK : 
+Testing j = 908000
+OK : OK : OK : 
+Testing j = 909000
+OK : OK : OK : 
+Testing j = 910000
+OK : OK : OK : 
+Testing j = 911000
+OK : OK : OK : 
+Testing j = 912000
+OK : OK : OK : 
+Testing j = 913000
+OK : OK : OK : 
+Testing j = 914000
+OK : OK : OK : 
+Testing j = 915000
+OK : OK : OK : 
+Testing j = 916000
+OK : OK : OK : 
+Testing j = 917000
+OK : OK : OK : 
+Testing j = 918000
+OK : OK : OK : 
+Testing j = 919000
+OK : OK : OK : 
+Testing j = 920000
+OK : OK : OK : 
+Testing j = 921000
+OK : OK : OK : 
+Testing j = 922000
+OK : OK : OK : 
+Testing j = 923000
+OK : OK : OK : 
+Testing j = 924000
+OK : OK : OK : 
+Testing j = 925000
+OK : OK : OK : 
+Testing j = 926000
+OK : OK : OK : 
+Testing j = 927000
+OK : OK : OK : 
+Testing j = 928000
+OK : OK : OK : 
+Testing j = 929000
+OK : OK : OK : 
+Testing j = 930000
+OK : OK : OK : 
+Testing j = 931000
+OK : OK : OK : 
+Testing j = 932000
+OK : OK : OK : 
+Testing j = 933000
+OK : OK : OK : 
+Testing j = 934000
+OK : OK : OK : 
+Testing j = 935000
+OK : OK : OK : 
+Testing j = 936000
+OK : OK : OK : 
+Testing j = 937000
+OK : OK : OK : 
+Testing j = 938000
+OK : OK : OK : 
+Testing j = 939000
+OK : OK : OK : 
+Testing j = 940000
+OK : OK : OK : 
+Testing j = 941000
+OK : OK : OK : 
+Testing j = 942000
+OK : OK : OK : 
+Testing j = 943000
+OK : OK : OK : 
+Testing j = 944000
+OK : OK : OK : 
+Testing j = 945000
+OK : OK : OK : 
+Testing j = 946000
+OK : OK : OK : 
+Testing j = 947000
+OK : OK : OK : 
+Testing j = 948000
+OK : OK : OK : 
+Testing j = 949000
+OK : OK : OK : 
+Testing j = 950000
+OK : OK : OK : 
+Testing j = 951000
+OK : OK : OK : 
+Testing j = 952000
+OK : OK : OK : 
+Testing j = 953000
+OK : OK : OK : 
+Testing j = 954000
+OK : OK : OK : 
+Testing j = 955000
+OK : OK : OK : 
+Testing j = 956000
+OK : OK : OK : 
+Testing j = 957000
+OK : OK : OK : 
+Testing j = 958000
+OK : OK : OK : 
+Testing j = 959000
+OK : OK : OK : 
+Testing j = 960000
+OK : OK : OK : 
+Testing j = 961000
+OK : OK : OK : 
+Testing j = 962000
+OK : OK : OK : 
+Testing j = 963000
+OK : OK : OK : 
+Testing j = 964000
+OK : OK : OK : 
+Testing j = 965000
+OK : OK : OK : 
+Testing j = 966000
+OK : OK : OK : 
+Testing j = 967000
+OK : OK : OK : 
+Testing j = 968000
+OK : OK : OK : 
+Testing j = 969000
+OK : OK : OK : 
+Testing j = 970000
+OK : OK : OK : 
+Testing j = 971000
+OK : OK : OK : 
+Testing j = 972000
+OK : OK : OK : 
+Testing j = 973000
+OK : OK : OK : 
+Testing j = 974000
+OK : OK : OK : 
+Testing j = 975000
+OK : OK : OK : 
+Testing j = 976000
+OK : OK : OK : 
+Testing j = 977000
+OK : OK : OK : 
+Testing j = 978000
+OK : OK : OK : 
+Testing j = 979000
+OK : OK : OK : 
+Testing j = 980000
+OK : OK : OK : 
+Testing j = 981000
+OK : OK : OK : 
+Testing j = 982000
+OK : OK : OK : 
+Testing j = 983000
+OK : OK : OK : 
+Testing j = 984000
+OK : OK : OK : 
+Testing j = 985000
+OK : OK : OK : 
+Testing j = 986000
+OK : OK : OK : 
+Testing j = 987000
+OK : OK : OK : 
+Testing j = 988000
+OK : OK : OK : 
+Testing j = 989000
+OK : OK : OK : 
+Testing j = 990000
+OK : OK : OK : 
+Testing j = 991000
+OK : OK : OK : 
+Testing j = 992000
+OK : OK : OK : 
+Testing j = 993000
+OK : OK : OK : 
+Testing j = 994000
+OK : OK : OK : 
+Testing j = 995000
+OK : OK : OK : 
+Testing j = 996000
+OK : OK : OK : 
+Testing j = 997000
+OK : OK : OK : 
+Testing j = 998000
+OK : OK : OK : 
+Testing j = 999000
+OK : OK : OK : 
+0.000e+00 1.000e+00 0.000e+00 
+Testing j = 0
+OK : OK : OK : 
+Testing j = 1000
+OK : OK : OK : 
+Testing j = 2000
+OK : OK : OK : 
+Testing j = 3000
+OK : OK : OK : 
+Testing j = 4000
+OK : OK : OK : 
+Testing j = 5000
+OK : OK : OK : 
+Testing j = 6000
+OK : OK : OK : 
+Testing j = 7000
+OK : OK : OK : 
+Testing j = 8000
+OK : OK : OK : 
+Testing j = 9000
+OK : OK : OK : 
+Testing j = 10000
+OK : OK : OK : 
+Testing j = 11000
+OK : OK : OK : 
+Testing j = 12000
+OK : OK : OK : 
+Testing j = 13000
+OK : OK : OK : 
+Testing j = 14000
+OK : OK : OK : 
+Testing j = 15000
+OK : OK : OK : 
+Testing j = 16000
+OK : OK : OK : 
+Testing j = 17000
+OK : OK : OK : 
+Testing j = 18000
+OK : OK : OK : 
+Testing j = 19000
+OK : OK : OK : 
+Testing j = 20000
+OK : OK : OK : 
+Testing j = 21000
+OK : OK : OK : 
+Testing j = 22000
+OK : OK : OK : 
+Testing j = 23000
+OK : OK : OK : 
+Testing j = 24000
+OK : OK : OK : 
+Testing j = 25000
+OK : OK : OK : 
+Testing j = 26000
+OK : OK : OK : 
+Testing j = 27000
+OK : OK : OK : 
+Testing j = 28000
+OK : OK : OK : 
+Testing j = 29000
+OK : OK : OK : 
+Testing j = 30000
+OK : OK : OK : 
+Testing j = 31000
+OK : OK : OK : 
+Testing j = 32000
+OK : OK : OK : 
+Testing j = 33000
+OK : OK : OK : 
+Testing j = 34000
+OK : OK : OK : 
+Testing j = 35000
+OK : OK : OK : 
+Testing j = 36000
+OK : OK : OK : 
+Testing j = 37000
+OK : OK : OK : 
+Testing j = 38000
+OK : OK : OK : 
+Testing j = 39000
+OK : OK : OK : 
+Testing j = 40000
+OK : OK : OK : 
+Testing j = 41000
+OK : OK : OK : 
+Testing j = 42000
+OK : OK : OK : 
+Testing j = 43000
+OK : OK : OK : 
+Testing j = 44000
+OK : OK : OK : 
+Testing j = 45000
+OK : OK : OK : 
+Testing j = 46000
+OK : OK : OK : 
+Testing j = 47000
+OK : OK : OK : 
+Testing j = 48000
+OK : OK : OK : 
+Testing j = 49000
+OK : OK : OK : 
+Testing j = 50000
+OK : OK : OK : 
+Testing j = 51000
+OK : OK : OK : 
+Testing j = 52000
+OK : OK : OK : 
+Testing j = 53000
+OK : OK : OK : 
+Testing j = 54000
+OK : OK : OK : 
+Testing j = 55000
+OK : OK : OK : 
+Testing j = 56000
+OK : OK : OK : 
+Testing j = 57000
+OK : OK : OK : 
+Testing j = 58000
+OK : OK : OK : 
+Testing j = 59000
+OK : OK : OK : 
+Testing j = 60000
+OK : OK : OK : 
+Testing j = 61000
+OK : OK : OK : 
+Testing j = 62000
+OK : OK : OK : 
+Testing j = 63000
+OK : OK : OK : 
+Testing j = 64000
+OK : OK : OK : 
+Testing j = 65000
+OK : OK : OK : 
+Testing j = 66000
+OK : OK : OK : 
+Testing j = 67000
+OK : OK : OK : 
+Testing j = 68000
+OK : OK : OK : 
+Testing j = 69000
+OK : OK : OK : 
+Testing j = 70000
+OK : OK : OK : 
+Testing j = 71000
+OK : OK : OK : 
+Testing j = 72000
+OK : OK : OK : 
+Testing j = 73000
+OK : OK : OK : 
+Testing j = 74000
+OK : OK : OK : 
+Testing j = 75000
+OK : OK : OK : 
+Testing j = 76000
+OK : OK : OK : 
+Testing j = 77000
+OK : OK : OK : 
+Testing j = 78000
+OK : OK : OK : 
+Testing j = 79000
+OK : OK : OK : 
+Testing j = 80000
+OK : OK : OK : 
+Testing j = 81000
+OK : OK : OK : 
+Testing j = 82000
+OK : OK : OK : 
+Testing j = 83000
+OK : OK : OK : 
+Testing j = 84000
+OK : OK : OK : 
+Testing j = 85000
+OK : OK : OK : 
+Testing j = 86000
+OK : OK : OK : 
+Testing j = 87000
+OK : OK : OK : 
+Testing j = 88000
+OK : OK : OK : 
+Testing j = 89000
+OK : OK : OK : 
+Testing j = 90000
+OK : OK : OK : 
+Testing j = 91000
+OK : OK : OK : 
+Testing j = 92000
+OK : OK : OK : 
+Testing j = 93000
+OK : OK : OK : 
+Testing j = 94000
+OK : OK : OK : 
+Testing j = 95000
+OK : OK : OK : 
+Testing j = 96000
+OK : OK : OK : 
+Testing j = 97000
+OK : OK : OK : 
+Testing j = 98000
+OK : OK : OK : 
+Testing j = 99000
+OK : OK : OK : 
+Testing j = 100000
+OK : OK : OK : 
+Testing j = 101000
+OK : OK : OK : 
+Testing j = 102000
+OK : OK : OK : 
+Testing j = 103000
+OK : OK : OK : 
+Testing j = 104000
+OK : OK : OK : 
+Testing j = 105000
+OK : OK : OK : 
+Testing j = 106000
+OK : OK : OK : 
+Testing j = 107000
+OK : OK : OK : 
+Testing j = 108000
+OK : OK : OK : 
+Testing j = 109000
+OK : OK : OK : 
+Testing j = 110000
+OK : OK : OK : 
+Testing j = 111000
+OK : OK : OK : 
+Testing j = 112000
+OK : OK : OK : 
+Testing j = 113000
+OK : OK : OK : 
+Testing j = 114000
+OK : OK : OK : 
+Testing j = 115000
+OK : OK : OK : 
+Testing j = 116000
+OK : OK : OK : 
+Testing j = 117000
+OK : OK : OK : 
+Testing j = 118000
+OK : OK : OK : 
+Testing j = 119000
+OK : OK : OK : 
+Testing j = 120000
+OK : OK : OK : 
+Testing j = 121000
+OK : OK : OK : 
+Testing j = 122000
+OK : OK : OK : 
+Testing j = 123000
+OK : OK : OK : 
+Testing j = 124000
+OK : OK : OK : 
+Testing j = 125000
+OK : OK : OK : 
+Testing j = 126000
+OK : OK : OK : 
+Testing j = 127000
+OK : OK : OK : 
+Testing j = 128000
+OK : OK : OK : 
+Testing j = 129000
+OK : OK : OK : 
+Testing j = 130000
+OK : OK : OK : 
+Testing j = 131000
+OK : OK : OK : 
+Testing j = 132000
+OK : OK : OK : 
+Testing j = 133000
+OK : OK : OK : 
+Testing j = 134000
+OK : OK : OK : 
+Testing j = 135000
+OK : OK : OK : 
+Testing j = 136000
+OK : OK : OK : 
+Testing j = 137000
+OK : OK : OK : 
+Testing j = 138000
+OK : OK : OK : 
+Testing j = 139000
+OK : OK : OK : 
+Testing j = 140000
+OK : OK : OK : 
+Testing j = 141000
+OK : OK : OK : 
+Testing j = 142000
+OK : OK : OK : 
+Testing j = 143000
+OK : OK : OK : 
+Testing j = 144000
+OK : OK : OK : 
+Testing j = 145000
+OK : OK : OK : 
+Testing j = 146000
+OK : OK : OK : 
+Testing j = 147000
+OK : OK : OK : 
+Testing j = 148000
+OK : OK : OK : 
+Testing j = 149000
+OK : OK : OK : 
+Testing j = 150000
+OK : OK : OK : 
+Testing j = 151000
+OK : OK : OK : 
+Testing j = 152000
+OK : OK : OK : 
+Testing j = 153000
+OK : OK : OK : 
+Testing j = 154000
+OK : OK : OK : 
+Testing j = 155000
+OK : OK : OK : 
+Testing j = 156000
+OK : OK : OK : 
+Testing j = 157000
+OK : OK : OK : 
+Testing j = 158000
+OK : OK : OK : 
+Testing j = 159000
+OK : OK : OK : 
+Testing j = 160000
+OK : OK : OK : 
+Testing j = 161000
+OK : OK : OK : 
+Testing j = 162000
+OK : OK : OK : 
+Testing j = 163000
+OK : OK : OK : 
+Testing j = 164000
+OK : OK : OK : 
+Testing j = 165000
+OK : OK : OK : 
+Testing j = 166000
+OK : OK : OK : 
+Testing j = 167000
+OK : OK : OK : 
+Testing j = 168000
+OK : OK : OK : 
+Testing j = 169000
+OK : OK : OK : 
+Testing j = 170000
+OK : OK : OK : 
+Testing j = 171000
+OK : OK : OK : 
+Testing j = 172000
+OK : OK : OK : 
+Testing j = 173000
+OK : OK : OK : 
+Testing j = 174000
+OK : OK : OK : 
+Testing j = 175000
+OK : OK : OK : 
+Testing j = 176000
+OK : OK : OK : 
+Testing j = 177000
+OK : OK : OK : 
+Testing j = 178000
+OK : OK : OK : 
+Testing j = 179000
+OK : OK : OK : 
+Testing j = 180000
+OK : OK : OK : 
+Testing j = 181000
+OK : OK : OK : 
+Testing j = 182000
+OK : OK : OK : 
+Testing j = 183000
+OK : OK : OK : 
+Testing j = 184000
+OK : OK : OK : 
+Testing j = 185000
+OK : OK : OK : 
+Testing j = 186000
+OK : OK : OK : 
+Testing j = 187000
+OK : OK : OK : 
+Testing j = 188000
+OK : OK : OK : 
+Testing j = 189000
+OK : OK : OK : 
+Testing j = 190000
+OK : OK : OK : 
+Testing j = 191000
+OK : OK : OK : 
+Testing j = 192000
+OK : OK : OK : 
+Testing j = 193000
+OK : OK : OK : 
+Testing j = 194000
+OK : OK : OK : 
+Testing j = 195000
+OK : OK : OK : 
+Testing j = 196000
+OK : OK : OK : 
+Testing j = 197000
+OK : OK : OK : 
+Testing j = 198000
+OK : OK : OK : 
+Testing j = 199000
+OK : OK : OK : 
+Testing j = 200000
+OK : OK : OK : 
+Testing j = 201000
+OK : OK : OK : 
+Testing j = 202000
+OK : OK : OK : 
+Testing j = 203000
+OK : OK : OK : 
+Testing j = 204000
+OK : OK : OK : 
+Testing j = 205000
+OK : OK : OK : 
+Testing j = 206000
+OK : OK : OK : 
+Testing j = 207000
+OK : OK : OK : 
+Testing j = 208000
+OK : OK : OK : 
+Testing j = 209000
+OK : OK : OK : 
+Testing j = 210000
+OK : OK : OK : 
+Testing j = 211000
+OK : OK : OK : 
+Testing j = 212000
+OK : OK : OK : 
+Testing j = 213000
+OK : OK : OK : 
+Testing j = 214000
+OK : OK : OK : 
+Testing j = 215000
+OK : OK : OK : 
+Testing j = 216000
+OK : OK : OK : 
+Testing j = 217000
+OK : OK : OK : 
+Testing j = 218000
+OK : OK : OK : 
+Testing j = 219000
+OK : OK : OK : 
+Testing j = 220000
+OK : OK : OK : 
+Testing j = 221000
+OK : OK : OK : 
+Testing j = 222000
+OK : OK : OK : 
+Testing j = 223000
+OK : OK : OK : 
+Testing j = 224000
+OK : OK : OK : 
+Testing j = 225000
+OK : OK : OK : 
+Testing j = 226000
+OK : OK : OK : 
+Testing j = 227000
+OK : OK : OK : 
+Testing j = 228000
+OK : OK : OK : 
+Testing j = 229000
+OK : OK : OK : 
+Testing j = 230000
+OK : OK : OK : 
+Testing j = 231000
+OK : OK : OK : 
+Testing j = 232000
+OK : OK : OK : 
+Testing j = 233000
+OK : OK : OK : 
+Testing j = 234000
+OK : OK : OK : 
+Testing j = 235000
+OK : OK : OK : 
+Testing j = 236000
+OK : OK : OK : 
+Testing j = 237000
+OK : OK : OK : 
+Testing j = 238000
+OK : OK : OK : 
+Testing j = 239000
+OK : OK : OK : 
+Testing j = 240000
+OK : OK : OK : 
+Testing j = 241000
+OK : OK : OK : 
+Testing j = 242000
+OK : OK : OK : 
+Testing j = 243000
+OK : OK : OK : 
+Testing j = 244000
+OK : OK : OK : 
+Testing j = 245000
+OK : OK : OK : 
+Testing j = 246000
+OK : OK : OK : 
+Testing j = 247000
+OK : OK : OK : 
+Testing j = 248000
+OK : OK : OK : 
+Testing j = 249000
+OK : OK : OK : 
+Testing j = 250000
+OK : OK : OK : 
+Testing j = 251000
+OK : OK : OK : 
+Testing j = 252000
+OK : OK : OK : 
+Testing j = 253000
+OK : OK : OK : 
+Testing j = 254000
+OK : OK : OK : 
+Testing j = 255000
+OK : OK : OK : 
+Testing j = 256000
+OK : OK : OK : 
+Testing j = 257000
+OK : OK : OK : 
+Testing j = 258000
+OK : OK : OK : 
+Testing j = 259000
+OK : OK : OK : 
+Testing j = 260000
+OK : OK : OK : 
+Testing j = 261000
+OK : OK : OK : 
+Testing j = 262000
+OK : OK : OK : 
+Testing j = 263000
+OK : OK : OK : 
+Testing j = 264000
+OK : OK : OK : 
+Testing j = 265000
+OK : OK : OK : 
+Testing j = 266000
+OK : OK : OK : 
+Testing j = 267000
+OK : OK : OK : 
+Testing j = 268000
+OK : OK : OK : 
+Testing j = 269000
+OK : OK : OK : 
+Testing j = 270000
+OK : OK : OK : 
+Testing j = 271000
+OK : OK : OK : 
+Testing j = 272000
+OK : OK : OK : 
+Testing j = 273000
+OK : OK : OK : 
+Testing j = 274000
+OK : OK : OK : 
+Testing j = 275000
+OK : OK : OK : 
+Testing j = 276000
+OK : OK : OK : 
+Testing j = 277000
+OK : OK : OK : 
+Testing j = 278000
+OK : OK : OK : 
+Testing j = 279000
+OK : OK : OK : 
+Testing j = 280000
+OK : OK : OK : 
+Testing j = 281000
+OK : OK : OK : 
+Testing j = 282000
+OK : OK : OK : 
+Testing j = 283000
+OK : OK : OK : 
+Testing j = 284000
+OK : OK : OK : 
+Testing j = 285000
+OK : OK : OK : 
+Testing j = 286000
+OK : OK : OK : 
+Testing j = 287000
+OK : OK : OK : 
+Testing j = 288000
+OK : OK : OK : 
+Testing j = 289000
+OK : OK : OK : 
+Testing j = 290000
+OK : OK : OK : 
+Testing j = 291000
+OK : OK : OK : 
+Testing j = 292000
+OK : OK : OK : 
+Testing j = 293000
+OK : OK : OK : 
+Testing j = 294000
+OK : OK : OK : 
+Testing j = 295000
+OK : OK : OK : 
+Testing j = 296000
+OK : OK : OK : 
+Testing j = 297000
+OK : OK : OK : 
+Testing j = 298000
+OK : OK : OK : 
+Testing j = 299000
+OK : OK : OK : 
+Testing j = 300000
+OK : OK : OK : 
+Testing j = 301000
+OK : OK : OK : 
+Testing j = 302000
+OK : OK : OK : 
+Testing j = 303000
+OK : OK : OK : 
+Testing j = 304000
+OK : OK : OK : 
+Testing j = 305000
+OK : OK : OK : 
+Testing j = 306000
+OK : OK : OK : 
+Testing j = 307000
+OK : OK : OK : 
+Testing j = 308000
+OK : OK : OK : 
+Testing j = 309000
+OK : OK : OK : 
+Testing j = 310000
+OK : OK : OK : 
+Testing j = 311000
+OK : OK : OK : 
+Testing j = 312000
+OK : OK : OK : 
+Testing j = 313000
+OK : OK : OK : 
+Testing j = 314000
+OK : OK : OK : 
+Testing j = 315000
+OK : OK : OK : 
+Testing j = 316000
+OK : OK : OK : 
+Testing j = 317000
+OK : OK : OK : 
+Testing j = 318000
+OK : OK : OK : 
+Testing j = 319000
+OK : OK : OK : 
+Testing j = 320000
+OK : OK : OK : 
+Testing j = 321000
+OK : OK : OK : 
+Testing j = 322000
+OK : OK : OK : 
+Testing j = 323000
+OK : OK : OK : 
+Testing j = 324000
+OK : OK : OK : 
+Testing j = 325000
+OK : OK : OK : 
+Testing j = 326000
+OK : OK : OK : 
+Testing j = 327000
+OK : OK : OK : 
+Testing j = 328000
+OK : OK : OK : 
+Testing j = 329000
+OK : OK : OK : 
+Testing j = 330000
+OK : OK : OK : 
+Testing j = 331000
+OK : OK : OK : 
+Testing j = 332000
+OK : OK : OK : 
+Testing j = 333000
+OK : OK : OK : 
+Testing j = 334000
+OK : OK : OK : 
+Testing j = 335000
+OK : OK : OK : 
+Testing j = 336000
+OK : OK : OK : 
+Testing j = 337000
+OK : OK : OK : 
+Testing j = 338000
+OK : OK : OK : 
+Testing j = 339000
+OK : OK : OK : 
+Testing j = 340000
+OK : OK : OK : 
+Testing j = 341000
+OK : OK : OK : 
+Testing j = 342000
+OK : OK : OK : 
+Testing j = 343000
+OK : OK : OK : 
+Testing j = 344000
+OK : OK : OK : 
+Testing j = 345000
+OK : OK : OK : 
+Testing j = 346000
+OK : OK : OK : 
+Testing j = 347000
+OK : OK : OK : 
+Testing j = 348000
+OK : OK : OK : 
+Testing j = 349000
+OK : OK : OK : 
+Testing j = 350000
+OK : OK : OK : 
+Testing j = 351000
+OK : OK : OK : 
+Testing j = 352000
+OK : OK : OK : 
+Testing j = 353000
+OK : OK : OK : 
+Testing j = 354000
+OK : OK : OK : 
+Testing j = 355000
+OK : OK : OK : 
+Testing j = 356000
+OK : OK : OK : 
+Testing j = 357000
+OK : OK : OK : 
+Testing j = 358000
+OK : OK : OK : 
+Testing j = 359000
+OK : OK : OK : 
+Testing j = 360000
+OK : OK : OK : 
+Testing j = 361000
+OK : OK : OK : 
+Testing j = 362000
+OK : OK : OK : 
+Testing j = 363000
+OK : OK : OK : 
+Testing j = 364000
+OK : OK : OK : 
+Testing j = 365000
+OK : OK : OK : 
+Testing j = 366000
+OK : OK : OK : 
+Testing j = 367000
+OK : OK : OK : 
+Testing j = 368000
+OK : OK : OK : 
+Testing j = 369000
+OK : OK : OK : 
+Testing j = 370000
+OK : OK : OK : 
+Testing j = 371000
+OK : OK : OK : 
+Testing j = 372000
+OK : OK : OK : 
+Testing j = 373000
+OK : OK : OK : 
+Testing j = 374000
+OK : OK : OK : 
+Testing j = 375000
+OK : OK : OK : 
+Testing j = 376000
+OK : OK : OK : 
+Testing j = 377000
+OK : OK : OK : 
+Testing j = 378000
+OK : OK : OK : 
+Testing j = 379000
+OK : OK : OK : 
+Testing j = 380000
+OK : OK : OK : 
+Testing j = 381000
+OK : OK : OK : 
+Testing j = 382000
+OK : OK : OK : 
+Testing j = 383000
+OK : OK : OK : 
+Testing j = 384000
+OK : OK : OK : 
+Testing j = 385000
+OK : OK : OK : 
+Testing j = 386000
+OK : OK : OK : 
+Testing j = 387000
+OK : OK : OK : 
+Testing j = 388000
+OK : OK : OK : 
+Testing j = 389000
+OK : OK : OK : 
+Testing j = 390000
+OK : OK : OK : 
+Testing j = 391000
+OK : OK : OK : 
+Testing j = 392000
+OK : OK : OK : 
+Testing j = 393000
+OK : OK : OK : 
+Testing j = 394000
+OK : OK : OK : 
+Testing j = 395000
+OK : OK : OK : 
+Testing j = 396000
+OK : OK : OK : 
+Testing j = 397000
+OK : OK : OK : 
+Testing j = 398000
+OK : OK : OK : 
+Testing j = 399000
+OK : OK : OK : 
+Testing j = 400000
+OK : OK : OK : 
+Testing j = 401000
+OK : OK : OK : 
+Testing j = 402000
+OK : OK : OK : 
+Testing j = 403000
+OK : OK : OK : 
+Testing j = 404000
+OK : OK : OK : 
+Testing j = 405000
+OK : OK : OK : 
+Testing j = 406000
+OK : OK : OK : 
+Testing j = 407000
+OK : OK : OK : 
+Testing j = 408000
+OK : OK : OK : 
+Testing j = 409000
+OK : OK : OK : 
+Testing j = 410000
+OK : OK : OK : 
+Testing j = 411000
+OK : OK : OK : 
+Testing j = 412000
+OK : OK : OK : 
+Testing j = 413000
+OK : OK : OK : 
+Testing j = 414000
+OK : OK : OK : 
+Testing j = 415000
+OK : OK : OK : 
+Testing j = 416000
+OK : OK : OK : 
+Testing j = 417000
+OK : OK : OK : 
+Testing j = 418000
+OK : OK : OK : 
+Testing j = 419000
+OK : OK : OK : 
+Testing j = 420000
+OK : OK : OK : 
+Testing j = 421000
+OK : OK : OK : 
+Testing j = 422000
+OK : OK : OK : 
+Testing j = 423000
+OK : OK : OK : 
+Testing j = 424000
+OK : OK : OK : 
+Testing j = 425000
+OK : OK : OK : 
+Testing j = 426000
+OK : OK : OK : 
+Testing j = 427000
+OK : OK : OK : 
+Testing j = 428000
+OK : OK : OK : 
+Testing j = 429000
+OK : OK : OK : 
+Testing j = 430000
+OK : OK : OK : 
+Testing j = 431000
+OK : OK : OK : 
+Testing j = 432000
+OK : OK : OK : 
+Testing j = 433000
+OK : OK : OK : 
+Testing j = 434000
+OK : OK : OK : 
+Testing j = 435000
+OK : OK : OK : 
+Testing j = 436000
+OK : OK : OK : 
+Testing j = 437000
+OK : OK : OK : 
+Testing j = 438000
+OK : OK : OK : 
+Testing j = 439000
+OK : OK : OK : 
+Testing j = 440000
+OK : OK : OK : 
+Testing j = 441000
+OK : OK : OK : 
+Testing j = 442000
+OK : OK : OK : 
+Testing j = 443000
+OK : OK : OK : 
+Testing j = 444000
+OK : OK : OK : 
+Testing j = 445000
+OK : OK : OK : 
+Testing j = 446000
+OK : OK : OK : 
+Testing j = 447000
+OK : OK : OK : 
+Testing j = 448000
+OK : OK : OK : 
+Testing j = 449000
+OK : OK : OK : 
+Testing j = 450000
+OK : OK : OK : 
+Testing j = 451000
+OK : OK : OK : 
+Testing j = 452000
+OK : OK : OK : 
+Testing j = 453000
+OK : OK : OK : 
+Testing j = 454000
+OK : OK : OK : 
+Testing j = 455000
+OK : OK : OK : 
+Testing j = 456000
+OK : OK : OK : 
+Testing j = 457000
+OK : OK : OK : 
+Testing j = 458000
+OK : OK : OK : 
+Testing j = 459000
+OK : OK : OK : 
+Testing j = 460000
+OK : OK : OK : 
+Testing j = 461000
+OK : OK : OK : 
+Testing j = 462000
+OK : OK : OK : 
+Testing j = 463000
+OK : OK : OK : 
+Testing j = 464000
+OK : OK : OK : 
+Testing j = 465000
+OK : OK : OK : 
+Testing j = 466000
+OK : OK : OK : 
+Testing j = 467000
+OK : OK : OK : 
+Testing j = 468000
+OK : OK : OK : 
+Testing j = 469000
+OK : OK : OK : 
+Testing j = 470000
+OK : OK : OK : 
+Testing j = 471000
+OK : OK : OK : 
+Testing j = 472000
+OK : OK : OK : 
+Testing j = 473000
+OK : OK : OK : 
+Testing j = 474000
+OK : OK : OK : 
+Testing j = 475000
+OK : OK : OK : 
+Testing j = 476000
+OK : OK : OK : 
+Testing j = 477000
+OK : OK : OK : 
+Testing j = 478000
+OK : OK : OK : 
+Testing j = 479000
+OK : OK : OK : 
+Testing j = 480000
+OK : OK : OK : 
+Testing j = 481000
+OK : OK : OK : 
+Testing j = 482000
+OK : OK : OK : 
+Testing j = 483000
+OK : OK : OK : 
+Testing j = 484000
+OK : OK : OK : 
+Testing j = 485000
+OK : OK : OK : 
+Testing j = 486000
+OK : OK : OK : 
+Testing j = 487000
+OK : OK : OK : 
+Testing j = 488000
+OK : OK : OK : 
+Testing j = 489000
+OK : OK : OK : 
+Testing j = 490000
+OK : OK : OK : 
+Testing j = 491000
+OK : OK : OK : 
+Testing j = 492000
+OK : OK : OK : 
+Testing j = 493000
+OK : OK : OK : 
+Testing j = 494000
+OK : OK : OK : 
+Testing j = 495000
+OK : OK : OK : 
+Testing j = 496000
+OK : OK : OK : 
+Testing j = 497000
+OK : OK : OK : 
+Testing j = 498000
+OK : OK : OK : 
+Testing j = 499000
+OK : OK : OK : 
+Testing j = 500000
+OK : OK : OK : 
+Testing j = 501000
+OK : OK : OK : 
+Testing j = 502000
+OK : OK : OK : 
+Testing j = 503000
+OK : OK : OK : 
+Testing j = 504000
+OK : OK : OK : 
+Testing j = 505000
+OK : OK : OK : 
+Testing j = 506000
+OK : OK : OK : 
+Testing j = 507000
+OK : OK : OK : 
+Testing j = 508000
+OK : OK : OK : 
+Testing j = 509000
+OK : OK : OK : 
+Testing j = 510000
+OK : OK : OK : 
+Testing j = 511000
+OK : OK : OK : 
+Testing j = 512000
+OK : OK : OK : 
+Testing j = 513000
+OK : OK : OK : 
+Testing j = 514000
+OK : OK : OK : 
+Testing j = 515000
+OK : OK : OK : 
+Testing j = 516000
+OK : OK : OK : 
+Testing j = 517000
+OK : OK : OK : 
+Testing j = 518000
+OK : OK : OK : 
+Testing j = 519000
+OK : OK : OK : 
+Testing j = 520000
+OK : OK : OK : 
+Testing j = 521000
+OK : OK : OK : 
+Testing j = 522000
+OK : OK : OK : 
+Testing j = 523000
+OK : OK : OK : 
+Testing j = 524000
+OK : OK : OK : 
+Testing j = 525000
+OK : OK : OK : 
+Testing j = 526000
+OK : OK : OK : 
+Testing j = 527000
+OK : OK : OK : 
+Testing j = 528000
+OK : OK : OK : 
+Testing j = 529000
+OK : OK : OK : 
+Testing j = 530000
+OK : OK : OK : 
+Testing j = 531000
+OK : OK : OK : 
+Testing j = 532000
+OK : OK : OK : 
+Testing j = 533000
+OK : OK : OK : 
+Testing j = 534000
+OK : OK : OK : 
+Testing j = 535000
+OK : OK : OK : 
+Testing j = 536000
+OK : OK : OK : 
+Testing j = 537000
+OK : OK : OK : 
+Testing j = 538000
+OK : OK : OK : 
+Testing j = 539000
+OK : OK : OK : 
+Testing j = 540000
+OK : OK : OK : 
+Testing j = 541000
+OK : OK : OK : 
+Testing j = 542000
+OK : OK : OK : 
+Testing j = 543000
+OK : OK : OK : 
+Testing j = 544000
+OK : OK : OK : 
+Testing j = 545000
+OK : OK : OK : 
+Testing j = 546000
+OK : OK : OK : 
+Testing j = 547000
+OK : OK : OK : 
+Testing j = 548000
+OK : OK : OK : 
+Testing j = 549000
+OK : OK : OK : 
+Testing j = 550000
+OK : OK : OK : 
+Testing j = 551000
+OK : OK : OK : 
+Testing j = 552000
+OK : OK : OK : 
+Testing j = 553000
+OK : OK : OK : 
+Testing j = 554000
+OK : OK : OK : 
+Testing j = 555000
+OK : OK : OK : 
+Testing j = 556000
+OK : OK : OK : 
+Testing j = 557000
+OK : OK : OK : 
+Testing j = 558000
+OK : OK : OK : 
+Testing j = 559000
+OK : OK : OK : 
+Testing j = 560000
+OK : OK : OK : 
+Testing j = 561000
+OK : OK : OK : 
+Testing j = 562000
+OK : OK : OK : 
+Testing j = 563000
+OK : OK : OK : 
+Testing j = 564000
+OK : OK : OK : 
+Testing j = 565000
+OK : OK : OK : 
+Testing j = 566000
+OK : OK : OK : 
+Testing j = 567000
+OK : OK : OK : 
+Testing j = 568000
+OK : OK : OK : 
+Testing j = 569000
+OK : OK : OK : 
+Testing j = 570000
+OK : OK : OK : 
+Testing j = 571000
+OK : OK : OK : 
+Testing j = 572000
+OK : OK : OK : 
+Testing j = 573000
+OK : OK : OK : 
+Testing j = 574000
+OK : OK : OK : 
+Testing j = 575000
+OK : OK : OK : 
+Testing j = 576000
+OK : OK : OK : 
+Testing j = 577000
+OK : OK : OK : 
+Testing j = 578000
+OK : OK : OK : 
+Testing j = 579000
+OK : OK : OK : 
+Testing j = 580000
+OK : OK : OK : 
+Testing j = 581000
+OK : OK : OK : 
+Testing j = 582000
+OK : OK : OK : 
+Testing j = 583000
+OK : OK : OK : 
+Testing j = 584000
+OK : OK : OK : 
+Testing j = 585000
+OK : OK : OK : 
+Testing j = 586000
+OK : OK : OK : 
+Testing j = 587000
+OK : OK : OK : 
+Testing j = 588000
+OK : OK : OK : 
+Testing j = 589000
+OK : OK : OK : 
+Testing j = 590000
+OK : OK : OK : 
+Testing j = 591000
+OK : OK : OK : 
+Testing j = 592000
+OK : OK : OK : 
+Testing j = 593000
+OK : OK : OK : 
+Testing j = 594000
+OK : OK : OK : 
+Testing j = 595000
+OK : OK : OK : 
+Testing j = 596000
+OK : OK : OK : 
+Testing j = 597000
+OK : OK : OK : 
+Testing j = 598000
+OK : OK : OK : 
+Testing j = 599000
+OK : OK : OK : 
+Testing j = 600000
+OK : OK : OK : 
+Testing j = 601000
+OK : OK : OK : 
+Testing j = 602000
+OK : OK : OK : 
+Testing j = 603000
+OK : OK : OK : 
+Testing j = 604000
+OK : OK : OK : 
+Testing j = 605000
+OK : OK : OK : 
+Testing j = 606000
+OK : OK : OK : 
+Testing j = 607000
+OK : OK : OK : 
+Testing j = 608000
+OK : OK : OK : 
+Testing j = 609000
+OK : OK : OK : 
+Testing j = 610000
+OK : OK : OK : 
+Testing j = 611000
+OK : OK : OK : 
+Testing j = 612000
+OK : OK : OK : 
+Testing j = 613000
+OK : OK : OK : 
+Testing j = 614000
+OK : OK : OK : 
+Testing j = 615000
+OK : OK : OK : 
+Testing j = 616000
+OK : OK : OK : 
+Testing j = 617000
+OK : OK : OK : 
+Testing j = 618000
+OK : OK : OK : 
+Testing j = 619000
+OK : OK : OK : 
+Testing j = 620000
+OK : OK : OK : 
+Testing j = 621000
+OK : OK : OK : 
+Testing j = 622000
+OK : OK : OK : 
+Testing j = 623000
+OK : OK : OK : 
+Testing j = 624000
+OK : OK : OK : 
+Testing j = 625000
+OK : OK : OK : 
+Testing j = 626000
+OK : OK : OK : 
+Testing j = 627000
+OK : OK : OK : 
+Testing j = 628000
+OK : OK : OK : 
+Testing j = 629000
+OK : OK : OK : 
+Testing j = 630000
+OK : OK : OK : 
+Testing j = 631000
+OK : OK : OK : 
+Testing j = 632000
+OK : OK : OK : 
+Testing j = 633000
+OK : OK : OK : 
+Testing j = 634000
+OK : OK : OK : 
+Testing j = 635000
+OK : OK : OK : 
+Testing j = 636000
+OK : OK : OK : 
+Testing j = 637000
+OK : OK : OK : 
+Testing j = 638000
+OK : OK : OK : 
+Testing j = 639000
+OK : OK : OK : 
+Testing j = 640000
+OK : OK : OK : 
+Testing j = 641000
+OK : OK : OK : 
+Testing j = 642000
+OK : OK : OK : 
+Testing j = 643000
+OK : OK : OK : 
+Testing j = 644000
+OK : OK : OK : 
+Testing j = 645000
+OK : OK : OK : 
+Testing j = 646000
+OK : OK : OK : 
+Testing j = 647000
+OK : OK : OK : 
+Testing j = 648000
+OK : OK : OK : 
+Testing j = 649000
+OK : OK : OK : 
+Testing j = 650000
+OK : OK : OK : 
+Testing j = 651000
+OK : OK : OK : 
+Testing j = 652000
+OK : OK : OK : 
+Testing j = 653000
+OK : OK : OK : 
+Testing j = 654000
+OK : OK : OK : 
+Testing j = 655000
+OK : OK : OK : 
+Testing j = 656000
+OK : OK : OK : 
+Testing j = 657000
+OK : OK : OK : 
+Testing j = 658000
+OK : OK : OK : 
+Testing j = 659000
+OK : OK : OK : 
+Testing j = 660000
+OK : OK : OK : 
+Testing j = 661000
+OK : OK : OK : 
+Testing j = 662000
+OK : OK : OK : 
+Testing j = 663000
+OK : OK : OK : 
+Testing j = 664000
+OK : OK : OK : 
+Testing j = 665000
+OK : OK : OK : 
+Testing j = 666000
+OK : OK : OK : 
+Testing j = 667000
+OK : OK : OK : 
+Testing j = 668000
+OK : OK : OK : 
+Testing j = 669000
+OK : OK : OK : 
+Testing j = 670000
+OK : OK : OK : 
+Testing j = 671000
+OK : OK : OK : 
+Testing j = 672000
+OK : OK : OK : 
+Testing j = 673000
+OK : OK : OK : 
+Testing j = 674000
+OK : OK : OK : 
+Testing j = 675000
+OK : OK : OK : 
+Testing j = 676000
+OK : OK : OK : 
+Testing j = 677000
+OK : OK : OK : 
+Testing j = 678000
+OK : OK : OK : 
+Testing j = 679000
+OK : OK : OK : 
+Testing j = 680000
+OK : OK : OK : 
+Testing j = 681000
+OK : OK : OK : 
+Testing j = 682000
+OK : OK : OK : 
+Testing j = 683000
+OK : OK : OK : 
+Testing j = 684000
+OK : OK : OK : 
+Testing j = 685000
+OK : OK : OK : 
+Testing j = 686000
+OK : OK : OK : 
+Testing j = 687000
+OK : OK : OK : 
+Testing j = 688000
+OK : OK : OK : 
+Testing j = 689000
+OK : OK : OK : 
+Testing j = 690000
+OK : OK : OK : 
+Testing j = 691000
+OK : OK : OK : 
+Testing j = 692000
+OK : OK : OK : 
+Testing j = 693000
+OK : OK : OK : 
+Testing j = 694000
+OK : OK : OK : 
+Testing j = 695000
+OK : OK : OK : 
+Testing j = 696000
+OK : OK : OK : 
+Testing j = 697000
+OK : OK : OK : 
+Testing j = 698000
+OK : OK : OK : 
+Testing j = 699000
+OK : OK : OK : 
+Testing j = 700000
+OK : OK : OK : 
+Testing j = 701000
+OK : OK : OK : 
+Testing j = 702000
+OK : OK : OK : 
+Testing j = 703000
+OK : OK : OK : 
+Testing j = 704000
+OK : OK : OK : 
+Testing j = 705000
+OK : OK : OK : 
+Testing j = 706000
+OK : OK : OK : 
+Testing j = 707000
+OK : OK : OK : 
+Testing j = 708000
+OK : OK : OK : 
+Testing j = 709000
+OK : OK : OK : 
+Testing j = 710000
+OK : OK : OK : 
+Testing j = 711000
+OK : OK : OK : 
+Testing j = 712000
+OK : OK : OK : 
+Testing j = 713000
+OK : OK : OK : 
+Testing j = 714000
+OK : OK : OK : 
+Testing j = 715000
+OK : OK : OK : 
+Testing j = 716000
+OK : OK : OK : 
+Testing j = 717000
+OK : OK : OK : 
+Testing j = 718000
+OK : OK : OK : 
+Testing j = 719000
+OK : OK : OK : 
+Testing j = 720000
+OK : OK : OK : 
+Testing j = 721000
+OK : OK : OK : 
+Testing j = 722000
+OK : OK : OK : 
+Testing j = 723000
+OK : OK : OK : 
+Testing j = 724000
+OK : OK : OK : 
+Testing j = 725000
+OK : OK : OK : 
+Testing j = 726000
+OK : OK : OK : 
+Testing j = 727000
+OK : OK : OK : 
+Testing j = 728000
+OK : OK : OK : 
+Testing j = 729000
+OK : OK : OK : 
+Testing j = 730000
+OK : OK : OK : 
+Testing j = 731000
+OK : OK : OK : 
+Testing j = 732000
+OK : OK : OK : 
+Testing j = 733000
+OK : OK : OK : 
+Testing j = 734000
+OK : OK : OK : 
+Testing j = 735000
+OK : OK : OK : 
+Testing j = 736000
+OK : OK : OK : 
+Testing j = 737000
+OK : OK : OK : 
+Testing j = 738000
+OK : OK : OK : 
+Testing j = 739000
+OK : OK : OK : 
+Testing j = 740000
+OK : OK : OK : 
+Testing j = 741000
+OK : OK : OK : 
+Testing j = 742000
+OK : OK : OK : 
+Testing j = 743000
+OK : OK : OK : 
+Testing j = 744000
+OK : OK : OK : 
+Testing j = 745000
+OK : OK : OK : 
+Testing j = 746000
+OK : OK : OK : 
+Testing j = 747000
+OK : OK : OK : 
+Testing j = 748000
+OK : OK : OK : 
+Testing j = 749000
+OK : OK : OK : 
+Testing j = 750000
+OK : OK : OK : 
+Testing j = 751000
+OK : OK : OK : 
+Testing j = 752000
+OK : OK : OK : 
+Testing j = 753000
+OK : OK : OK : 
+Testing j = 754000
+OK : OK : OK : 
+Testing j = 755000
+OK : OK : OK : 
+Testing j = 756000
+OK : OK : OK : 
+Testing j = 757000
+OK : OK : OK : 
+Testing j = 758000
+OK : OK : OK : 
+Testing j = 759000
+OK : OK : OK : 
+Testing j = 760000
+OK : OK : OK : 
+Testing j = 761000
+OK : OK : OK : 
+Testing j = 762000
+OK : OK : OK : 
+Testing j = 763000
+OK : OK : OK : 
+Testing j = 764000
+OK : OK : OK : 
+Testing j = 765000
+OK : OK : OK : 
+Testing j = 766000
+OK : OK : OK : 
+Testing j = 767000
+OK : OK : OK : 
+Testing j = 768000
+OK : OK : OK : 
+Testing j = 769000
+OK : OK : OK : 
+Testing j = 770000
+OK : OK : OK : 
+Testing j = 771000
+OK : OK : OK : 
+Testing j = 772000
+OK : OK : OK : 
+Testing j = 773000
+OK : OK : OK : 
+Testing j = 774000
+OK : OK : OK : 
+Testing j = 775000
+OK : OK : OK : 
+Testing j = 776000
+OK : OK : OK : 
+Testing j = 777000
+OK : OK : OK : 
+Testing j = 778000
+OK : OK : OK : 
+Testing j = 779000
+OK : OK : OK : 
+Testing j = 780000
+OK : OK : OK : 
+Testing j = 781000
+OK : OK : OK : 
+Testing j = 782000
+OK : OK : OK : 
+Testing j = 783000
+OK : OK : OK : 
+Testing j = 784000
+OK : OK : OK : 
+Testing j = 785000
+OK : OK : OK : 
+Testing j = 786000
+OK : OK : OK : 
+Testing j = 787000
+OK : OK : OK : 
+Testing j = 788000
+OK : OK : OK : 
+Testing j = 789000
+OK : OK : OK : 
+Testing j = 790000
+OK : OK : OK : 
+Testing j = 791000
+OK : OK : OK : 
+Testing j = 792000
+OK : OK : OK : 
+Testing j = 793000
+OK : OK : OK : 
+Testing j = 794000
+OK : OK : OK : 
+Testing j = 795000
+OK : OK : OK : 
+Testing j = 796000
+OK : OK : OK : 
+Testing j = 797000
+OK : OK : OK : 
+Testing j = 798000
+OK : OK : OK : 
+Testing j = 799000
+OK : OK : OK : 
+Testing j = 800000
+OK : OK : OK : 
+Testing j = 801000
+OK : OK : OK : 
+Testing j = 802000
+OK : OK : OK : 
+Testing j = 803000
+OK : OK : OK : 
+Testing j = 804000
+OK : OK : OK : 
+Testing j = 805000
+OK : OK : OK : 
+Testing j = 806000
+OK : OK : OK : 
+Testing j = 807000
+OK : OK : OK : 
+Testing j = 808000
+OK : OK : OK : 
+Testing j = 809000
+OK : OK : OK : 
+Testing j = 810000
+OK : OK : OK : 
+Testing j = 811000
+OK : OK : OK : 
+Testing j = 812000
+OK : OK : OK : 
+Testing j = 813000
+OK : OK : OK : 
+Testing j = 814000
+OK : OK : OK : 
+Testing j = 815000
+OK : OK : OK : 
+Testing j = 816000
+OK : OK : OK : 
+Testing j = 817000
+OK : OK : OK : 
+Testing j = 818000
+OK : OK : OK : 
+Testing j = 819000
+OK : OK : OK : 
+Testing j = 820000
+OK : OK : OK : 
+Testing j = 821000
+OK : OK : OK : 
+Testing j = 822000
+OK : OK : OK : 
+Testing j = 823000
+OK : OK : OK : 
+Testing j = 824000
+OK : OK : OK : 
+Testing j = 825000
+OK : OK : OK : 
+Testing j = 826000
+OK : OK : OK : 
+Testing j = 827000
+OK : OK : OK : 
+Testing j = 828000
+OK : OK : OK : 
+Testing j = 829000
+OK : OK : OK : 
+Testing j = 830000
+OK : OK : OK : 
+Testing j = 831000
+OK : OK : OK : 
+Testing j = 832000
+OK : OK : OK : 
+Testing j = 833000
+OK : OK : OK : 
+Testing j = 834000
+OK : OK : OK : 
+Testing j = 835000
+OK : OK : OK : 
+Testing j = 836000
+OK : OK : OK : 
+Testing j = 837000
+OK : OK : OK : 
+Testing j = 838000
+OK : OK : OK : 
+Testing j = 839000
+OK : OK : OK : 
+Testing j = 840000
+OK : OK : OK : 
+Testing j = 841000
+OK : OK : OK : 
+Testing j = 842000
+OK : OK : OK : 
+Testing j = 843000
+OK : OK : OK : 
+Testing j = 844000
+OK : OK : OK : 
+Testing j = 845000
+OK : OK : OK : 
+Testing j = 846000
+OK : OK : OK : 
+Testing j = 847000
+OK : OK : OK : 
+Testing j = 848000
+OK : OK : OK : 
+Testing j = 849000
+OK : OK : OK : 
+Testing j = 850000
+OK : OK : OK : 
+Testing j = 851000
+OK : OK : OK : 
+Testing j = 852000
+OK : OK : OK : 
+Testing j = 853000
+OK : OK : OK : 
+Testing j = 854000
+OK : OK : OK : 
+Testing j = 855000
+OK : OK : OK : 
+Testing j = 856000
+OK : OK : OK : 
+Testing j = 857000
+OK : OK : OK : 
+Testing j = 858000
+OK : OK : OK : 
+Testing j = 859000
+OK : OK : OK : 
+Testing j = 860000
+OK : OK : OK : 
+Testing j = 861000
+OK : OK : OK : 
+Testing j = 862000
+OK : OK : OK : 
+Testing j = 863000
+OK : OK : OK : 
+Testing j = 864000
+OK : OK : OK : 
+Testing j = 865000
+OK : OK : OK : 
+Testing j = 866000
+OK : OK : OK : 
+Testing j = 867000
+OK : OK : OK : 
+Testing j = 868000
+OK : OK : OK : 
+Testing j = 869000
+OK : OK : OK : 
+Testing j = 870000
+OK : OK : OK : 
+Testing j = 871000
+OK : OK : OK : 
+Testing j = 872000
+OK : OK : OK : 
+Testing j = 873000
+OK : OK : OK : 
+Testing j = 874000
+OK : OK : OK : 
+Testing j = 875000
+OK : OK : OK : 
+Testing j = 876000
+OK : OK : OK : 
+Testing j = 877000
+OK : OK : OK : 
+Testing j = 878000
+OK : OK : OK : 
+Testing j = 879000
+OK : OK : OK : 
+Testing j = 880000
+OK : OK : OK : 
+Testing j = 881000
+OK : OK : OK : 
+Testing j = 882000
+OK : OK : OK : 
+Testing j = 883000
+OK : OK : OK : 
+Testing j = 884000
+OK : OK : OK : 
+Testing j = 885000
+OK : OK : OK : 
+Testing j = 886000
+OK : OK : OK : 
+Testing j = 887000
+OK : OK : OK : 
+Testing j = 888000
+OK : OK : OK : 
+Testing j = 889000
+OK : OK : OK : 
+Testing j = 890000
+OK : OK : OK : 
+Testing j = 891000
+OK : OK : OK : 
+Testing j = 892000
+OK : OK : OK : 
+Testing j = 893000
+OK : OK : OK : 
+Testing j = 894000
+OK : OK : OK : 
+Testing j = 895000
+OK : OK : OK : 
+Testing j = 896000
+OK : OK : OK : 
+Testing j = 897000
+OK : OK : OK : 
+Testing j = 898000
+OK : OK : OK : 
+Testing j = 899000
+OK : OK : OK : 
+Testing j = 900000
+OK : OK : OK : 
+Testing j = 901000
+OK : OK : OK : 
+Testing j = 902000
+OK : OK : OK : 
+Testing j = 903000
+OK : OK : OK : 
+Testing j = 904000
+OK : OK : OK : 
+Testing j = 905000
+OK : OK : OK : 
+Testing j = 906000
+OK : OK : OK : 
+Testing j = 907000
+OK : OK : OK : 
+Testing j = 908000
+OK : OK : OK : 
+Testing j = 909000
+OK : OK : OK : 
+Testing j = 910000
+OK : OK : OK : 
+Testing j = 911000
+OK : OK : OK : 
+Testing j = 912000
+OK : OK : OK : 
+Testing j = 913000
+OK : OK : OK : 
+Testing j = 914000
+OK : OK : OK : 
+Testing j = 915000
+OK : OK : OK : 
+Testing j = 916000
+OK : OK : OK : 
+Testing j = 917000
+OK : OK : OK : 
+Testing j = 918000
+OK : OK : OK : 
+Testing j = 919000
+OK : OK : OK : 
+Testing j = 920000
+OK : OK : OK : 
+Testing j = 921000
+OK : OK : OK : 
+Testing j = 922000
+OK : OK : OK : 
+Testing j = 923000
+OK : OK : OK : 
+Testing j = 924000
+OK : OK : OK : 
+Testing j = 925000
+OK : OK : OK : 
+Testing j = 926000
+OK : OK : OK : 
+Testing j = 927000
+OK : OK : OK : 
+Testing j = 928000
+OK : OK : OK : 
+Testing j = 929000
+OK : OK : OK : 
+Testing j = 930000
+OK : OK : OK : 
+Testing j = 931000
+OK : OK : OK : 
+Testing j = 932000
+OK : OK : OK : 
+Testing j = 933000
+OK : OK : OK : 
+Testing j = 934000
+OK : OK : OK : 
+Testing j = 935000
+OK : OK : OK : 
+Testing j = 936000
+OK : OK : OK : 
+Testing j = 937000
+OK : OK : OK : 
+Testing j = 938000
+OK : OK : OK : 
+Testing j = 939000
+OK : OK : OK : 
+Testing j = 940000
+OK : OK : OK : 
+Testing j = 941000
+OK : OK : OK : 
+Testing j = 942000
+OK : OK : OK : 
+Testing j = 943000
+OK : OK : OK : 
+Testing j = 944000
+OK : OK : OK : 
+Testing j = 945000
+OK : OK : OK : 
+Testing j = 946000
+OK : OK : OK : 
+Testing j = 947000
+OK : OK : OK : 
+Testing j = 948000
+OK : OK : OK : 
+Testing j = 949000
+OK : OK : OK : 
+Testing j = 950000
+OK : OK : OK : 
+Testing j = 951000
+OK : OK : OK : 
+Testing j = 952000
+OK : OK : OK : 
+Testing j = 953000
+OK : OK : OK : 
+Testing j = 954000
+OK : OK : OK : 
+Testing j = 955000
+OK : OK : OK : 
+Testing j = 956000
+OK : OK : OK : 
+Testing j = 957000
+OK : OK : OK : 
+Testing j = 958000
+OK : OK : OK : 
+Testing j = 959000
+OK : OK : OK : 
+Testing j = 960000
+OK : OK : OK : 
+Testing j = 961000
+OK : OK : OK : 
+Testing j = 962000
+OK : OK : OK : 
+Testing j = 963000
+OK : OK : OK : 
+Testing j = 964000
+OK : OK : OK : 
+Testing j = 965000
+OK : OK : OK : 
+Testing j = 966000
+OK : OK : OK : 
+Testing j = 967000
+OK : OK : OK : 
+Testing j = 968000
+OK : OK : OK : 
+Testing j = 969000
+OK : OK : OK : 
+Testing j = 970000
+OK : OK : OK : 
+Testing j = 971000
+OK : OK : OK : 
+Testing j = 972000
+OK : OK : OK : 
+Testing j = 973000
+OK : OK : OK : 
+Testing j = 974000
+OK : OK : OK : 
+Testing j = 975000
+OK : OK : OK : 
+Testing j = 976000
+OK : OK : OK : 
+Testing j = 977000
+OK : OK : OK : 
+Testing j = 978000
+OK : OK : OK : 
+Testing j = 979000
+OK : OK : OK : 
+Testing j = 980000
+OK : OK : OK : 
+Testing j = 981000
+OK : OK : OK : 
+Testing j = 982000
+OK : OK : OK : 
+Testing j = 983000
+OK : OK : OK : 
+Testing j = 984000
+OK : OK : OK : 
+Testing j = 985000
+OK : OK : OK : 
+Testing j = 986000
+OK : OK : OK : 
+Testing j = 987000
+OK : OK : OK : 
+Testing j = 988000
+OK : OK : OK : 
+Testing j = 989000
+OK : OK : OK : 
+Testing j = 990000
+OK : OK : OK : 
+Testing j = 991000
+OK : OK : OK : 
+Testing j = 992000
+OK : OK : OK : 
+Testing j = 993000
+OK : OK : OK : 
+Testing j = 994000
+OK : OK : OK : 
+Testing j = 995000
+OK : OK : OK : 
+Testing j = 996000
+OK : OK : OK : 
+Testing j = 997000
+OK : OK : OK : 
+Testing j = 998000
+OK : OK : OK : 
+Testing j = 999000
+OK : OK : OK : 
+0.000e+00 0.000e+00 1.000e+00 
+Testing j = 0
+OK : OK : OK : 
+Testing j = 1000
+OK : OK : OK : 
+Testing j = 2000
+OK : OK : OK : 
+Testing j = 3000
+OK : OK : OK : 
+Testing j = 4000
+OK : OK : OK : 
+Testing j = 5000
+OK : OK : OK : 
+Testing j = 6000
+OK : OK : OK : 
+Testing j = 7000
+OK : OK : OK : 
+Testing j = 8000
+OK : OK : OK : 
+Testing j = 9000
+OK : OK : OK : 
+Testing j = 10000
+OK : OK : OK : 
+Testing j = 11000
+OK : OK : OK : 
+Testing j = 12000
+OK : OK : OK : 
+Testing j = 13000
+OK : OK : OK : 
+Testing j = 14000
+OK : OK : OK : 
+Testing j = 15000
+OK : OK : OK : 
+Testing j = 16000
+OK : OK : OK : 
+Testing j = 17000
+OK : OK : OK : 
+Testing j = 18000
+OK : OK : OK : 
+Testing j = 19000
+OK : OK : OK : 
+Testing j = 20000
+OK : OK : OK : 
+Testing j = 21000
+OK : OK : OK : 
+Testing j = 22000
+OK : OK : OK : 
+Testing j = 23000
+OK : OK : OK : 
+Testing j = 24000
+OK : OK : OK : 
+Testing j = 25000
+OK : OK : OK : 
+Testing j = 26000
+OK : OK : OK : 
+Testing j = 27000
+OK : OK : OK : 
+Testing j = 28000
+OK : OK : OK : 
+Testing j = 29000
+OK : OK : OK : 
+Testing j = 30000
+OK : OK : OK : 
+Testing j = 31000
+OK : OK : OK : 
+Testing j = 32000
+OK : OK : OK : 
+Testing j = 33000
+OK : OK : OK : 
+Testing j = 34000
+OK : OK : OK : 
+Testing j = 35000
+OK : OK : OK : 
+Testing j = 36000
+OK : OK : OK : 
+Testing j = 37000
+OK : OK : OK : 
+Testing j = 38000
+OK : OK : OK : 
+Testing j = 39000
+OK : OK : OK : 
+Testing j = 40000
+OK : OK : OK : 
+Testing j = 41000
+OK : OK : OK : 
+Testing j = 42000
+OK : OK : OK : 
+Testing j = 43000
+OK : OK : OK : 
+Testing j = 44000
+OK : OK : OK : 
+Testing j = 45000
+OK : OK : OK : 
+Testing j = 46000
+OK : OK : OK : 
+Testing j = 47000
+OK : OK : OK : 
+Testing j = 48000
+OK : OK : OK : 
+Testing j = 49000
+OK : OK : OK : 
+Testing j = 50000
+OK : OK : OK : 
+Testing j = 51000
+OK : OK : OK : 
+Testing j = 52000
+OK : OK : OK : 
+Testing j = 53000
+OK : OK : OK : 
+Testing j = 54000
+OK : OK : OK : 
+Testing j = 55000
+OK : OK : OK : 
+Testing j = 56000
+OK : OK : OK : 
+Testing j = 57000
+OK : OK : OK : 
+Testing j = 58000
+OK : OK : OK : 
+Testing j = 59000
+OK : OK : OK : 
+Testing j = 60000
+OK : OK : OK : 
+Testing j = 61000
+OK : OK : OK : 
+Testing j = 62000
+OK : OK : OK : 
+Testing j = 63000
+OK : OK : OK : 
+Testing j = 64000
+OK : OK : OK : 
+Testing j = 65000
+OK : OK : OK : 
+Testing j = 66000
+OK : OK : OK : 
+Testing j = 67000
+OK : OK : OK : 
+Testing j = 68000
+OK : OK : OK : 
+Testing j = 69000
+OK : OK : OK : 
+Testing j = 70000
+OK : OK : OK : 
+Testing j = 71000
+OK : OK : OK : 
+Testing j = 72000
+OK : OK : OK : 
+Testing j = 73000
+OK : OK : OK : 
+Testing j = 74000
+OK : OK : OK : 
+Testing j = 75000
+OK : OK : OK : 
+Testing j = 76000
+OK : OK : OK : 
+Testing j = 77000
+OK : OK : OK : 
+Testing j = 78000
+OK : OK : OK : 
+Testing j = 79000
+OK : OK : OK : 
+Testing j = 80000
+OK : OK : OK : 
+Testing j = 81000
+OK : OK : OK : 
+Testing j = 82000
+OK : OK : OK : 
+Testing j = 83000
+OK : OK : OK : 
+Testing j = 84000
+OK : OK : OK : 
+Testing j = 85000
+OK : OK : OK : 
+Testing j = 86000
+OK : OK : OK : 
+Testing j = 87000
+OK : OK : OK : 
+Testing j = 88000
+OK : OK : OK : 
+Testing j = 89000
+OK : OK : OK : 
+Testing j = 90000
+OK : OK : OK : 
+Testing j = 91000
+OK : OK : OK : 
+Testing j = 92000
+OK : OK : OK : 
+Testing j = 93000
+OK : OK : OK : 
+Testing j = 94000
+OK : OK : OK : 
+Testing j = 95000
+OK : OK : OK : 
+Testing j = 96000
+OK : OK : OK : 
+Testing j = 97000
+OK : OK : OK : 
+Testing j = 98000
+OK : OK : OK : 
+Testing j = 99000
+OK : OK : OK : 
+Testing j = 100000
+OK : OK : OK : 
+Testing j = 101000
+OK : OK : OK : 
+Testing j = 102000
+OK : OK : OK : 
+Testing j = 103000
+OK : OK : OK : 
+Testing j = 104000
+OK : OK : OK : 
+Testing j = 105000
+OK : OK : OK : 
+Testing j = 106000
+OK : OK : OK : 
+Testing j = 107000
+OK : OK : OK : 
+Testing j = 108000
+OK : OK : OK : 
+Testing j = 109000
+OK : OK : OK : 
+Testing j = 110000
+OK : OK : OK : 
+Testing j = 111000
+OK : OK : OK : 
+Testing j = 112000
+OK : OK : OK : 
+Testing j = 113000
+OK : OK : OK : 
+Testing j = 114000
+OK : OK : OK : 
+Testing j = 115000
+OK : OK : OK : 
+Testing j = 116000
+OK : OK : OK : 
+Testing j = 117000
+OK : OK : OK : 
+Testing j = 118000
+OK : OK : OK : 
+Testing j = 119000
+OK : OK : OK : 
+Testing j = 120000
+OK : OK : OK : 
+Testing j = 121000
+OK : OK : OK : 
+Testing j = 122000
+OK : OK : OK : 
+Testing j = 123000
+OK : OK : OK : 
+Testing j = 124000
+OK : OK : OK : 
+Testing j = 125000
+OK : OK : OK : 
+Testing j = 126000
+OK : OK : OK : 
+Testing j = 127000
+OK : OK : OK : 
+Testing j = 128000
+OK : OK : OK : 
+Testing j = 129000
+OK : OK : OK : 
+Testing j = 130000
+OK : OK : OK : 
+Testing j = 131000
+OK : OK : OK : 
+Testing j = 132000
+OK : OK : OK : 
+Testing j = 133000
+OK : OK : OK : 
+Testing j = 134000
+OK : OK : OK : 
+Testing j = 135000
+OK : OK : OK : 
+Testing j = 136000
+OK : OK : OK : 
+Testing j = 137000
+OK : OK : OK : 
+Testing j = 138000
+OK : OK : OK : 
+Testing j = 139000
+OK : OK : OK : 
+Testing j = 140000
+OK : OK : OK : 
+Testing j = 141000
+OK : OK : OK : 
+Testing j = 142000
+OK : OK : OK : 
+Testing j = 143000
+OK : OK : OK : 
+Testing j = 144000
+OK : OK : OK : 
+Testing j = 145000
+OK : OK : OK : 
+Testing j = 146000
+OK : OK : OK : 
+Testing j = 147000
+OK : OK : OK : 
+Testing j = 148000
+OK : OK : OK : 
+Testing j = 149000
+OK : OK : OK : 
+Testing j = 150000
+OK : OK : OK : 
+Testing j = 151000
+OK : OK : OK : 
+Testing j = 152000
+OK : OK : OK : 
+Testing j = 153000
+OK : OK : OK : 
+Testing j = 154000
+OK : OK : OK : 
+Testing j = 155000
+OK : OK : OK : 
+Testing j = 156000
+OK : OK : OK : 
+Testing j = 157000
+OK : OK : OK : 
+Testing j = 158000
+OK : OK : OK : 
+Testing j = 159000
+OK : OK : OK : 
+Testing j = 160000
+OK : OK : OK : 
+Testing j = 161000
+OK : OK : OK : 
+Testing j = 162000
+OK : OK : OK : 
+Testing j = 163000
+OK : OK : OK : 
+Testing j = 164000
+OK : OK : OK : 
+Testing j = 165000
+OK : OK : OK : 
+Testing j = 166000
+OK : OK : OK : 
+Testing j = 167000
+OK : OK : OK : 
+Testing j = 168000
+OK : OK : OK : 
+Testing j = 169000
+OK : OK : OK : 
+Testing j = 170000
+OK : OK : OK : 
+Testing j = 171000
+OK : OK : OK : 
+Testing j = 172000
+OK : OK : OK : 
+Testing j = 173000
+OK : OK : OK : 
+Testing j = 174000
+OK : OK : OK : 
+Testing j = 175000
+OK : OK : OK : 
+Testing j = 176000
+OK : OK : OK : 
+Testing j = 177000
+OK : OK : OK : 
+Testing j = 178000
+OK : OK : OK : 
+Testing j = 179000
+OK : OK : OK : 
+Testing j = 180000
+OK : OK : OK : 
+Testing j = 181000
+OK : OK : OK : 
+Testing j = 182000
+OK : OK : OK : 
+Testing j = 183000
+OK : OK : OK : 
+Testing j = 184000
+OK : OK : OK : 
+Testing j = 185000
+OK : OK : OK : 
+Testing j = 186000
+OK : OK : OK : 
+Testing j = 187000
+OK : OK : OK : 
+Testing j = 188000
+OK : OK : OK : 
+Testing j = 189000
+OK : OK : OK : 
+Testing j = 190000
+OK : OK : OK : 
+Testing j = 191000
+OK : OK : OK : 
+Testing j = 192000
+OK : OK : OK : 
+Testing j = 193000
+OK : OK : OK : 
+Testing j = 194000
+OK : OK : OK : 
+Testing j = 195000
+OK : OK : OK : 
+Testing j = 196000
+OK : OK : OK : 
+Testing j = 197000
+OK : OK : OK : 
+Testing j = 198000
+OK : OK : OK : 
+Testing j = 199000
+OK : OK : OK : 
+Testing j = 200000
+OK : OK : OK : 
+Testing j = 201000
+OK : OK : OK : 
+Testing j = 202000
+OK : OK : OK : 
+Testing j = 203000
+OK : OK : OK : 
+Testing j = 204000
+OK : OK : OK : 
+Testing j = 205000
+OK : OK : OK : 
+Testing j = 206000
+OK : OK : OK : 
+Testing j = 207000
+OK : OK : OK : 
+Testing j = 208000
+OK : OK : OK : 
+Testing j = 209000
+OK : OK : OK : 
+Testing j = 210000
+OK : OK : OK : 
+Testing j = 211000
+OK : OK : OK : 
+Testing j = 212000
+OK : OK : OK : 
+Testing j = 213000
+OK : OK : OK : 
+Testing j = 214000
+OK : OK : OK : 
+Testing j = 215000
+OK : OK : OK : 
+Testing j = 216000
+OK : OK : OK : 
+Testing j = 217000
+OK : OK : OK : 
+Testing j = 218000
+OK : OK : OK : 
+Testing j = 219000
+OK : OK : OK : 
+Testing j = 220000
+OK : OK : OK : 
+Testing j = 221000
+OK : OK : OK : 
+Testing j = 222000
+OK : OK : OK : 
+Testing j = 223000
+OK : OK : OK : 
+Testing j = 224000
+OK : OK : OK : 
+Testing j = 225000
+OK : OK : OK : 
+Testing j = 226000
+OK : OK : OK : 
+Testing j = 227000
+OK : OK : OK : 
+Testing j = 228000
+OK : OK : OK : 
+Testing j = 229000
+OK : OK : OK : 
+Testing j = 230000
+OK : OK : OK : 
+Testing j = 231000
+OK : OK : OK : 
+Testing j = 232000
+OK : OK : OK : 
+Testing j = 233000
+OK : OK : OK : 
+Testing j = 234000
+OK : OK : OK : 
+Testing j = 235000
+OK : OK : OK : 
+Testing j = 236000
+OK : OK : OK : 
+Testing j = 237000
+OK : OK : OK : 
+Testing j = 238000
+OK : OK : OK : 
+Testing j = 239000
+OK : OK : OK : 
+Testing j = 240000
+OK : OK : OK : 
+Testing j = 241000
+OK : OK : OK : 
+Testing j = 242000
+OK : OK : OK : 
+Testing j = 243000
+OK : OK : OK : 
+Testing j = 244000
+OK : OK : OK : 
+Testing j = 245000
+OK : OK : OK : 
+Testing j = 246000
+OK : OK : OK : 
+Testing j = 247000
+OK : OK : OK : 
+Testing j = 248000
+OK : OK : OK : 
+Testing j = 249000
+OK : OK : OK : 
+Testing j = 250000
+OK : OK : OK : 
+Testing j = 251000
+OK : OK : OK : 
+Testing j = 252000
+OK : OK : OK : 
+Testing j = 253000
+OK : OK : OK : 
+Testing j = 254000
+OK : OK : OK : 
+Testing j = 255000
+OK : OK : OK : 
+Testing j = 256000
+OK : OK : OK : 
+Testing j = 257000
+OK : OK : OK : 
+Testing j = 258000
+OK : OK : OK : 
+Testing j = 259000
+OK : OK : OK : 
+Testing j = 260000
+OK : OK : OK : 
+Testing j = 261000
+OK : OK : OK : 
+Testing j = 262000
+OK : OK : OK : 
+Testing j = 263000
+OK : OK : OK : 
+Testing j = 264000
+OK : OK : OK : 
+Testing j = 265000
+OK : OK : OK : 
+Testing j = 266000
+OK : OK : OK : 
+Testing j = 267000
+OK : OK : OK : 
+Testing j = 268000
+OK : OK : OK : 
+Testing j = 269000
+OK : OK : OK : 
+Testing j = 270000
+OK : OK : OK : 
+Testing j = 271000
+OK : OK : OK : 
+Testing j = 272000
+OK : OK : OK : 
+Testing j = 273000
+OK : OK : OK : 
+Testing j = 274000
+OK : OK : OK : 
+Testing j = 275000
+OK : OK : OK : 
+Testing j = 276000
+OK : OK : OK : 
+Testing j = 277000
+OK : OK : OK : 
+Testing j = 278000
+OK : OK : OK : 
+Testing j = 279000
+OK : OK : OK : 
+Testing j = 280000
+OK : OK : OK : 
+Testing j = 281000
+OK : OK : OK : 
+Testing j = 282000
+OK : OK : OK : 
+Testing j = 283000
+OK : OK : OK : 
+Testing j = 284000
+OK : OK : OK : 
+Testing j = 285000
+OK : OK : OK : 
+Testing j = 286000
+OK : OK : OK : 
+Testing j = 287000
+OK : OK : OK : 
+Testing j = 288000
+OK : OK : OK : 
+Testing j = 289000
+OK : OK : OK : 
+Testing j = 290000
+OK : OK : OK : 
+Testing j = 291000
+OK : OK : OK : 
+Testing j = 292000
+OK : OK : OK : 
+Testing j = 293000
+OK : OK : OK : 
+Testing j = 294000
+OK : OK : OK : 
+Testing j = 295000
+OK : OK : OK : 
+Testing j = 296000
+OK : OK : OK : 
+Testing j = 297000
+OK : OK : OK : 
+Testing j = 298000
+OK : OK : OK : 
+Testing j = 299000
+OK : OK : OK : 
+Testing j = 300000
+OK : OK : OK : 
+Testing j = 301000
+OK : OK : OK : 
+Testing j = 302000
+OK : OK : OK : 
+Testing j = 303000
+OK : OK : OK : 
+Testing j = 304000
+OK : OK : OK : 
+Testing j = 305000
+OK : OK : OK : 
+Testing j = 306000
+OK : OK : OK : 
+Testing j = 307000
+OK : OK : OK : 
+Testing j = 308000
+OK : OK : OK : 
+Testing j = 309000
+OK : OK : OK : 
+Testing j = 310000
+OK : OK : OK : 
+Testing j = 311000
+OK : OK : OK : 
+Testing j = 312000
+OK : OK : OK : 
+Testing j = 313000
+OK : OK : OK : 
+Testing j = 314000
+OK : OK : OK : 
+Testing j = 315000
+OK : OK : OK : 
+Testing j = 316000
+OK : OK : OK : 
+Testing j = 317000
+OK : OK : OK : 
+Testing j = 318000
+OK : OK : OK : 
+Testing j = 319000
+OK : OK : OK : 
+Testing j = 320000
+OK : OK : OK : 
+Testing j = 321000
+OK : OK : OK : 
+Testing j = 322000
+OK : OK : OK : 
+Testing j = 323000
+OK : OK : OK : 
+Testing j = 324000
+OK : OK : OK : 
+Testing j = 325000
+OK : OK : OK : 
+Testing j = 326000
+OK : OK : OK : 
+Testing j = 327000
+OK : OK : OK : 
+Testing j = 328000
+OK : OK : OK : 
+Testing j = 329000
+OK : OK : OK : 
+Testing j = 330000
+OK : OK : OK : 
+Testing j = 331000
+OK : OK : OK : 
+Testing j = 332000
+OK : OK : OK : 
+Testing j = 333000
+OK : OK : OK : 
+Testing j = 334000
+OK : OK : OK : 
+Testing j = 335000
+OK : OK : OK : 
+Testing j = 336000
+OK : OK : OK : 
+Testing j = 337000
+OK : OK : OK : 
+Testing j = 338000
+OK : OK : OK : 
+Testing j = 339000
+OK : OK : OK : 
+Testing j = 340000
+OK : OK : OK : 
+Testing j = 341000
+OK : OK : OK : 
+Testing j = 342000
+OK : OK : OK : 
+Testing j = 343000
+OK : OK : OK : 
+Testing j = 344000
+OK : OK : OK : 
+Testing j = 345000
+OK : OK : OK : 
+Testing j = 346000
+OK : OK : OK : 
+Testing j = 347000
+OK : OK : OK : 
+Testing j = 348000
+OK : OK : OK : 
+Testing j = 349000
+OK : OK : OK : 
+Testing j = 350000
+OK : OK : OK : 
+Testing j = 351000
+OK : OK : OK : 
+Testing j = 352000
+OK : OK : OK : 
+Testing j = 353000
+OK : OK : OK : 
+Testing j = 354000
+OK : OK : OK : 
+Testing j = 355000
+OK : OK : OK : 
+Testing j = 356000
+OK : OK : OK : 
+Testing j = 357000
+OK : OK : OK : 
+Testing j = 358000
+OK : OK : OK : 
+Testing j = 359000
+OK : OK : OK : 
+Testing j = 360000
+OK : OK : OK : 
+Testing j = 361000
+OK : OK : OK : 
+Testing j = 362000
+OK : OK : OK : 
+Testing j = 363000
+OK : OK : OK : 
+Testing j = 364000
+OK : OK : OK : 
+Testing j = 365000
+OK : OK : OK : 
+Testing j = 366000
+OK : OK : OK : 
+Testing j = 367000
+OK : OK : OK : 
+Testing j = 368000
+OK : OK : OK : 
+Testing j = 369000
+OK : OK : OK : 
+Testing j = 370000
+OK : OK : OK : 
+Testing j = 371000
+OK : OK : OK : 
+Testing j = 372000
+OK : OK : OK : 
+Testing j = 373000
+OK : OK : OK : 
+Testing j = 374000
+OK : OK : OK : 
+Testing j = 375000
+OK : OK : OK : 
+Testing j = 376000
+OK : OK : OK : 
+Testing j = 377000
+OK : OK : OK : 
+Testing j = 378000
+OK : OK : OK : 
+Testing j = 379000
+OK : OK : OK : 
+Testing j = 380000
+OK : OK : OK : 
+Testing j = 381000
+OK : OK : OK : 
+Testing j = 382000
+OK : OK : OK : 
+Testing j = 383000
+OK : OK : OK : 
+Testing j = 384000
+OK : OK : OK : 
+Testing j = 385000
+OK : OK : OK : 
+Testing j = 386000
+OK : OK : OK : 
+Testing j = 387000
+OK : OK : OK : 
+Testing j = 388000
+OK : OK : OK : 
+Testing j = 389000
+OK : OK : OK : 
+Testing j = 390000
+OK : OK : OK : 
+Testing j = 391000
+OK : OK : OK : 
+Testing j = 392000
+OK : OK : OK : 
+Testing j = 393000
+OK : OK : OK : 
+Testing j = 394000
+OK : OK : OK : 
+Testing j = 395000
+OK : OK : OK : 
+Testing j = 396000
+OK : OK : OK : 
+Testing j = 397000
+OK : OK : OK : 
+Testing j = 398000
+OK : OK : OK : 
+Testing j = 399000
+OK : OK : OK : 
+Testing j = 400000
+OK : OK : OK : 
+Testing j = 401000
+OK : OK : OK : 
+Testing j = 402000
+OK : OK : OK : 
+Testing j = 403000
+OK : OK : OK : 
+Testing j = 404000
+OK : OK : OK : 
+Testing j = 405000
+OK : OK : OK : 
+Testing j = 406000
+OK : OK : OK : 
+Testing j = 407000
+OK : OK : OK : 
+Testing j = 408000
+OK : OK : OK : 
+Testing j = 409000
+OK : OK : OK : 
+Testing j = 410000
+OK : OK : OK : 
+Testing j = 411000
+OK : OK : OK : 
+Testing j = 412000
+OK : OK : OK : 
+Testing j = 413000
+OK : OK : OK : 
+Testing j = 414000
+OK : OK : OK : 
+Testing j = 415000
+OK : OK : OK : 
+Testing j = 416000
+OK : OK : OK : 
+Testing j = 417000
+OK : OK : OK : 
+Testing j = 418000
+OK : OK : OK : 
+Testing j = 419000
+OK : OK : OK : 
+Testing j = 420000
+OK : OK : OK : 
+Testing j = 421000
+OK : OK : OK : 
+Testing j = 422000
+OK : OK : OK : 
+Testing j = 423000
+OK : OK : OK : 
+Testing j = 424000
+OK : OK : OK : 
+Testing j = 425000
+OK : OK : OK : 
+Testing j = 426000
+OK : OK : OK : 
+Testing j = 427000
+OK : OK : OK : 
+Testing j = 428000
+OK : OK : OK : 
+Testing j = 429000
+OK : OK : OK : 
+Testing j = 430000
+OK : OK : OK : 
+Testing j = 431000
+OK : OK : OK : 
+Testing j = 432000
+OK : OK : OK : 
+Testing j = 433000
+OK : OK : OK : 
+Testing j = 434000
+OK : OK : OK : 
+Testing j = 435000
+OK : OK : OK : 
+Testing j = 436000
+OK : OK : OK : 
+Testing j = 437000
+OK : OK : OK : 
+Testing j = 438000
+OK : OK : OK : 
+Testing j = 439000
+OK : OK : OK : 
+Testing j = 440000
+OK : OK : OK : 
+Testing j = 441000
+OK : OK : OK : 
+Testing j = 442000
+OK : OK : OK : 
+Testing j = 443000
+OK : OK : OK : 
+Testing j = 444000
+OK : OK : OK : 
+Testing j = 445000
+OK : OK : OK : 
+Testing j = 446000
+OK : OK : OK : 
+Testing j = 447000
+OK : OK : OK : 
+Testing j = 448000
+OK : OK : OK : 
+Testing j = 449000
+OK : OK : OK : 
+Testing j = 450000
+OK : OK : OK : 
+Testing j = 451000
+OK : OK : OK : 
+Testing j = 452000
+OK : OK : OK : 
+Testing j = 453000
+OK : OK : OK : 
+Testing j = 454000
+OK : OK : OK : 
+Testing j = 455000
+OK : OK : OK : 
+Testing j = 456000
+OK : OK : OK : 
+Testing j = 457000
+OK : OK : OK : 
+Testing j = 458000
+OK : OK : OK : 
+Testing j = 459000
+OK : OK : OK : 
+Testing j = 460000
+OK : OK : OK : 
+Testing j = 461000
+OK : OK : OK : 
+Testing j = 462000
+OK : OK : OK : 
+Testing j = 463000
+OK : OK : OK : 
+Testing j = 464000
+OK : OK : OK : 
+Testing j = 465000
+OK : OK : OK : 
+Testing j = 466000
+OK : OK : OK : 
+Testing j = 467000
+OK : OK : OK : 
+Testing j = 468000
+OK : OK : OK : 
+Testing j = 469000
+OK : OK : OK : 
+Testing j = 470000
+OK : OK : OK : 
+Testing j = 471000
+OK : OK : OK : 
+Testing j = 472000
+OK : OK : OK : 
+Testing j = 473000
+OK : OK : OK : 
+Testing j = 474000
+OK : OK : OK : 
+Testing j = 475000
+OK : OK : OK : 
+Testing j = 476000
+OK : OK : OK : 
+Testing j = 477000
+OK : OK : OK : 
+Testing j = 478000
+OK : OK : OK : 
+Testing j = 479000
+OK : OK : OK : 
+Testing j = 480000
+OK : OK : OK : 
+Testing j = 481000
+OK : OK : OK : 
+Testing j = 482000
+OK : OK : OK : 
+Testing j = 483000
+OK : OK : OK : 
+Testing j = 484000
+OK : OK : OK : 
+Testing j = 485000
+OK : OK : OK : 
+Testing j = 486000
+OK : OK : OK : 
+Testing j = 487000
+OK : OK : OK : 
+Testing j = 488000
+OK : OK : OK : 
+Testing j = 489000
+OK : OK : OK : 
+Testing j = 490000
+OK : OK : OK : 
+Testing j = 491000
+OK : OK : OK : 
+Testing j = 492000
+OK : OK : OK : 
+Testing j = 493000
+OK : OK : OK : 
+Testing j = 494000
+OK : OK : OK : 
+Testing j = 495000
+OK : OK : OK : 
+Testing j = 496000
+OK : OK : OK : 
+Testing j = 497000
+OK : OK : OK : 
+Testing j = 498000
+OK : OK : OK : 
+Testing j = 499000
+OK : OK : OK : 
+Testing j = 500000
+OK : OK : OK : 
+Testing j = 501000
+OK : OK : OK : 
+Testing j = 502000
+OK : OK : OK : 
+Testing j = 503000
+OK : OK : OK : 
+Testing j = 504000
+OK : OK : OK : 
+Testing j = 505000
+OK : OK : OK : 
+Testing j = 506000
+OK : OK : OK : 
+Testing j = 507000
+OK : OK : OK : 
+Testing j = 508000
+OK : OK : OK : 
+Testing j = 509000
+OK : OK : OK : 
+Testing j = 510000
+OK : OK : OK : 
+Testing j = 511000
+OK : OK : OK : 
+Testing j = 512000
+OK : OK : OK : 
+Testing j = 513000
+OK : OK : OK : 
+Testing j = 514000
+OK : OK : OK : 
+Testing j = 515000
+OK : OK : OK : 
+Testing j = 516000
+OK : OK : OK : 
+Testing j = 517000
+OK : OK : OK : 
+Testing j = 518000
+OK : OK : OK : 
+Testing j = 519000
+OK : OK : OK : 
+Testing j = 520000
+OK : OK : OK : 
+Testing j = 521000
+OK : OK : OK : 
+Testing j = 522000
+OK : OK : OK : 
+Testing j = 523000
+OK : OK : OK : 
+Testing j = 524000
+OK : OK : OK : 
+Testing j = 525000
+OK : OK : OK : 
+Testing j = 526000
+OK : OK : OK : 
+Testing j = 527000
+OK : OK : OK : 
+Testing j = 528000
+OK : OK : OK : 
+Testing j = 529000
+OK : OK : OK : 
+Testing j = 530000
+OK : OK : OK : 
+Testing j = 531000
+OK : OK : OK : 
+Testing j = 532000
+OK : OK : OK : 
+Testing j = 533000
+OK : OK : OK : 
+Testing j = 534000
+OK : OK : OK : 
+Testing j = 535000
+OK : OK : OK : 
+Testing j = 536000
+OK : OK : OK : 
+Testing j = 537000
+OK : OK : OK : 
+Testing j = 538000
+OK : OK : OK : 
+Testing j = 539000
+OK : OK : OK : 
+Testing j = 540000
+OK : OK : OK : 
+Testing j = 541000
+OK : OK : OK : 
+Testing j = 542000
+OK : OK : OK : 
+Testing j = 543000
+OK : OK : OK : 
+Testing j = 544000
+OK : OK : OK : 
+Testing j = 545000
+OK : OK : OK : 
+Testing j = 546000
+OK : OK : OK : 
+Testing j = 547000
+OK : OK : OK : 
+Testing j = 548000
+OK : OK : OK : 
+Testing j = 549000
+OK : OK : OK : 
+Testing j = 550000
+OK : OK : OK : 
+Testing j = 551000
+OK : OK : OK : 
+Testing j = 552000
+OK : OK : OK : 
+Testing j = 553000
+OK : OK : OK : 
+Testing j = 554000
+OK : OK : OK : 
+Testing j = 555000
+OK : OK : OK : 
+Testing j = 556000
+OK : OK : OK : 
+Testing j = 557000
+OK : OK : OK : 
+Testing j = 558000
+OK : OK : OK : 
+Testing j = 559000
+OK : OK : OK : 
+Testing j = 560000
+OK : OK : OK : 
+Testing j = 561000
+OK : OK : OK : 
+Testing j = 562000
+OK : OK : OK : 
+Testing j = 563000
+OK : OK : OK : 
+Testing j = 564000
+OK : OK : OK : 
+Testing j = 565000
+OK : OK : OK : 
+Testing j = 566000
+OK : OK : OK : 
+Testing j = 567000
+OK : OK : OK : 
+Testing j = 568000
+OK : OK : OK : 
+Testing j = 569000
+OK : OK : OK : 
+Testing j = 570000
+OK : OK : OK : 
+Testing j = 571000
+OK : OK : OK : 
+Testing j = 572000
+OK : OK : OK : 
+Testing j = 573000
+OK : OK : OK : 
+Testing j = 574000
+OK : OK : OK : 
+Testing j = 575000
+OK : OK : OK : 
+Testing j = 576000
+OK : OK : OK : 
+Testing j = 577000
+OK : OK : OK : 
+Testing j = 578000
+OK : OK : OK : 
+Testing j = 579000
+OK : OK : OK : 
+Testing j = 580000
+OK : OK : OK : 
+Testing j = 581000
+OK : OK : OK : 
+Testing j = 582000
+OK : OK : OK : 
+Testing j = 583000
+OK : OK : OK : 
+Testing j = 584000
+OK : OK : OK : 
+Testing j = 585000
+OK : OK : OK : 
+Testing j = 586000
+OK : OK : OK : 
+Testing j = 587000
+OK : OK : OK : 
+Testing j = 588000
+OK : OK : OK : 
+Testing j = 589000
+OK : OK : OK : 
+Testing j = 590000
+OK : OK : OK : 
+Testing j = 591000
+OK : OK : OK : 
+Testing j = 592000
+OK : OK : OK : 
+Testing j = 593000
+OK : OK : OK : 
+Testing j = 594000
+OK : OK : OK : 
+Testing j = 595000
+OK : OK : OK : 
+Testing j = 596000
+OK : OK : OK : 
+Testing j = 597000
+OK : OK : OK : 
+Testing j = 598000
+OK : OK : OK : 
+Testing j = 599000
+OK : OK : OK : 
+Testing j = 600000
+OK : OK : OK : 
+Testing j = 601000
+OK : OK : OK : 
+Testing j = 602000
+OK : OK : OK : 
+Testing j = 603000
+OK : OK : OK : 
+Testing j = 604000
+OK : OK : OK : 
+Testing j = 605000
+OK : OK : OK : 
+Testing j = 606000
+OK : OK : OK : 
+Testing j = 607000
+OK : OK : OK : 
+Testing j = 608000
+OK : OK : OK : 
+Testing j = 609000
+OK : OK : OK : 
+Testing j = 610000
+OK : OK : OK : 
+Testing j = 611000
+OK : OK : OK : 
+Testing j = 612000
+OK : OK : OK : 
+Testing j = 613000
+OK : OK : OK : 
+Testing j = 614000
+OK : OK : OK : 
+Testing j = 615000
+OK : OK : OK : 
+Testing j = 616000
+OK : OK : OK : 
+Testing j = 617000
+OK : OK : OK : 
+Testing j = 618000
+OK : OK : OK : 
+Testing j = 619000
+OK : OK : OK : 
+Testing j = 620000
+OK : OK : OK : 
+Testing j = 621000
+OK : OK : OK : 
+Testing j = 622000
+OK : OK : OK : 
+Testing j = 623000
+OK : OK : OK : 
+Testing j = 624000
+OK : OK : OK : 
+Testing j = 625000
+OK : OK : OK : 
+Testing j = 626000
+OK : OK : OK : 
+Testing j = 627000
+OK : OK : OK : 
+Testing j = 628000
+OK : OK : OK : 
+Testing j = 629000
+OK : OK : OK : 
+Testing j = 630000
+OK : OK : OK : 
+Testing j = 631000
+OK : OK : OK : 
+Testing j = 632000
+OK : OK : OK : 
+Testing j = 633000
+OK : OK : OK : 
+Testing j = 634000
+OK : OK : OK : 
+Testing j = 635000
+OK : OK : OK : 
+Testing j = 636000
+OK : OK : OK : 
+Testing j = 637000
+OK : OK : OK : 
+Testing j = 638000
+OK : OK : OK : 
+Testing j = 639000
+OK : OK : OK : 
+Testing j = 640000
+OK : OK : OK : 
+Testing j = 641000
+OK : OK : OK : 
+Testing j = 642000
+OK : OK : OK : 
+Testing j = 643000
+OK : OK : OK : 
+Testing j = 644000
+OK : OK : OK : 
+Testing j = 645000
+OK : OK : OK : 
+Testing j = 646000
+OK : OK : OK : 
+Testing j = 647000
+OK : OK : OK : 
+Testing j = 648000
+OK : OK : OK : 
+Testing j = 649000
+OK : OK : OK : 
+Testing j = 650000
+OK : OK : OK : 
+Testing j = 651000
+OK : OK : OK : 
+Testing j = 652000
+OK : OK : OK : 
+Testing j = 653000
+OK : OK : OK : 
+Testing j = 654000
+OK : OK : OK : 
+Testing j = 655000
+OK : OK : OK : 
+Testing j = 656000
+OK : OK : OK : 
+Testing j = 657000
+OK : OK : OK : 
+Testing j = 658000
+OK : OK : OK : 
+Testing j = 659000
+OK : OK : OK : 
+Testing j = 660000
+OK : OK : OK : 
+Testing j = 661000
+OK : OK : OK : 
+Testing j = 662000
+OK : OK : OK : 
+Testing j = 663000
+OK : OK : OK : 
+Testing j = 664000
+OK : OK : OK : 
+Testing j = 665000
+OK : OK : OK : 
+Testing j = 666000
+OK : OK : OK : 
+Testing j = 667000
+OK : OK : OK : 
+Testing j = 668000
+OK : OK : OK : 
+Testing j = 669000
+OK : OK : OK : 
+Testing j = 670000
+OK : OK : OK : 
+Testing j = 671000
+OK : OK : OK : 
+Testing j = 672000
+OK : OK : OK : 
+Testing j = 673000
+OK : OK : OK : 
+Testing j = 674000
+OK : OK : OK : 
+Testing j = 675000
+OK : OK : OK : 
+Testing j = 676000
+OK : OK : OK : 
+Testing j = 677000
+OK : OK : OK : 
+Testing j = 678000
+OK : OK : OK : 
+Testing j = 679000
+OK : OK : OK : 
+Testing j = 680000
+OK : OK : OK : 
+Testing j = 681000
+OK : OK : OK : 
+Testing j = 682000
+OK : OK : OK : 
+Testing j = 683000
+OK : OK : OK : 
+Testing j = 684000
+OK : OK : OK : 
+Testing j = 685000
+OK : OK : OK : 
+Testing j = 686000
+OK : OK : OK : 
+Testing j = 687000
+OK : OK : OK : 
+Testing j = 688000
+OK : OK : OK : 
+Testing j = 689000
+OK : OK : OK : 
+Testing j = 690000
+OK : OK : OK : 
+Testing j = 691000
+OK : OK : OK : 
+Testing j = 692000
+OK : OK : OK : 
+Testing j = 693000
+OK : OK : OK : 
+Testing j = 694000
+OK : OK : OK : 
+Testing j = 695000
+OK : OK : OK : 
+Testing j = 696000
+OK : OK : OK : 
+Testing j = 697000
+OK : OK : OK : 
+Testing j = 698000
+OK : OK : OK : 
+Testing j = 699000
+OK : OK : OK : 
+Testing j = 700000
+OK : OK : OK : 
+Testing j = 701000
+OK : OK : OK : 
+Testing j = 702000
+OK : OK : OK : 
+Testing j = 703000
+OK : OK : OK : 
+Testing j = 704000
+OK : OK : OK : 
+Testing j = 705000
+OK : OK : OK : 
+Testing j = 706000
+OK : OK : OK : 
+Testing j = 707000
+OK : OK : OK : 
+Testing j = 708000
+OK : OK : OK : 
+Testing j = 709000
+OK : OK : OK : 
+Testing j = 710000
+OK : OK : OK : 
+Testing j = 711000
+OK : OK : OK : 
+Testing j = 712000
+OK : OK : OK : 
+Testing j = 713000
+OK : OK : OK : 
+Testing j = 714000
+OK : OK : OK : 
+Testing j = 715000
+OK : OK : OK : 
+Testing j = 716000
+OK : OK : OK : 
+Testing j = 717000
+OK : OK : OK : 
+Testing j = 718000
+OK : OK : OK : 
+Testing j = 719000
+OK : OK : OK : 
+Testing j = 720000
+OK : OK : OK : 
+Testing j = 721000
+OK : OK : OK : 
+Testing j = 722000
+OK : OK : OK : 
+Testing j = 723000
+OK : OK : OK : 
+Testing j = 724000
+OK : OK : OK : 
+Testing j = 725000
+OK : OK : OK : 
+Testing j = 726000
+OK : OK : OK : 
+Testing j = 727000
+OK : OK : OK : 
+Testing j = 728000
+OK : OK : OK : 
+Testing j = 729000
+OK : OK : OK : 
+Testing j = 730000
+OK : OK : OK : 
+Testing j = 731000
+OK : OK : OK : 
+Testing j = 732000
+OK : OK : OK : 
+Testing j = 733000
+OK : OK : OK : 
+Testing j = 734000
+OK : OK : OK : 
+Testing j = 735000
+OK : OK : OK : 
+Testing j = 736000
+OK : OK : OK : 
+Testing j = 737000
+OK : OK : OK : 
+Testing j = 738000
+OK : OK : OK : 
+Testing j = 739000
+OK : OK : OK : 
+Testing j = 740000
+OK : OK : OK : 
+Testing j = 741000
+OK : OK : OK : 
+Testing j = 742000
+OK : OK : OK : 
+Testing j = 743000
+OK : OK : OK : 
+Testing j = 744000
+OK : OK : OK : 
+Testing j = 745000
+OK : OK : OK : 
+Testing j = 746000
+OK : OK : OK : 
+Testing j = 747000
+OK : OK : OK : 
+Testing j = 748000
+OK : OK : OK : 
+Testing j = 749000
+OK : OK : OK : 
+Testing j = 750000
+OK : OK : OK : 
+Testing j = 751000
+OK : OK : OK : 
+Testing j = 752000
+OK : OK : OK : 
+Testing j = 753000
+OK : OK : OK : 
+Testing j = 754000
+OK : OK : OK : 
+Testing j = 755000
+OK : OK : OK : 
+Testing j = 756000
+OK : OK : OK : 
+Testing j = 757000
+OK : OK : OK : 
+Testing j = 758000
+OK : OK : OK : 
+Testing j = 759000
+OK : OK : OK : 
+Testing j = 760000
+OK : OK : OK : 
+Testing j = 761000
+OK : OK : OK : 
+Testing j = 762000
+OK : OK : OK : 
+Testing j = 763000
+OK : OK : OK : 
+Testing j = 764000
+OK : OK : OK : 
+Testing j = 765000
+OK : OK : OK : 
+Testing j = 766000
+OK : OK : OK : 
+Testing j = 767000
+OK : OK : OK : 
+Testing j = 768000
+OK : OK : OK : 
+Testing j = 769000
+OK : OK : OK : 
+Testing j = 770000
+OK : OK : OK : 
+Testing j = 771000
+OK : OK : OK : 
+Testing j = 772000
+OK : OK : OK : 
+Testing j = 773000
+OK : OK : OK : 
+Testing j = 774000
+OK : OK : OK : 
+Testing j = 775000
+OK : OK : OK : 
+Testing j = 776000
+OK : OK : OK : 
+Testing j = 777000
+OK : OK : OK : 
+Testing j = 778000
+OK : OK : OK : 
+Testing j = 779000
+OK : OK : OK : 
+Testing j = 780000
+OK : OK : OK : 
+Testing j = 781000
+OK : OK : OK : 
+Testing j = 782000
+OK : OK : OK : 
+Testing j = 783000
+OK : OK : OK : 
+Testing j = 784000
+OK : OK : OK : 
+Testing j = 785000
+OK : OK : OK : 
+Testing j = 786000
+OK : OK : OK : 
+Testing j = 787000
+OK : OK : OK : 
+Testing j = 788000
+OK : OK : OK : 
+Testing j = 789000
+OK : OK : OK : 
+Testing j = 790000
+OK : OK : OK : 
+Testing j = 791000
+OK : OK : OK : 
+Testing j = 792000
+OK : OK : OK : 
+Testing j = 793000
+OK : OK : OK : 
+Testing j = 794000
+OK : OK : OK : 
+Testing j = 795000
+OK : OK : OK : 
+Testing j = 796000
+OK : OK : OK : 
+Testing j = 797000
+OK : OK : OK : 
+Testing j = 798000
+OK : OK : OK : 
+Testing j = 799000
+OK : OK : OK : 
+Testing j = 800000
+OK : OK : OK : 
+Testing j = 801000
+OK : OK : OK : 
+Testing j = 802000
+OK : OK : OK : 
+Testing j = 803000
+OK : OK : OK : 
+Testing j = 804000
+OK : OK : OK : 
+Testing j = 805000
+OK : OK : OK : 
+Testing j = 806000
+OK : OK : OK : 
+Testing j = 807000
+OK : OK : OK : 
+Testing j = 808000
+OK : OK : OK : 
+Testing j = 809000
+OK : OK : OK : 
+Testing j = 810000
+OK : OK : OK : 
+Testing j = 811000
+OK : OK : OK : 
+Testing j = 812000
+OK : OK : OK : 
+Testing j = 813000
+OK : OK : OK : 
+Testing j = 814000
+OK : OK : OK : 
+Testing j = 815000
+OK : OK : OK : 
+Testing j = 816000
+OK : OK : OK : 
+Testing j = 817000
+OK : OK : OK : 
+Testing j = 818000
+OK : OK : OK : 
+Testing j = 819000
+OK : OK : OK : 
+Testing j = 820000
+OK : OK : OK : 
+Testing j = 821000
+OK : OK : OK : 
+Testing j = 822000
+OK : OK : OK : 
+Testing j = 823000
+OK : OK : OK : 
+Testing j = 824000
+OK : OK : OK : 
+Testing j = 825000
+OK : OK : OK : 
+Testing j = 826000
+OK : OK : OK : 
+Testing j = 827000
+OK : OK : OK : 
+Testing j = 828000
+OK : OK : OK : 
+Testing j = 829000
+OK : OK : OK : 
+Testing j = 830000
+OK : OK : OK : 
+Testing j = 831000
+OK : OK : OK : 
+Testing j = 832000
+OK : OK : OK : 
+Testing j = 833000
+OK : OK : OK : 
+Testing j = 834000
+OK : OK : OK : 
+Testing j = 835000
+OK : OK : OK : 
+Testing j = 836000
+OK : OK : OK : 
+Testing j = 837000
+OK : OK : OK : 
+Testing j = 838000
+OK : OK : OK : 
+Testing j = 839000
+OK : OK : OK : 
+Testing j = 840000
+OK : OK : OK : 
+Testing j = 841000
+OK : OK : OK : 
+Testing j = 842000
+OK : OK : OK : 
+Testing j = 843000
+OK : OK : OK : 
+Testing j = 844000
+OK : OK : OK : 
+Testing j = 845000
+OK : OK : OK : 
+Testing j = 846000
+OK : OK : OK : 
+Testing j = 847000
+OK : OK : OK : 
+Testing j = 848000
+OK : OK : OK : 
+Testing j = 849000
+OK : OK : OK : 
+Testing j = 850000
+OK : OK : OK : 
+Testing j = 851000
+OK : OK : OK : 
+Testing j = 852000
+OK : OK : OK : 
+Testing j = 853000
+OK : OK : OK : 
+Testing j = 854000
+OK : OK : OK : 
+Testing j = 855000
+OK : OK : OK : 
+Testing j = 856000
+OK : OK : OK : 
+Testing j = 857000
+OK : OK : OK : 
+Testing j = 858000
+OK : OK : OK : 
+Testing j = 859000
+OK : OK : OK : 
+Testing j = 860000
+OK : OK : OK : 
+Testing j = 861000
+OK : OK : OK : 
+Testing j = 862000
+OK : OK : OK : 
+Testing j = 863000
+OK : OK : OK : 
+Testing j = 864000
+OK : OK : OK : 
+Testing j = 865000
+OK : OK : OK : 
+Testing j = 866000
+OK : OK : OK : 
+Testing j = 867000
+OK : OK : OK : 
+Testing j = 868000
+OK : OK : OK : 
+Testing j = 869000
+OK : OK : OK : 
+Testing j = 870000
+OK : OK : OK : 
+Testing j = 871000
+OK : OK : OK : 
+Testing j = 872000
+OK : OK : OK : 
+Testing j = 873000
+OK : OK : OK : 
+Testing j = 874000
+OK : OK : OK : 
+Testing j = 875000
+OK : OK : OK : 
+Testing j = 876000
+OK : OK : OK : 
+Testing j = 877000
+OK : OK : OK : 
+Testing j = 878000
+OK : OK : OK : 
+Testing j = 879000
+OK : OK : OK : 
+Testing j = 880000
+OK : OK : OK : 
+Testing j = 881000
+OK : OK : OK : 
+Testing j = 882000
+OK : OK : OK : 
+Testing j = 883000
+OK : OK : OK : 
+Testing j = 884000
+OK : OK : OK : 
+Testing j = 885000
+OK : OK : OK : 
+Testing j = 886000
+OK : OK : OK : 
+Testing j = 887000
+OK : OK : OK : 
+Testing j = 888000
+OK : OK : OK : 
+Testing j = 889000
+OK : OK : OK : 
+Testing j = 890000
+OK : OK : OK : 
+Testing j = 891000
+OK : OK : OK : 
+Testing j = 892000
+OK : OK : OK : 
+Testing j = 893000
+OK : OK : OK : 
+Testing j = 894000
+OK : OK : OK : 
+Testing j = 895000
+OK : OK : OK : 
+Testing j = 896000
+OK : OK : OK : 
+Testing j = 897000
+OK : OK : OK : 
+Testing j = 898000
+OK : OK : OK : 
+Testing j = 899000
+OK : OK : OK : 
+Testing j = 900000
+OK : OK : OK : 
+Testing j = 901000
+OK : OK : OK : 
+Testing j = 902000
+OK : OK : OK : 
+Testing j = 903000
+OK : OK : OK : 
+Testing j = 904000
+OK : OK : OK : 
+Testing j = 905000
+OK : OK : OK : 
+Testing j = 906000
+OK : OK : OK : 
+Testing j = 907000
+OK : OK : OK : 
+Testing j = 908000
+OK : OK : OK : 
+Testing j = 909000
+OK : OK : OK : 
+Testing j = 910000
+OK : OK : OK : 
+Testing j = 911000
+OK : OK : OK : 
+Testing j = 912000
+OK : OK : OK : 
+Testing j = 913000
+OK : OK : OK : 
+Testing j = 914000
+OK : OK : OK : 
+Testing j = 915000
+OK : OK : OK : 
+Testing j = 916000
+OK : OK : OK : 
+Testing j = 917000
+OK : OK : OK : 
+Testing j = 918000
+OK : OK : OK : 
+Testing j = 919000
+OK : OK : OK : 
+Testing j = 920000
+OK : OK : OK : 
+Testing j = 921000
+OK : OK : OK : 
+Testing j = 922000
+OK : OK : OK : 
+Testing j = 923000
+OK : OK : OK : 
+Testing j = 924000
+OK : OK : OK : 
+Testing j = 925000
+OK : OK : OK : 
+Testing j = 926000
+OK : OK : OK : 
+Testing j = 927000
+OK : OK : OK : 
+Testing j = 928000
+OK : OK : OK : 
+Testing j = 929000
+OK : OK : OK : 
+Testing j = 930000
+OK : OK : OK : 
+Testing j = 931000
+OK : OK : OK : 
+Testing j = 932000
+OK : OK : OK : 
+Testing j = 933000
+OK : OK : OK : 
+Testing j = 934000
+OK : OK : OK : 
+Testing j = 935000
+OK : OK : OK : 
+Testing j = 936000
+OK : OK : OK : 
+Testing j = 937000
+OK : OK : OK : 
+Testing j = 938000
+OK : OK : OK : 
+Testing j = 939000
+OK : OK : OK : 
+Testing j = 940000
+OK : OK : OK : 
+Testing j = 941000
+OK : OK : OK : 
+Testing j = 942000
+OK : OK : OK : 
+Testing j = 943000
+OK : OK : OK : 
+Testing j = 944000
+OK : OK : OK : 
+Testing j = 945000
+OK : OK : OK : 
+Testing j = 946000
+OK : OK : OK : 
+Testing j = 947000
+OK : OK : OK : 
+Testing j = 948000
+OK : OK : OK : 
+Testing j = 949000
+OK : OK : OK : 
+Testing j = 950000
+OK : OK : OK : 
+Testing j = 951000
+OK : OK : OK : 
+Testing j = 952000
+OK : OK : OK : 
+Testing j = 953000
+OK : OK : OK : 
+Testing j = 954000
+OK : OK : OK : 
+Testing j = 955000
+OK : OK : OK : 
+Testing j = 956000
+OK : OK : OK : 
+Testing j = 957000
+OK : OK : OK : 
+Testing j = 958000
+OK : OK : OK : 
+Testing j = 959000
+OK : OK : OK : 
+Testing j = 960000
+OK : OK : OK : 
+Testing j = 961000
+OK : OK : OK : 
+Testing j = 962000
+OK : OK : OK : 
+Testing j = 963000
+OK : OK : OK : 
+Testing j = 964000
+OK : OK : OK : 
+Testing j = 965000
+OK : OK : OK : 
+Testing j = 966000
+OK : OK : OK : 
+Testing j = 967000
+OK : OK : OK : 
+Testing j = 968000
+OK : OK : OK : 
+Testing j = 969000
+OK : OK : OK : 
+Testing j = 970000
+OK : OK : OK : 
+Testing j = 971000
+OK : OK : OK : 
+Testing j = 972000
+OK : OK : OK : 
+Testing j = 973000
+OK : OK : OK : 
+Testing j = 974000
+OK : OK : OK : 
+Testing j = 975000
+OK : OK : OK : 
+Testing j = 976000
+OK : OK : OK : 
+Testing j = 977000
+OK : OK : OK : 
+Testing j = 978000
+OK : OK : OK : 
+Testing j = 979000
+OK : OK : OK : 
+Testing j = 980000
+OK : OK : OK : 
+Testing j = 981000
+OK : OK : OK : 
+Testing j = 982000
+OK : OK : OK : 
+Testing j = 983000
+OK : OK : OK : 
+Testing j = 984000
+OK : OK : OK : 
+Testing j = 985000
+OK : OK : OK : 
+Testing j = 986000
+OK : OK : OK : 
+Testing j = 987000
+OK : OK : OK : 
+Testing j = 988000
+OK : OK : OK : 
+Testing j = 989000
+OK : OK : OK : 
+Testing j = 990000
+OK : OK : OK : 
+Testing j = 991000
+OK : OK : OK : 
+Testing j = 992000
+OK : OK : OK : 
+Testing j = 993000
+OK : OK : OK : 
+Testing j = 994000
+OK : OK : OK : 
+Testing j = 995000
+OK : OK : OK : 
+Testing j = 996000
+OK : OK : OK : 
+Testing j = 997000
+OK : OK : OK : 
+Testing j = 998000
+OK : OK : OK : 
+Testing j = 999000
+OK : OK : OK : 

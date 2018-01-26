@@ -1,0 +1,82 @@
+Test for a bacteria to test that a translation does not alter its rigid velocities
+208
+We have a tria of 208 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Computing reference rigid velocities
+There are 636 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+72.2038 : 72.2038
+
+Computing the center of mass of our system for the frame 0
+13.9455 13.9455
+The Mass (Surface) of the entire system is : 13.9455
+Using 0 0 0 as force pole.
+Center of mass position = 0.00449277 2.70407e-06 -0.00799525
+   Iterations needed to solve mass matrix:         1
+Analyzing frame = 1 over 120
+72.2038 : 72.2038
+Imposing rotational velocity
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.0146348
+Check on the V operator Norm (should be zero) pure: 0.0146348
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         2
+FINAL CHECK 0 2.38976e-14 : 2.40343e-14
+FINAL CHECK 1 4.44089e-16 : 2.41023e-15
+Transforming velocities from center of mass G to origin O
+solved system
+saving
+preparing for new time
+Analyzing frame = 0 over 120
+72.2038 : 72.2038
+Analyzing frame = 0 over 120
+72.2038 : 72.2038
+
+Computing the center of mass of our system for the frame 0
+13.9455 13.9455
+The Mass (Surface) of the entire system is : 13.9455
+Using 0 0 0 as force pole.
+Center of mass position = 0.00449277 3.54097 -8.39046
+   Iterations needed to solve mass matrix:         1
+Analyzing frame = 1 over 120
+72.2038 : 72.2038
+Imposing rotational velocity
+-0.523599
+4.38905 -1.85405
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.0146348
+Check on the V operator Norm (should be zero) pure: 0.0146348
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 8.45504e-13 : 1.33807e-11
+FINAL CHECK 1 8.45518e-13 : 1.33775e-11
+Transforming velocities from center of mass G to origin O
+solved system
+ OK !
+ OK !
+ OK !
+ OK !
+ OK !
+ OK !
+saving

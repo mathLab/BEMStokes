@@ -1,0 +1,46 @@
+Minimum Test for the preconditioner with interior problem and the monolithic system
+106
+We have a tria of 106 cells.
+Computing the euler vector for the reference grid
+Creating a coarse free_surface
+Added wall 0 to the box 1
+Creating a coarse do_nothing
+Added wall 1 to the box 2
+Creating a coarse do_nothing
+Added wall 2 to the box 3
+Creating a coarse do_nothing
+Added wall 3 to the box 4
+Creating a coarse do_nothing
+Added wall 4 to the box 5
+Creating a coarse do_nothing
+Added wall 5 to the box 6
+There are 618 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+153612 153612
+The Mass (Surface) of the entire system is : 12.1766
+The Mass (Surface) error of the entire system is : 0.031013
+Using 0 0 0 as force pole.
+Center of mass position = -0.000144065 -0.00129566 -0.000692987
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 5.89359
+Check on the V operator Norm (should be zero) pure: 0.00231049
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1.15186e-15
+check with versor vector : 1 l_infty : 1.15785e-15
+check with versor vector : 2 l_infty : 1.46194e-15
+monolithic building
+Solving directly the monolithic system
+Solving using an iterative solver combined with a preconditioner
+ILU
+Iterations needed to solve monolithic:         64
+JACOBI
+Iterations needed to solve monolithic:         52
+AMG
+Iterations needed to solve monolithic:         64

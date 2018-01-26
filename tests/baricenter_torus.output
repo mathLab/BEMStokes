@@ -1,0 +1,14 @@
+There are 1152 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Analyzing frame = 0 over 120
+230.248 : 230.248
+
+Computing the center of mass of our system for the frame 0
+1364.41 1364.41
+The Mass (Surface) of the entire system is : 1364.41
+Using 0 0 0 as force pole.
+Center of mass position = 4.13169e-13 -4.91291e-08 -1.21161e-08
+OK
+OK
+OK

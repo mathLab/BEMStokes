@@ -1,0 +1,36 @@
+Test on the Geometry in 3D. We test the convergence of the normal vector
+Testing for degree = 1
+Testing for degree = 1
+We have a tria of 10 cells.
+Computing the euler vector for the reference grid
+Creating the box
+There are 20 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.18034 6.18034
+The Mass (Surface) of the entire system is : 6.18034
+The Mass (Surface) error of the entire system is : 0.508184
+Using 0 0 as force pole.
+Center of mass position = 3.63135e-18 3.92958e-18
+   Iterations needed to solve mass matrix:         1
+There are 40 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+6.25738 6.25738
+The Mass (Surface) of the entire system is : 6.25738
+The Mass (Surface) error of the entire system is : 0.502054
+Using 0 0 as force pole.
+Center of mass position = 5.4066e-17 2.16238e-17
+   Iterations needed to solve mass matrix:         1
+Convergence of the plain deal.II normal
+cells dofs    u_Linfty         u_L2           u_H1      
+   10  160 3.060e-01    - 6.446e-01    - 3.634e+00    - 
+   20  320 1.548e-01 0.98 3.217e-01 1.00 3.567e+00 0.03 
+Convergence of the deal.II normal with L2 projection
+cells dofs    u_Linfty         u_L2           u_H1      
+   10   20 4.290e-02    - 1.252e-01    - 6.647e-01    - 
+   20   40 1.082e-02 1.99 3.178e-02 1.98 3.242e-01 1.04 

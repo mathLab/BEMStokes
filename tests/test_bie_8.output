@@ -1,0 +1,44 @@
+106
+We have a tria of 106 cells.
+Computing the euler vector for the reference grid
+Creating the box
+There are 5094 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+Fixed euler vector with exact norm of support points
+41.2068 : 41.2068
+
+Computing the center of mass of our system for the frame 0
+12.5415 12.5415
+The Mass (Surface) of the entire system is : 12.5415
+The Mass (Surface) error of the entire system is : 0.00197929
+Using 0 0 0 as force pole.
+Center of mass position = -9.7047e-06 -7.94313e-05 -4.23995e-05
+Fixed euler vector with exact norm of support points
+41.2068 : 41.2068
+Test on the boundary in 3D for the Double Layer
+Test on the 0th rigid mode
+The rigid mode is = 1 0 0
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [0.5, 0, 0 ]
+OK boundary point
+Test on the 1th rigid mode
+The rigid mode is = 0 1 0
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [0, 0.5, 0 ]
+OK boundary point
+Test on the 2th rigid mode
+The rigid mode is = 0 0 1
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [0, 0, 0.5 ]
+OK boundary point
+Test on the 3th rigid mode
+The rigid mode is = 0 -0.999955 0.00931797
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [0, -0.499978, 0.00465899 ]
+OK boundary point
+Test on the 4th rigid mode
+The rigid mode is = 0.999955 0 0.00178022
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [0.499978, 0, 0.000890111 ]
+OK boundary point
+Test on the 5th rigid mode
+The rigid mode is = -0.00931797 -0.00178022 0
+Boundary Point at -0.00178022 0.00931797 0.999955 , expected [-0.00465899, -0.000890111, 0 ]
+OK boundary point
+Grid written to grid-dim.vtk

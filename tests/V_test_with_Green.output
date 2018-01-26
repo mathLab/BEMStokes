@@ -1,0 +1,59 @@
+Test that the BEM is able to recover the Fundamental Solution
+Testing for degree = 1
+6
+We have a tria of 6 cells.
+Computing the euler vector for the reference grid
+Creating the box
+Cycle : 0 2
+There are 24 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+8 8
+The Mass (Surface) of the entire system is : 8
+The Mass (Surface) error of the entire system is : 0.36338
+Using 0 0 0 as force pole.
+Center of mass position = -1.95156e-17 1.50704e-17 -5.09575e-18
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.0296104
+Check on the V operator Norm (should be zero) pure: 0.0296104
+Corrected V
+Check on the V operator Norm post (should be one) pure: 0.0501858
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+0.176785 0.110436
+   Iterations needed to solve DN:         0
+Cycle : 1 2
+There are 78 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+11.0403 11.0403
+The Mass (Surface) of the entire system is : 11.0403
+The Mass (Surface) error of the entire system is : 0.121441
+Using 0 0 0 as force pole.
+Center of mass position = -3.71997e-17 -8.80891e-18 -2.1929e-17
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.0117581
+Check on the V operator Norm (should be zero) pure: 0.0117581
+Corrected V
+Check on the V operator Norm post (should be one) pure: 0.0125692
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+0.304121 0.110436
+   Iterations needed to solve DN:         0
+cells dofs    u_Linfty         u_L2           u_H1
+    6   24 2.142e-01    - 5.509e-01    - 1.083e+00    -
+   24   78 9.958e-02 1.10 2.156e-01 1.35 4.672e-01 1.21

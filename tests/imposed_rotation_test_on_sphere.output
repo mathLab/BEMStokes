@@ -1,0 +1,47 @@
+Test for a rotation of a sphere in the space
+There are 324 degrees of freedom
+re-ordering vector
+re-initializing sparsity patterns and matrices
+
+Computing the center of mass of our system for the frame 0
+12.1766 12.1766
+The Mass (Surface) of the entire system is : 12.1766
+The Mass (Surface) error of the entire system is : 0.031013
+Using 34.9135 34.9123 34.9129 as force pole.
+Center of mass position = 34.9135 34.9123 34.9129
+   Iterations needed to solve mass matrix:         1
+Check on the tangential projection (should be zero): 0
+Check on the V operator Norm (should be zero): 0.00231049
+Check on the V operator Norm (should be zero) pure: 0.00231049
+Corrected V
+Check on the V operator Norm post (should be one) pure: 1
+building versor matrix
+correcting K matrix
+check with versor vector : 0 l_infty : 1
+check with versor vector : 1 l_infty : 1
+check with versor vector : 2 l_infty : 1
+monolithic building
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.30939e-13 : 1.09159e-12
+FINAL CHECK 1 1.30937e-13 : 1.08797e-12
+Transforming velocities from center of mass G to origin O
+solved system
+ OK OMEGA_3
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.82864e-13 : 1.56684e-12
+FINAL CHECK 1 1.82864e-13 : 1.56122e-12
+Transforming velocities from center of mass G to origin O
+solved system
+ OK OMEGA_4
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         1
+FINAL CHECK 0 1.84221e-13 : 1.53996e-12
+FINAL CHECK 1 1.84221e-13 : 1.53442e-12
+Transforming velocities from center of mass G to origin O
+solved system
+ OK OMEGA_5
