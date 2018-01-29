@@ -1,9 +1,7 @@
-sudo: required
-
 image: mathlab/deal2lkit:latest
 
 before_script:
-  - mkdir /builds/BEMStokes/
+  - ls /builds/
   - cd /builds/BEMStokes/
   - ./scripts/check_indentation.sh
   - export D=/builds/BEMStokes
