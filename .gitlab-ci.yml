@@ -1,3 +1,5 @@
+sudo: required
+
 image: mathlab/deal2lkit:latest
 
 before_script:
