@@ -1,7 +1,7 @@
 image: mathlab/deal2lkit:latest
 
 before_script:
-  - cd /builds/BEMStokes/
+  - mkdir /builds/BEMStokes/
   - ./scripts/check_indentation.sh
   - export D=/builds/BEMStokes
 
