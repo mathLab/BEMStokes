@@ -4404,7 +4404,7 @@ namespace BEMStokes
       }
     // ofs_vel_cg << std::endl;
     ofs_vel_cg.close();
-    pcout<<"Transforming velocities from center of mass G to origin O"<<std::endl;
+    pcout<<"Transforming velocities from the force pole to origin O"<<std::endl;
     if (force_pole!="Origin")
       {
         rigid_velocities[0] += baricenter_rigid_velocities[4] * (0.-point_force_pole[2]) - baricenter_rigid_velocities[5] * (0.-point_force_pole[1]);
