@@ -7,10 +7,10 @@
 #include "Teuchos_TimeMonitor.hpp"
 #include <boost/archive/binary_iarchive.hpp>
 #include <boost/archive/binary_oarchive.hpp>
-
+#ifdef BEM_STOKES_WITH_OCE
 #include <deal.II/opencascade/boundary_lib.h>
 #include <deal.II/opencascade/utilities.h>
-
+#endif
 using Teuchos::Time;
 using Teuchos::TimeMonitor;
 using Teuchos::RCP;
@@ -258,14 +258,14 @@ namespace BEMStokes
     add_parameter(prm, &use_internal_alpha, "Use alpha for the internal problem", "false",
                   Patterns::Bool());
 
-    add_parameter(prm, &input_grid_path, "Input path to grid", "../Guasto_input_grids_new_spline/",
+    add_parameter(prm, &input_grid_path, "Input path to grid", "../debug_grids/",
                   Patterns::Anything());
 
     add_parameter(prm, &input_iges_file_1, "Iges filename 1", "../iges_files/flagellum_rotated_",
                   Patterns::Anything());
 
 
-    add_parameter(prm, &input_grid_base_name, "Input grid base name", "single_mesh_3d_",
+    add_parameter(prm, &input_grid_base_name, "Input grid base name", "sphere_mesh_"+Utilities::int_to_string(dim)+"d_",
                   Patterns::Anything());
     add_parameter(prm, &input_grid_format, "Input grid format", "msh",
                   Patterns::Anything());
@@ -512,6 +512,7 @@ namespace BEMStokes
     const unsigned int dim = 3;
     double tolerance = 5e-3;
     double scale_factor = 1e-3;
+#ifdef BEM_STOKES_WITH_OCE
     TopoDS_Shape flagellum_surface = OpenCASCADE::read_IGES(cad_file_name, scale_factor);
     // const double tolerance = OpenCASCADE::get_shape_tolerance(flagellum_surface) * 5;
     Point<3> CP = OpenCASCADE::closest_point(flagellum_surface, Point<3>(0.0,0.0,0.0));
@@ -546,7 +547,9 @@ namespace BEMStokes
     flagellum_manifold = std::shared_ptr<Manifold<dim-1,dim> >
                          (dynamic_cast<Manifold<dim-1,dim> * > (new OpenCASCADE::NormalToMeshProjectionBoundary<2,3> (flagellum_surface, tolerance)));
     triangulation.set_manifold(2,*flagellum_manifold);
-
+#else
+    AssertThrow(false, ExcMessage("You need to define BEM_STOKES_WITH_OCE with cmake to use iges files"));
+#endif
 
 
 
@@ -628,7 +631,7 @@ namespace BEMStokes
             //     if(k>10)
             //       break;
             // }
-            ofstream history("mesh.history");
+            std::ofstream history("mesh.history");
             tria.save_refine_flags(history);
             tria.prepare_coarsening_and_refinement();
             tria.execute_coarsening_and_refinement ();
@@ -2228,7 +2231,7 @@ namespace BEMStokes
             std::string flagellum_frame_filename;
             flagellum_frame_filename=input_iges_file_1+Utilities::int_to_string(frame)+".iges";
             apply_flagellum_iges(frame_tria, flagellum_frame_filename);
-            ifstream history("mesh.history");
+            std::ifstream history("mesh.history");
             frame_tria.load_refine_flags(history);
             frame_tria.execute_coarsening_and_refinement();
           }
