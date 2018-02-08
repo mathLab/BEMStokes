@@ -3068,12 +3068,12 @@ namespace BEMStokes
     for (unsigned int i=0; i<num_rigid; ++i)
       {
         tangential_projector_body(N_rigid[i], tmp_N[i]);
-        pcout<<N_rigid[i].l2_norm()<<" RIGID 1 "<<tmp_N[i].l2_norm()<<" ";
+        // pcout<<N_rigid[i].l2_norm()<<" RIGID 1 "<<tmp_N[i].l2_norm()<<" ";
         K_matrix.vmult(tmp_N_2[i], tmp_N[i]);
-        pcout<<tmp_N_2[i].l2_norm()<<"  ";
+        // pcout<<tmp_N_2[i].l2_norm()<<"  ";
         tangential_projector_body(tmp_N_2[i], tmp_N[i]);
         constraints.distribute(tmp_N[i]);
-        pcout<<tmp_N[i].l2_norm()<<std::endl;
+        // pcout<<tmp_N[i].l2_norm()<<std::endl;
 
       }
     TrilinosWrappers::MPI::Vector tmp_flagellum_2(this_cpu_set,mpi_communicator);
@@ -4304,8 +4304,8 @@ namespace BEMStokes
         constraints.distribute(stokes_forces_foo);
         constraints.distribute(wall_velocities);
         stokes_forces = stokes_forces_foo;
-        pcout<<stokes_forces.linfty_norm()<<" QUI "<<stokes_forces.l2_norm()<<std::endl;
-        pcout<<monolithic_solution.linfty_norm()<<" QUI "<<monolithic_solution.l2_norm()<<std::endl;
+        // pcout<<stokes_forces.linfty_norm()<<" QUI "<<stokes_forces.l2_norm()<<std::endl;
+        // pcout<<monolithic_solution.linfty_norm()<<" QUI "<<monolithic_solution.l2_norm()<<std::endl;
         double motor_torque = N_flagellum_torque_dual*stokes_forces;
         if (this_mpi_process==0 && solve_with_torque)
           {
