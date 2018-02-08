@@ -26,7 +26,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 5.10703e-15 : 2.15597e-14
 FINAL CHECK 1 5.10703e-15 : 2.15585e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 0.0221468
 OK
@@ -38,7 +38,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 5.59732e-15 : 2.84905e-14
 FINAL CHECK 1 5.59732e-15 : 2.84472e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 0.017927
 OK
@@ -50,7 +50,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 4.5249e-15 : 2.111e-14
 FINAL CHECK 1 4.5249e-15 : 2.11084e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 OK
 OK
@@ -62,7 +62,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 1.85962e-15 : 1.00092e-14
 FINAL CHECK 1 1.85962e-15 : 9.97475e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 0.414604
 0.137346
@@ -74,7 +74,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 2.66454e-15 : 1.50706e-14
 FINAL CHECK 1 2.66454e-15 : 1.50705e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 0.0247127
 OK
@@ -86,7 +86,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 5.32907e-15 : 2.88533e-14
 FINAL CHECK 1 5.32907e-15 : 2.88506e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 0.0093697
 0.523033

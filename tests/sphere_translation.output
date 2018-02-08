@@ -30,7 +30,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
 FINAL CHECK 0 8.32982e-14 : 9.81521e-14
 FINAL CHECK 1 5.84058e-15 : 5.1914e-14
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 ERROR on rigid translation 0 : 0.0840328 , 0.0833333 , 0.00839399
 OK rigid translation 1

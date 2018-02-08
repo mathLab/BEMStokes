@@ -26,7 +26,7 @@ monolithic building
 Solving system
 FINAL CHECK 0 5.27356e-16 : 2.80638e-15
 FINAL CHECK 1 5.27356e-16 : 2.80638e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 preparing for new time
@@ -56,7 +56,7 @@ monolithic building
 Solving system
 FINAL CHECK 0 4.71845e-16 : 2.54725e-15
 FINAL CHECK 1 4.71845e-16 : 2.54725e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 -3.204e-01 1.061e-01 1.216e-04 

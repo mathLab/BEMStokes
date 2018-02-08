@@ -26,7 +26,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
 FINAL CHECK 0 1.30939e-13 : 1.09159e-12
 FINAL CHECK 1 1.30937e-13 : 1.08797e-12
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
  OK OMEGA_3
 Solving system
@@ -34,7 +34,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
 FINAL CHECK 0 1.82864e-13 : 1.56684e-12
 FINAL CHECK 1 1.82864e-13 : 1.56122e-12
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
  OK OMEGA_4
 Solving system
@@ -42,6 +42,6 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
 FINAL CHECK 0 1.84221e-13 : 1.53996e-12
 FINAL CHECK 1 1.84221e-13 : 1.53442e-12
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
  OK OMEGA_5

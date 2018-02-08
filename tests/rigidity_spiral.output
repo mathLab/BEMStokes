@@ -26,7 +26,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 6.66134e-16 : 3.02708e-15
 FINAL CHECK 1 6.10623e-16 : 2.96479e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 0.0226526 -0.00322867 0.14253
@@ -39,7 +39,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 1.59578e-15 : 5.3857e-15
 FINAL CHECK 1 9.4369e-16 : 4.83583e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 0.0098606 -0.00322712 0.327274
@@ -52,7 +52,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 1.10719e-15 : 4.33038e-15
 FINAL CHECK 1 9.05526e-16 : 4.13397e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 0.0241059 0.0081422 0.337767
@@ -65,7 +65,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 9.63476e-16 : 5.41131e-15
 FINAL CHECK 1 9.4369e-16 : 5.29187e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 0.0404977 0.0555436 1.37152
@@ -78,7 +78,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 1.14709e-15 : 5.26626e-15
 FINAL CHECK 1 9.81853e-16 : 5.05689e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 0.045553 0.00651303 0.142977
@@ -91,7 +91,7 @@ preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
 FINAL CHECK 0 1.33227e-15 : 3.08314e-15
 FINAL CHECK 1 5.82867e-16 : 2.58526e-15
-Transforming velocities from center of mass G to origin O
+Transforming velocities from the force pole to origin O
 solved system
 saving
 OK
