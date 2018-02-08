@@ -686,6 +686,7 @@ namespace BEMStokes
                   }
                 pcout<<"built and set the Spherical Manifold"<<std::endl;
                 tria.refine_global(internal_sphere_refinements);
+                // tria.flip_all_direction_flags();
                 tria.flip_all_direction_flags();
                 std::string filename = "tria.inp";
                 std::ofstream wall_ofs;
@@ -3057,27 +3058,28 @@ namespace BEMStokes
 
     TrilinosWrappers::MPI::Vector tmp_shape_vel(this_cpu_set, mpi_communicator), tmp_shape_vel2(this_cpu_set, mpi_communicator);
     TrilinosWrappers::MPI::Vector tmp_flagellum(this_cpu_set,mpi_communicator);
-    if (grid_type == "Real")
-      {
-        tangential_projector_body(shape_velocities, tmp_shape_vel2);
-        tmp_shape_vel = tmp_shape_vel2;
-        K_matrix.vmult(tmp_shape_vel2, tmp_shape_vel);
-        tangential_projector_body(tmp_shape_vel2, tmp_shape_vel);
-        // tmp_shape_vel = tmp_shape_vel2;
-        constraints.distribute(tmp_shape_vel);
+    tangential_projector_body(shape_velocities, tmp_shape_vel2);
+    tmp_shape_vel = tmp_shape_vel2;
+    K_matrix.vmult(tmp_shape_vel2, tmp_shape_vel);
+    tangential_projector_body(tmp_shape_vel2, tmp_shape_vel);
+    // tmp_shape_vel = tmp_shape_vel2;
+    constraints.distribute(tmp_shape_vel);
 
-        for (unsigned int i=0; i<num_rigid; ++i)
-          {
-            tangential_projector_body(N_rigid[i], tmp_N[i]);
-            K_matrix.vmult(tmp_N_2[i], tmp_N[i]);
-            tangential_projector_body(tmp_N_2[i], tmp_N[i]);
-            constraints.distribute(tmp_N[i]);
-          }
-        TrilinosWrappers::MPI::Vector tmp_flagellum_2(this_cpu_set,mpi_communicator);
-        tangential_projector_body(N_flagellum_torque, tmp_flagellum);
-        K_matrix.vmult(tmp_flagellum_2, tmp_flagellum);
-        tangential_projector_body(tmp_flagellum_2, tmp_flagellum);
+    for (unsigned int i=0; i<num_rigid; ++i)
+      {
+        tangential_projector_body(N_rigid[i], tmp_N[i]);
+        pcout<<N_rigid[i].l2_norm()<<" RIGID 1 "<<tmp_N[i].l2_norm()<<" ";
+        K_matrix.vmult(tmp_N_2[i], tmp_N[i]);
+        pcout<<tmp_N_2[i].l2_norm()<<"  ";
+        tangential_projector_body(tmp_N_2[i], tmp_N[i]);
+        constraints.distribute(tmp_N[i]);
+        pcout<<tmp_N[i].l2_norm()<<std::endl;
+
       }
+    TrilinosWrappers::MPI::Vector tmp_flagellum_2(this_cpu_set,mpi_communicator);
+    tangential_projector_body(N_flagellum_torque, tmp_flagellum);
+    K_matrix.vmult(tmp_flagellum_2, tmp_flagellum);
+    tangential_projector_body(tmp_flagellum_2, tmp_flagellum);
 
     pcout<<"monolithic building"<<std::endl;
     Vector<double> local_normal_vector(normal_vector);
@@ -3291,7 +3293,7 @@ namespace BEMStokes
         assemble_monolithic_preconditioner();
       }
     // If we are debugging we may want to take a look into the matrices themselves so we save them in txt.
-    if (false)//(extra_debug_info)
+    if (true)//(extra_debug_info)
       {
         std::ofstream ofs_monolithic;
         std::string filename_monolithic;
@@ -4302,7 +4304,8 @@ namespace BEMStokes
         constraints.distribute(stokes_forces_foo);
         constraints.distribute(wall_velocities);
         stokes_forces = stokes_forces_foo;
-
+        pcout<<stokes_forces.linfty_norm()<<" QUI "<<stokes_forces.l2_norm()<<std::endl;
+        pcout<<monolithic_solution.linfty_norm()<<" QUI "<<monolithic_solution.l2_norm()<<std::endl;
         double motor_torque = N_flagellum_torque_dual*stokes_forces;
         if (this_mpi_process==0 && solve_with_torque)
           {
