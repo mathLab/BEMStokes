@@ -2213,6 +2213,12 @@ namespace BEMStokes
               }
           }
         pcout << "Fixed euler vector with exact norm of support points" << std::endl;
+        std::string euler_filename = "euler_tria_"+ Utilities::int_to_string(frame)+".bin";
+        std::ofstream out;
+        out.open (euler_filename);
+        boost::archive::binary_oarchive oa(out);
+        tria.save(oa, 0);
+
       }
     else
       {
@@ -4304,8 +4310,6 @@ namespace BEMStokes
         constraints.distribute(stokes_forces_foo);
         constraints.distribute(wall_velocities);
         stokes_forces = stokes_forces_foo;
-        // pcout<<stokes_forces.linfty_norm()<<" QUI "<<stokes_forces.l2_norm()<<std::endl;
-        // pcout<<monolithic_solution.linfty_norm()<<" QUI "<<monolithic_solution.l2_norm()<<std::endl;
         double motor_torque = N_flagellum_torque_dual*stokes_forces;
         if (this_mpi_process==0 && solve_with_torque)
           {

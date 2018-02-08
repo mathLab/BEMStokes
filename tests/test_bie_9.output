@@ -21,7 +21,7 @@ Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000256497
 Check on the V operator Norm (should be zero) pure: 0.000256497
 Corrected V
-Check on the V operator Norm post (should be one) pure: 1.66667
+Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1

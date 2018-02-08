@@ -19,7 +19,7 @@ Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000256497
 Check on the V operator Norm (should be zero) pure: 0.000256497
 Corrected V
-Check on the V operator Norm post (should be one) pure: 0.000402932
+Check on the V operator Norm post (should be one) pure: 0.000241759
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
@@ -43,7 +43,7 @@ Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.00205872
 Check on the V operator Norm (should be zero) pure: 0.00205872
 Corrected V
-Check on the V operator Norm post (should be one) pure: -0.000533138
+Check on the V operator Norm post (should be one) pure: -0.00034654
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
@@ -67,7 +67,7 @@ Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000920745
 Check on the V operator Norm (should be zero) pure: 0.000920745
 Corrected V
-Check on the V operator Norm post (should be one) pure: -0.000763474
+Check on the V operator Norm post (should be one) pure: -0.000496258
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
@@ -91,7 +91,7 @@ Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000437615
 Check on the V operator Norm (should be zero) pure: 0.000437615
 Corrected V
-Check on the V operator Norm post (should be one) pure: -0.000487636
+Check on the V operator Norm post (should be one) pure: -0.000323059
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
