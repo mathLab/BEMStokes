@@ -1295,7 +1295,7 @@ namespace BEMStokes
     pcout<<"creating wall with id "<<wall_number<<std::endl;
     Triangulation<dim-1, dim> triangulation_wall;
     create_coarse_wall(triangulation_wall, wall_type, position, span, flip_normal);
-    Point<dim> center(triangulation_wall.begin_active()->center());
+    // Point<dim> center(triangulation_wall.begin_active()->center());
     // GridGenerator::subdivided_hyper_rectangle(triangulation_wall,repetitions, P1, P2);
     triangulation_wall.refine_global();
     if (this_mpi_process == 0)
@@ -1464,10 +1464,6 @@ namespace BEMStokes
         triangulation.prepare_coarsening_and_refinement();
         triangulation.execute_coarsening_and_refinement();
       }
-    typename Triangulation<dim-1,dim>::active_cell_iterator
-    cell = triangulation.begin_active(),
-    endc = triangulation.end();
-
 
 
 
@@ -2097,8 +2093,7 @@ namespace BEMStokes
         endc = dh_stokes.end();
 
         typename DoFHandler<dim-1,dim>::active_cell_iterator
-        cell_map = map_dh.begin_active(),
-        endc_map = map_dh.end();
+        cell_map = map_dh.begin_active();
 
         unsigned int comp_i;
         TrilinosWrappers::MPI::Vector rhs_shape(this_cpu_set, mpi_communicator);
@@ -3299,7 +3294,7 @@ namespace BEMStokes
         assemble_monolithic_preconditioner();
       }
     // If we are debugging we may want to take a look into the matrices themselves so we save them in txt.
-    if (true)//(extra_debug_info)
+    if (false)//(extra_debug_info)
       {
         std::ofstream ofs_monolithic;
         std::string filename_monolithic;
@@ -4013,7 +4008,7 @@ namespace BEMStokes
   void BEMProblem<dim>::dirichlet_to_neumann_operator(const TrilinosWrappers::MPI::Vector &input_vel,  TrilinosWrappers::MPI::Vector &output_force)
   {
     //Vector<double> output_force(dh_stokes.n_dofs());
-    CustomOperator<TrilinosWrappers::MPI::Vector, TrilinosWrappers::SparseMatrix> my_operator(normal_vector, M_normal_vector, l2normGamma, V_matrix);
+    // CustomOperator<TrilinosWrappers::MPI::Vector, TrilinosWrappers::SparseMatrix> my_operator(normal_vector, M_normal_vector, l2normGamma, V_matrix);
 
     TrilinosWrappers::MPI::Vector partial_vel_1(this_cpu_set, mpi_communicator);
     TrilinosWrappers::MPI::Vector partial_vel_2(this_cpu_set, mpi_communicator);
@@ -5304,7 +5299,7 @@ namespace BEMStokes
     fs_exterior_stokes_kernel.set_wall_orientation(kernel_wall_orientation);
     ns_stokes_kernel.set_wall_orientation(kernel_wall_orientation);
     ns_exterior_stokes_kernel.set_wall_orientation(kernel_wall_orientation);
-    for (cell = dh_stokes.begin_active(); cell != dh_stokes.end(); ++cell)
+    for (cell = dh_stokes.begin_active(); cell != endc; ++cell)
       {
         fe_stokes_v.reinit(cell);
 
@@ -5393,7 +5388,7 @@ namespace BEMStokes
     for (unsigned int i=0; i<val_velocities.size()/dim; ++i)
       {
 
-        for (cell = dh_stokes.begin_active(); cell != dh_stokes.end(); ++cell)
+        for (cell = dh_stokes.begin_active(); cell != endc; ++cell)
           {
             cell->get_dof_indices(local_dof_indices);
             bool is_singular = false;

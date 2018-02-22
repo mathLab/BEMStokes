@@ -40,8 +40,8 @@ NoSlipWallStokesKernel<dim>::value_tens_image(const Tensor<1,dim,double> &p, con
   R_image = sqrt(R_image) + epsilon;
 
   Tensor<2,dim, double> G;
-  double X3=h_0;
-  double x3=p[wall_orientation]+h_0;
+  // double X3=h_0;
+  // double x3=p[wall_orientation]+h_0;
 
   // for (unsigned int i=0; i<dim; ++i)
   //   {
