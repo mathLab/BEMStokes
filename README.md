@@ -93,7 +93,7 @@ Follow the detailed [instruction](https://www.dealii.org/developer/readme.html) 
 
 
 ### deal2lkit Installation procedure
-Follow the detailed [instruction](https://https://github.com/mathLab/deal2lkit) to install deal2lkit.
+Follow the detailed [instruction](https://https://github.com/mathLab/deal2lkit) to install deal2lkit. We strongly recommend to install also the Open Asset Import library [Assimp](http://assimp.sourceforge.net/) and to enable the deal2lkit features regarding such library. 
 
 
 ### BEMStokes Installation procedure
