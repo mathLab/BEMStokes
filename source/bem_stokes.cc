@@ -747,10 +747,10 @@ namespace BEMStokes
       {
         for (unsigned int i=0; i<wall_types.size(); ++i)
           if (wall_bool[i])
-          {
-            pcout<<"Creating wall "<<i<<std::endl;
-            create_wall(tria, wall_types[i], wall_positions[i], wall_spans[i], i, flip_normal_wall_bool[i]);
-          }
+            {
+              pcout<<"Creating wall "<<i<<std::endl;
+              create_wall(tria, wall_types[i], wall_positions[i], wall_spans[i], i, flip_normal_wall_bool[i]);
+            }
       }
     else
       {
