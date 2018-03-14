@@ -206,6 +206,8 @@ namespace BEMStokes
   {
     add_parameter(prm, &num_convergence_cycle, "Number of convergence iterations","3", Patterns::Integer());
 
+    add_parameter(prm, &two_spheres, "Perform 2 sphere analysis","false", Patterns::Bool());
+
     add_parameter(prm, &spheres_distance, "Distance for the 2 sphere analysis","2.2", Patterns::Double());
 
     add_parameter(prm, &solve_with_torque, "Impose a torque on the flagellum","false", Patterns::Bool());
@@ -651,7 +653,7 @@ namespace BEMStokes
                 tria.clear();
                 Triangulation<dim-1, dim> tria_1, tria_2;
                 pippo[0]=0.;
-                bool two_spheres=false;
+                // two_spheres=false;
                 if (two_spheres)
                   {
                     GridGenerator::hyper_sphere (tria_1,pippo_1,1. );
@@ -2464,7 +2466,7 @@ namespace BEMStokes
 
     center_of_mass = center_of_mass_foo;
 
-    dpcout<<"CONTROLLARE STORIA CENTRI DI MASSA!!!"<<std::endl;
+    // dpcout<<"CONTROLLARE STORIA CENTRI DI MASSA!!!"<<std::endl;
     mass_foo=0.;
     for (unsigned int i =0; i<dim; ++i)
       center_of_mass_foo[i]=0.;
@@ -5540,9 +5542,9 @@ namespace BEMStokes
       //As first step we convert the bool parameters into vectors.
       convert_bool_parameters();
 
-      // We retrieve the two Finite Element Systems, er translate the ParsedFiniteElement in shared_ptr to easu their usage
-      fe_stokes = SP(parsed_fe_stokes());
-      fe_map = SP(parsed_fe_mapping());
+      // We retrieve the two Finite Element Systems, er translate the ParsedFiniteElement in shared_ptr to ease their usage
+      fe_stokes = SP(parsed_fe_stokes().get());
+      fe_map = SP(parsed_fe_mapping().get());
 
       // Secondly we need to read the reference domain, from which we will "evolve" our simulation
       read_domain();
@@ -5820,8 +5822,8 @@ namespace BEMStokes
     // read_parameters("../parameters.prm");
     convert_bool_parameters();
 
-    fe_stokes = SP(parsed_fe_stokes());
-    fe_map = SP(parsed_fe_mapping());
+    fe_stokes = SP(parsed_fe_stokes().get());
+    fe_map = SP(parsed_fe_mapping().get());
 
     read_domain();
     pcout<<"reinitialize"<<std::endl;
