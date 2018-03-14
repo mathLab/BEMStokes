@@ -4,7 +4,6 @@ Testing for degree = 1
 built and set the Spherical Manifold
 We have a tria of 32 cells.
 Computing the euler vector for the reference grid
-Creating the box
 There are 64 degrees of freedom
 re-ordering vector
 re-initializing sparsity patterns and matrices
@@ -20,20 +19,19 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 11.3137 : 11.3137
-cells dofs   u_Linfty        u_L2           u_H1       
-   32   64 0.000e+00   - 0.000e+00   - 1.082e-08     - 
-   64  128 0.000e+00 nan 0.000e+00 nan 1.102e-08 -0.03 
-  128  256 0.000e+00 nan 0.000e+00 nan 1.133e-08 -0.04 
-cells dofs    u_Linfty         u_L2           u_H1      
-   32   64 4.249e-03    - 1.245e-02    - 2.016e-01    - 
-   64  128 1.065e-03 2.00 3.117e-03 2.00 1.005e-01 1.00 
-  128  256 2.663e-04 2.00 7.797e-04 2.00 5.024e-02 1.00 
+cells dofs   u_Linfty        u_L2           u_H1
+   32   64 0.000e+00   - 0.000e+00   - 1.082e-08     -
+   64  128 0.000e+00 nan 0.000e+00 nan 1.102e-08 -0.03
+  128  256 0.000e+00 nan 0.000e+00 nan 1.133e-08 -0.04
+cells dofs    u_Linfty         u_L2           u_H1
+   32   64 4.249e-03    - 1.245e-02    - 2.016e-01    -
+   64  128 1.065e-03 2.00 3.117e-03 2.00 1.005e-01 1.00
+  128  256 2.663e-04 2.00 7.797e-04 2.00 5.024e-02 1.00
 Testing for degree = 2
 Testing for degree = 2
 built and set the Spherical Manifold
 We have a tria of 32 cells.
 Computing the euler vector for the reference grid
-Creating the box
 There are 128 degrees of freedom
 re-ordering vector
 re-initializing sparsity patterns and matrices
@@ -49,20 +47,19 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 16 : 16
-cells dofs   u_Linfty        u_L2           u_H1       
-   32  128 0.000e+00   - 0.000e+00   - 1.105e-08     - 
-   64  256 0.000e+00 nan 0.000e+00 nan 1.131e-08 -0.03 
-  128  512 0.000e+00 nan 0.000e+00 nan 1.118e-08  0.02 
-cells dofs    u_Linfty         u_L2           u_H1      
-   32  128 2.851e-06    - 6.551e-06    - 2.709e-04    - 
-   64  256 1.785e-07 4.00 4.099e-07 4.00 3.391e-05 3.00 
-  128  512 1.116e-08 4.00 2.562e-08 4.00 4.240e-06 3.00 
+cells dofs   u_Linfty        u_L2           u_H1
+   32  128 0.000e+00   - 0.000e+00   - 1.105e-08     -
+   64  256 0.000e+00 nan 0.000e+00 nan 1.131e-08 -0.03
+  128  512 0.000e+00 nan 0.000e+00 nan 1.118e-08  0.02
+cells dofs    u_Linfty         u_L2           u_H1
+   32  128 2.851e-06    - 6.551e-06    - 2.709e-04    -
+   64  256 1.785e-07 4.00 4.099e-07 4.00 3.391e-05 3.00
+  128  512 1.116e-08 4.00 2.562e-08 4.00 4.240e-06 3.00
 Testing for degree = 3
 Testing for degree = 3
 built and set the Spherical Manifold
 We have a tria of 32 cells.
 Computing the euler vector for the reference grid
-Creating the box
 There are 192 degrees of freedom
 re-ordering vector
 re-initializing sparsity patterns and matrices
@@ -78,11 +75,11 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 19.5959 : 19.5959
-cells dofs   u_Linfty        u_L2           u_H1       
-   32  192 0.000e+00   - 0.000e+00   - 1.118e-08     - 
-   64  384 0.000e+00 nan 0.000e+00 nan 1.124e-08 -0.01 
-  128  768 0.000e+00 nan 0.000e+00 nan 1.121e-08  0.00 
-cells dofs    u_Linfty         u_L2           u_H1      
-   32  192 6.199e-07    - 1.747e-06    - 8.440e-05    - 
-   64  384 3.885e-08 4.00 1.093e-07 4.00 1.056e-05 3.00 
-  128  768 2.430e-09 4.00 6.833e-09 4.00 1.320e-06 3.00 
+cells dofs   u_Linfty        u_L2           u_H1
+   32  192 0.000e+00   - 0.000e+00   - 1.118e-08     -
+   64  384 0.000e+00 nan 0.000e+00 nan 1.124e-08 -0.01
+  128  768 0.000e+00 nan 0.000e+00 nan 1.121e-08  0.00
+cells dofs    u_Linfty         u_L2           u_H1
+   32  192 6.199e-07    - 1.747e-06    - 8.440e-05    -
+   64  384 3.885e-08 4.00 1.093e-07 4.00 1.056e-05 3.00
+  128  768 2.430e-09 4.00 6.833e-09 4.00 1.320e-06 3.00

@@ -3,7 +3,6 @@ Testing for degree = 1
 6
 We have a tria of 6 cells.
 Computing the euler vector for the reference grid
-Creating the box
 Cycle : 0 3
 There are 78 degrees of freedom
 re-ordering vector
@@ -79,7 +78,7 @@ check with versor vector : 2 l_infty : 1
 monolithic building
 1.65762 0.285967
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty          u_L2            u_H1       
-    6   78 1.495e-01     - 3.834e-01     - 9.906e-01     - 
-   24  294 5.022e-01 -1.75 4.960e-01 -0.37 2.588e+00 -1.39 
-   96 1158 4.526e-01  0.15 2.319e-01  1.10 2.579e+00  0.01 
+cells dofs    u_Linfty          u_L2            u_H1
+    6   78 1.495e-01     - 3.834e-01     - 9.906e-01     -
+   24  294 5.022e-01 -1.75 4.960e-01 -0.37 2.588e+00 -1.39
+   96 1158 4.526e-01  0.15 2.319e-01  1.10 2.579e+00  0.01

@@ -2,7 +2,6 @@ Minimum Test for the preconditioner with exterior problem and the monolithic sys
 106
 We have a tria of 106 cells.
 Computing the euler vector for the reference grid
-Creating the box
 There are 324 degrees of freedom
 re-ordering vector
 re-initializing sparsity patterns and matrices

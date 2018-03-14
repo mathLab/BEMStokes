@@ -1,6 +1,5 @@
 We have a tria of 10 cells.
 Computing the euler vector for the reference grid
-Creating the box
 There are 80 degrees of freedom
 re-ordering vector
 re-initializing sparsity patterns and matrices

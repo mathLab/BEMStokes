@@ -2,7 +2,6 @@ Test that the BEM is able to recover the Fundamental Solution
 Testing for degree = 1
 We have a tria of 10 cells.
 Computing the euler vector for the reference grid
-Creating the box
 Cycle : 0 4
 There are 40 degrees of freedom
 re-ordering vector
@@ -99,8 +98,8 @@ check with versor vector : 1 l_infty : 1
 monolithic building
 0.776057 0.115056
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty         u_L2           u_H1      
-   10   40 1.232e-02    - 1.393e-02    - 9.068e-02    - 
-   20   80 1.998e-03 2.62 1.590e-03 3.13 2.214e-02 2.03 
-   40  160 2.380e-04 3.07 1.651e-04 3.27 3.911e-03 2.50 
-   80  320 3.705e-05 2.68 4.349e-05 1.92 5.796e-04 2.75 
+cells dofs    u_Linfty         u_L2           u_H1
+   10   40 1.232e-02    - 1.393e-02    - 9.068e-02    -
+   20   80 1.998e-03 2.62 1.590e-03 3.13 2.214e-02 2.03
+   40  160 2.380e-04 3.07 1.651e-04 3.27 3.911e-03 2.50
+   80  320 3.705e-05 2.68 4.349e-05 1.92 5.796e-04 2.75

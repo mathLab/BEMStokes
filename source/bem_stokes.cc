@@ -745,10 +745,12 @@ namespace BEMStokes
     // std::cout<<create_box_bool<<std::endl;
     if (!create_box_bool)
       {
-        pcout<<"Creating the box"<<std::endl;
         for (unsigned int i=0; i<wall_types.size(); ++i)
           if (wall_bool[i])
+          {
+            pcout<<"Creating wall "<<i<<std::endl;
             create_wall(tria, wall_types[i], wall_positions[i], wall_spans[i], i, flip_normal_wall_bool[i]);
+          }
       }
     else
       {
@@ -761,6 +763,7 @@ namespace BEMStokes
         for (unsigned int i=first_index_box+6; i<wall_types.size(); ++i)
           if (wall_bool[i])
             create_wall(tria, wall_types[i], wall_positions[i], wall_spans[i], i, flip_normal_wall_bool[i]);
+        pcout<<"Creating the box"<<std::endl;
         create_box(tria, first_index_box);
       }
     if (cylinder_create_bool)

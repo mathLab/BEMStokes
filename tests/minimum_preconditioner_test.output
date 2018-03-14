@@ -2,6 +2,7 @@ Minimum Test for the preconditioner with interior problem and the monolithic sys
 106
 We have a tria of 106 cells.
 Computing the euler vector for the reference grid
+Creating the box
 Creating a coarse free_surface
 Added wall 0 to the box 1
 Creating a coarse do_nothing

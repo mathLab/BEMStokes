@@ -3,7 +3,6 @@ Testing for degree = 1
 6
 We have a tria of 6 cells.
 Computing the euler vector for the reference grid
-Creating the box
 Cycle : 0 2
 There are 24 degrees of freedom
 re-ordering vector

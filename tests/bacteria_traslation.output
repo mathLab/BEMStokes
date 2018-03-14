@@ -2,7 +2,6 @@ Test for a bacteria to test that a translation does not alter its rigid velociti
 208
 We have a tria of 208 cells.
 Computing the euler vector for the reference grid
-Creating the box
 Computing reference rigid velocities
 There are 636 degrees of freedom
 re-ordering vector
