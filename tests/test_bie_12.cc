@@ -49,8 +49,8 @@ int main (int argc, char **argv)
       bem_problem_3d.input_grid_path=mesh_filename_path;
       bem_problem_3d.input_grid_base_name="sphere_coarse_";
       bem_problem_3d.input_grid_format="inp";
-      bem_problem_3d.fe_stokes = std::unique_ptr(fe_builder23());
-      bem_problem_3d.fe_map = std::unique_ptr(fe_builder23());
+      bem_problem_3d.fe_stokes = (fe_builder23());
+      bem_problem_3d.fe_map = (fe_builder23());
       bem_problem_3d.use_flagellum_handler=false;
       bem_problem_3d.build_sphere_in_deal=true;
       bem_problem_3d.internal_sphere_refinements=0;

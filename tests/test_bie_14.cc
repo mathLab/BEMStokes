@@ -54,8 +54,8 @@ int main (int argc, char **argv)
       bem_problem_3d.input_grid_path=mesh_filename_path;
       bem_problem_3d.input_grid_base_name="sphere_coarse_";
       bem_problem_3d.input_grid_format="inp";
-      bem_problem_3d.fe_stokes = std::unique_ptr(fe_builder23());
-      bem_problem_3d.fe_map = std::unique_ptr(fe_builder23());
+      bem_problem_3d.fe_stokes = (fe_builder23());
+      bem_problem_3d.fe_map = (fe_builder23());
       bem_problem_3d.read_domain();
       SphericalManifold<dim-1,dim> manifold;
       bem_problem_3d.tria.set_all_manifold_ids(0);
