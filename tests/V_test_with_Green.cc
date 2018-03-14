@@ -104,8 +104,8 @@ int main (int argc, char **argv)
       bem_problem_3d.input_grid_path=SOURCE_DIR"/grid_test/";
       bem_problem_3d.input_grid_format="inp";
       bem_problem_3d.input_grid_base_name="sphere_";
-      bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-      bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+      bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+      bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
       bem_problem_3d.read_domain();
       SphericalManifold<2,3> manifold;
       bem_problem_3d.tria.set_all_manifold_ids(0);

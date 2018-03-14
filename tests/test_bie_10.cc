@@ -34,8 +34,8 @@ int main (int argc, char **argv)
   bem_problem_3d.input_grid_path=mesh_filename_path;
   bem_problem_3d.input_grid_base_name="sphere_half_refined_";
   bem_problem_3d.input_grid_format="inp";
-  bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-  bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+  bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+  bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
   bem_problem_3d.read_domain();
   SphericalManifold<dim-1,dim> manifold;
   bem_problem_3d.tria.set_all_manifold_ids(0);

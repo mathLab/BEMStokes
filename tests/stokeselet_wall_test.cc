@@ -90,8 +90,8 @@ int main (int argc, char **argv)
     bem_problem_3d.wall_bool[i]=false;
   bem_problem_3d.reflect_kernel=false;
   bem_problem_3d.no_slip_kernel=false;
-  bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-  bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+  bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+  bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
 
 
   Point<3> position_0,position_1,position_2,position_3,position_4,position_5;

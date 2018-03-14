@@ -109,8 +109,8 @@ int main (int argc, char **argv)
       std::string fe_name = "FESystem<1,2>[FE_Q<1,2>(2)^2]";
       // bem_problem_2d.fe_stokes = SP(FETools::get_fe_by_name<dim-1,dim> (fe_name));
       // bem_problem_2d.fe_map = SP(FETools::get_fe_by_name<dim-1,dim> (fe_name));
-      bem_problem_2d.fe_stokes = SP(bem_problem_2d.parsed_fe_stokes());
-      bem_problem_2d.fe_map = SP(bem_problem_2d.parsed_fe_mapping());
+      bem_problem_2d.fe_stokes = bem_problem_2d.parsed_fe_stokes();
+      bem_problem_2d.fe_map = bem_problem_2d.parsed_fe_mapping();
       bem_problem_2d.extra_debug_info = false;
       // ParameterAcceptor::initialize("parameters_16.prm", "used_parameters_16.prm");
       bem_problem_2d.read_domain();

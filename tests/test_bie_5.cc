@@ -34,8 +34,8 @@ int main (int argc, char **argv)
   bem_problem_2d.input_grid_path=mesh_filename_path;
   bem_problem_2d.input_grid_base_name="circle_";
   bem_problem_2d.input_grid_format="inp";
-  bem_problem_2d.fe_stokes = SP(bem_problem_2d.parsed_fe_stokes());
-  bem_problem_2d.fe_map = SP(bem_problem_2d.parsed_fe_mapping());
+  bem_problem_2d.fe_stokes = bem_problem_2d.parsed_fe_stokes();
+  bem_problem_2d.fe_map = bem_problem_2d.parsed_fe_mapping();
   bem_problem_2d.read_domain();
   bem_problem_2d.reinit();
   bem_problem_2d.compute_euler_vector(bem_problem_2d.euler_vec,0);

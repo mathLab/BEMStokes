@@ -36,8 +36,8 @@ int main (int argc, char **argv)
   bem_problem_3d.pcout<<"Minimum Test for the rotation with quaternions"<<std::endl;
   bem_problem_3d.use_internal_alpha=false;
   bem_problem_3d.create_box_bool=false;
-  bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-  bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+  bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+  bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
 
   double dt=0.0001;
   FullMatrix<double> rotation_matrix(dim,dim);

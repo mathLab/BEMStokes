@@ -42,8 +42,8 @@ int main (int argc, char **argv)
     bem_problem_3d.wall_bool[i]=false;
   bem_problem_3d.reflect_kernel=false;
   bem_problem_3d.no_slip_kernel=false;
-  bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-  bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+  bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+  bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
 
 
   bem_problem_3d.grid_type="Real";

@@ -90,8 +90,8 @@ int main (int argc, char **argv)
   bem_problem_3d.create_box_bool=false;
   for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
     bem_problem_3d.wall_bool[i]=false;
-  bem_problem_3d.fe_stokes = SP(bem_problem_3d.parsed_fe_stokes());
-  bem_problem_3d.fe_map = SP(bem_problem_3d.parsed_fe_mapping());
+  bem_problem_3d.fe_stokes = bem_problem_3d.parsed_fe_stokes();
+  bem_problem_3d.fe_map = bem_problem_3d.parsed_fe_mapping();
   std::string mesh_filename_path(SOURCE_DIR "/grid_test/");
   bem_problem_3d.input_grid_path=mesh_filename_path;
   bem_problem_3d.input_grid_base_name="sphere_half_refined_";

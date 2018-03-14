@@ -306,8 +306,8 @@ int main (int argc, char **argv)
   unsigned int sing_quad_order=10;
   unsigned int quad_order=7;
 
-  bem_problem_3d_1.fe_stokes =  SP(FETools::get_fe_by_name<dim-1,dim>(fe_name_1));
-  bem_problem_3d_1.fe_map =  SP(FETools::get_fe_by_name<dim-1,dim>(fe_name_1));
+  bem_problem_3d_1.fe_stokes =  std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_1));
+  bem_problem_3d_1.fe_map =  std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_1));
   std::string mesh_filename_path(SOURCE_DIR "/grid_test/");
   bem_problem_3d_1.input_grid_path=mesh_filename_path;
   bem_problem_3d_1.input_grid_base_name="sphere_coarse_";
@@ -357,8 +357,8 @@ int main (int argc, char **argv)
   //   std::cout<<std::endl;
   // }
   std::string fe_name_2 = "FESystem<2,3>[FE_Q<2,3>(1)^3]";
-  bem_problem_3d_2.fe_stokes = SP(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
-  bem_problem_3d_2.fe_map =  SP(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
+  bem_problem_3d_2.fe_stokes = std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
+  bem_problem_3d_2.fe_map =  std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
   bem_problem_3d_2.input_grid_path=mesh_filename_path;
   bem_problem_3d_2.input_grid_base_name="sphere_coarse_";
   bem_problem_3d_2.input_grid_format="inp";
