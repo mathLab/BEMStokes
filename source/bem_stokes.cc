@@ -743,7 +743,7 @@ namespace BEMStokes
     // pcout<<wall_types.size()<<" "<<wall_positions.size()<<" "<<wall_spans.size()<<std::endl;
     // pcout<<wall_types[0]<<" "<<wall_positions[0]<<" "<<wall_spans[0][0]<<" "<<wall_spans[0][1]<<" "<<wall_spans[0][2]<<" "<<std::endl;
     // std::cout<<create_box_bool<<std::endl;
-    if (!create_box_bool)
+    if (create_box_bool)
       {
         pcout<<"Creating the box"<<std::endl;
         for (unsigned int i=0; i<wall_types.size(); ++i)
