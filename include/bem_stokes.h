@@ -391,8 +391,8 @@ namespace BEMStokes
     Vector<double>          reference_euler_vec;
 
     // Stokes part
-    shared_ptr<FiniteElement<dim-1, dim> > fe_stokes;
-    shared_ptr<FiniteElement<dim-1, dim> > fe_map;
+    std::unique_ptr<FiniteElement<dim-1, dim> > fe_stokes;
+    std::unique_ptr<FiniteElement<dim-1, dim> > fe_map;
     // FESystem<dim-1, dim>  fe_map;
     // FESystem<dim-1, dim>  fe_stokes;
     DoFHandler<dim-1, dim> map_dh;
