@@ -100,8 +100,8 @@ Follow the detailed [instruction](https://https://github.com/mathLab/deal2lkit) 
 
 Then you can clone the repository and compile it
 
-	git clone https://github.com/mathLab/pi-BEM.git
-	cd pi-BEM
+	git clone https://gitlab.com/Giuliani/BEMStokes.git
+	cd BEMStokes
 	mkdir build
 	cd build
 	cmake ../
