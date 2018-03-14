@@ -107,8 +107,8 @@ int main (int argc, char **argv)
       bem_problem_3d.input_grid_format="inp";
       bem_problem_3d.input_grid_base_name="sphere_";
       std::string fe_name="FESystem<2,3>[FE_Q<2,3>(2)^3]";
-      bem_problem_3d.fe_stokes =  std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name));
-      bem_problem_3d.fe_map = std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name));
+      bem_problem_3d.fe_stokes =  std::unique_ptr<FiniteElement<dim-1,dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name));
+      bem_problem_3d.fe_map = std::unique_ptr<FiniteElement<dim-1,dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name));
       bem_problem_3d.read_domain();
       SphericalManifold<2,3> manifold;
       bem_problem_3d.tria.set_all_manifold_ids(0);
