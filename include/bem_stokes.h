@@ -485,6 +485,7 @@ namespace BEMStokes
     TrilinosWrappers::MPI::Vector N_flagellum_torque, N_flagellum_torque_dual, N_flagellum_translation;
     double flagellum_torque, flagellum_omega;
     double spheres_distance;
+    bool two_spheres;
     bool spherical_head;
     // CompressedSimpleSparsityPattern csp_prec;
 
