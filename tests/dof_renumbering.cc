@@ -201,8 +201,8 @@ int main (int argc, char **argv)
     }
   std::cout<<bem_problem_3d_1.map_dh.n_dofs()<<std::endl;
   std::string fe_name_2 = "FESystem<2,3>[FE_Q<2,3>(2)^3]";
-  bem_problem_3d_2.fe_stokes = std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
-  bem_problem_3d_2.fe_map =  std::unique_ptr(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
+  bem_problem_3d_2.fe_stokes = std::unique_ptr<FiniteElement<dim-1, dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
+  bem_problem_3d_2.fe_map =  std::unique_ptr<FiniteElement<dim-1, dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
   bem_problem_3d_2.input_grid_path=mesh_filename_path;
   bem_problem_3d_2.input_grid_base_name="sphere_coarse_";
   bem_problem_3d_2.input_grid_format="inp";
