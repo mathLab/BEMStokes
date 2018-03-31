@@ -1402,14 +1402,14 @@ namespace BEMStokes
     gi.read_ucd(in, true);
     triangulation_wall.set_all_manifold_ids(0);
     if (triangulation.n_active_cells()>=1)
-    {
-      Triangulation<dim-1, dim> save_tria_1;
-      GridGenerator::flatten_triangulation(triangulation_old,save_tria_1);
-      Triangulation<dim-1, dim> save_tria_2;
-      GridGenerator::flatten_triangulation(triangulation_wall,save_tria_2);
-      GridGenerator::merge_triangulations(save_tria_1, save_tria_2, triangulation);
-      // GridGenerator::merge_triangulations(triangulation_old, triangulation_wall, triangulation);
-    }
+      {
+        Triangulation<dim-1, dim> save_tria_1;
+        GridGenerator::flatten_triangulation(triangulation_old,save_tria_1);
+        Triangulation<dim-1, dim> save_tria_2;
+        GridGenerator::flatten_triangulation(triangulation_wall,save_tria_2);
+        GridGenerator::merge_triangulations(save_tria_1, save_tria_2, triangulation);
+        // GridGenerator::merge_triangulations(triangulation_old, triangulation_wall, triangulation);
+      }
     else
       triangulation.copy_triangulation(triangulation_wall);
 
