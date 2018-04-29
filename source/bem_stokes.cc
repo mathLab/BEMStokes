@@ -2114,14 +2114,14 @@ namespace BEMStokes
         squirmer_vel = input_velocity_path+squirming_velocity_basename+ Utilities::int_to_string(dim)+"d_frame_"+ Utilities::int_to_string(frame) + ".bin";
         std::ifstream squirms(squirmer_vel.c_str());
         helper.block_read(squirms);
-        pcout<<helper.l2_norm()<<std::endl;
+        // pcout<<helper.l2_norm()<<std::endl;
       }
     else
       {
         helper.sadd(1./time_step,-1./time_step,euler_vec);
       }
-    pcout<<helper.l2_norm()<<std::endl;
-    pcout<<shape_velocities.size()<<" "<<helper.size()<<std::endl;
+    // pcout<<helper.l2_norm()<<std::endl;
+    // pcout<<shape_velocities.size()<<" "<<helper.size()<<std::endl;
     if (fe_stokes->get_name() == fe_map->get_name())
       for (auto i : this_cpu_set)
         shape_velocities[i] = helper[i];//next_euler_vec[i]/time_step - euler_vec[i]/time_step;
