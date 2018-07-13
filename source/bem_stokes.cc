@@ -245,7 +245,7 @@ namespace BEMStokes
     add_parameter(prm, &squirming_velocity_basename, "Velocity basename","squirming_velocity_",
                   Patterns::Anything());
 
-    add_parameter(prm, &singular_quadrature_type, "Singular quadrature kind","Mixed", Patterns::Selection("Mixed|Duffy|Telles"));
+    add_parameter(prm, &singular_quadrature_type, "Singular quadrature kind","Duffy", Patterns::Selection("Mixed|Duffy|Telles"));
 
     add_parameter(prm, &force_pole, "Force Pole to be used","Origin", Patterns::Selection("Baricenter|Origin|Point"));
 
@@ -497,6 +497,8 @@ namespace BEMStokes
       gi.read_msh (in);
     else if (input_grid_format=="inp")
       gi.read_ucd (in, true);
+    else if (input_grid_format=="obj")
+      gi.read_assimp (input_grid_path+input_grid_base_name + Utilities::int_to_string(frame)+"." + input_grid_format);
     else
       Assert (false, ExcNotImplemented());
 
@@ -1067,12 +1069,15 @@ namespace BEMStokes
     gi.attach_triangulation (triangulation_wall);
     std::ifstream in;
     in.open (filename);
+    pcout<<input_grid_format<<std::endl;
     if (input_grid_format=="vtk")
       gi.read_vtk (in);
     else if (input_grid_format=="msh")
       gi.read_msh (in);
     else if (input_grid_format=="inp")
       gi.read_ucd (in, true);
+    else if (input_grid_format=="obj")
+      gi.read_assimp (filename);
     else
       Assert (false, ExcNotImplemented());
     if (flip_all)
