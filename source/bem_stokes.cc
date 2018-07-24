@@ -238,6 +238,13 @@ namespace BEMStokes
 
     add_parameter(prm, &grid_type, "Grid","Real", Patterns::Selection("Real|ImposedForce|Cube|Convergence|ImposedVelocity"));
 
+    add_parameter(prm, &velocity_type, "Velocity to be used","FiniteDifference", Patterns::Selection("FiniteDifference|Squirmer"));
+    add_parameter(prm, &input_velocity_path, "Path to velocity","../squirmer_vel/",
+                  Patterns::Anything());
+
+    add_parameter(prm, &squirming_velocity_basename, "Velocity basename","squirming_velocity_",
+                  Patterns::Anything());
+
     add_parameter(prm, &singular_quadrature_type, "Singular quadrature kind","Mixed", Patterns::Selection("Mixed|Duffy|Telles"));
 
     add_parameter(prm, &force_pole, "Force Pole to be used","Origin", Patterns::Selection("Baricenter|Origin|Point"));
@@ -490,6 +497,8 @@ namespace BEMStokes
       gi.read_msh (in);
     else if (input_grid_format=="inp")
       gi.read_ucd (in, true);
+    else if (input_grid_format=="obj")
+      gi.read_assimp (input_grid_path+input_grid_base_name + Utilities::int_to_string(frame)+"." + input_grid_format);
     else
       Assert (false, ExcNotImplemented());
 
@@ -738,7 +747,7 @@ namespace BEMStokes
       }
 
     pcout<<"We have a tria of "<<tria.n_active_cells()<<" cells."<<std::endl;
-
+// pcout<<tria.n_vertices()<<std::endl;
 
     pcout << "Computing the euler vector for the reference grid" << std::endl;
     // pcout<<wall_types.size()<<" "<<wall_positions.size()<<" "<<wall_spans.size()<<std::endl;
@@ -816,6 +825,7 @@ namespace BEMStokes
         data_out.write_vtu (output);
       }
     std::string filename = "tria.vtu";
+    // pcout<<tria.n_vertices()<<std::endl;
     std::ofstream wall_ofs;
     wall_ofs.open(filename, std::ofstream::out);
     GridOut go;
@@ -1059,12 +1069,15 @@ namespace BEMStokes
     gi.attach_triangulation (triangulation_wall);
     std::ifstream in;
     in.open (filename);
+    pcout<<input_grid_format<<std::endl;
     if (input_grid_format=="vtk")
       gi.read_vtk (in);
     else if (input_grid_format=="msh")
       gi.read_msh (in);
     else if (input_grid_format=="inp")
       gi.read_ucd (in, true);
+    else if (input_grid_format=="obj")
+      gi.read_assimp (filename);
     else
       Assert (false, ExcNotImplemented());
     if (flip_all)
@@ -1561,6 +1574,7 @@ namespace BEMStokes
       for (unsigned int i=0; i<dim; ++i)
         rotation_matrix(i,i) = 1.;
     dh_stokes.distribute_dofs(*fe_stokes);
+    // pcout<<tria.n_vertices()<<std::endl;
     pcout << "There are " << dh_stokes.n_dofs() << " degrees of freedom"<< std::endl;
     map_dh.distribute_dofs(*fe_map);
     // pcout<<dh_stokes.n_dofs()<<" "<<map_dh.n_dofs()<<std::endl;
@@ -2093,12 +2107,29 @@ namespace BEMStokes
 
 // If we consider two different FESystems for mapping and unkwons we need to project the vectors between them
   template <int dim>
-  void BEMProblem<dim>::project_shape_velocities()
+  void BEMProblem<dim>::project_shape_velocities(unsigned int frame)
   {
     pcout<<"Projecting shape velocities for non isoparametric BEMs"<<std::endl;
+    Vector<double> helper(next_euler_vec);
+    if (velocity_type=="Squirmer")
+      {
+        std::string squirmer_vel;
+        std::ofstream ofs_squirmer;
+        pcout<<"Reading squirmer velocity for frame: "<<frame<<std::endl;
+        squirmer_vel = input_velocity_path+squirming_velocity_basename+ Utilities::int_to_string(dim)+"d_frame_"+ Utilities::int_to_string(frame) + ".bin";
+        std::ifstream squirms(squirmer_vel.c_str());
+        helper.block_read(squirms);
+        // pcout<<helper.l2_norm()<<std::endl;
+      }
+    else
+      {
+        helper.sadd(1./time_step,-1./time_step,euler_vec);
+      }
+    // pcout<<helper.l2_norm()<<std::endl;
+    // pcout<<shape_velocities.size()<<" "<<helper.size()<<std::endl;
     if (fe_stokes->get_name() == fe_map->get_name())
       for (auto i : this_cpu_set)
-        shape_velocities[i] = next_euler_vec[i]/time_step - euler_vec[i]/time_step;
+        shape_velocities[i] = helper[i];//next_euler_vec[i]/time_step - euler_vec[i]/time_step;
     else
       {
         FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
@@ -2123,8 +2154,6 @@ namespace BEMStokes
 
         unsigned int comp_i;
         TrilinosWrappers::MPI::Vector rhs_shape(this_cpu_set, mpi_communicator);
-        Vector<double> helper(next_euler_vec);
-        helper.sadd(1.,-1.,euler_vec);
 
         for (cell = dh_stokes.begin_active(), cell_map=map_dh.begin_active(); cell != endc; ++cell, ++cell_map)
           {
@@ -2166,7 +2195,7 @@ namespace BEMStokes
 
                   }
 
-                local_rhs /= time_step;
+
                 constraints.distribute_local_to_global
                 (local_rhs,
                  local_dof_indices,
@@ -5644,10 +5673,11 @@ namespace BEMStokes
               //       shape_velocities[i]=1./time_step*(next_euler_vec[i]-euler_vec[i]);
               //     }
               // else
-              project_shape_velocities();
+              project_shape_velocities(i);
             }
           if (grid_type!="Real")
             shape_velocities = 0.;
+          pcout<<shape_velocities.l2_norm()<<std::endl;
 
           // A flag for debugging purposes
           bool compute=true;
@@ -5711,7 +5741,7 @@ namespace BEMStokes
                   //       shape_velocities[i]=1./time_step*(next_euler_vec[i]-euler_vec[i]);
                   //     }
                   // else
-                  project_shape_velocities();
+                  project_shape_velocities(i);
                 }
               bool compute = true;
 

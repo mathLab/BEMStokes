@@ -202,7 +202,7 @@ namespace BEMStokes
 
     /// We provide the option of not using isoparametric BEMs, thus we may need to project the shape_velocities vector (which is the real input datum of the problem) from the mapping
     /// discretisation to the finite dimensional space used to discretise the real unknowns of the problem.
-    void project_shape_velocities();
+    void project_shape_velocities(unsigned int frame = numbers::invalid_unsigned_int);
 
     /// In many benchamark application we can directly apply a rotational velocity to a part of the swimmer, at the moment such a velocity is applied using the rotation mode selected and
     /// the velocity are computed for the unknowns identified by this_cpu_set and flagellum_cpu_set.
@@ -444,8 +444,12 @@ namespace BEMStokes
     std::string input_grid_path;
     std::string input_grid_base_name;
     std::string input_grid_format;
+    std::string input_velocity_path;
+    std::string squirming_velocity_basename;
     std::string input_iges_file_1;
     std::string res_strategy;
+    std::string velocity_type;
+
     bool build_sphere_in_deal;
     unsigned int internal_sphere_refinements;
     unsigned int imposed_component;
