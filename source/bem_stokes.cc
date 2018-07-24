@@ -245,7 +245,7 @@ namespace BEMStokes
     add_parameter(prm, &squirming_velocity_basename, "Velocity basename","squirming_velocity_",
                   Patterns::Anything());
 
-    add_parameter(prm, &singular_quadrature_type, "Singular quadrature kind","Duffy", Patterns::Selection("Mixed|Duffy|Telles"));
+    add_parameter(prm, &singular_quadrature_type, "Singular quadrature kind","Mixed", Patterns::Selection("Mixed|Duffy|Telles"));
 
     add_parameter(prm, &force_pole, "Force Pole to be used","Origin", Patterns::Selection("Baricenter|Origin|Point"));
 
