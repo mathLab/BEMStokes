@@ -455,6 +455,10 @@ namespace BEMStokes
 
     add_parameter(prm, &extra_debug_info, "Print extra debug information", "true", Patterns::Bool());
 
+    add_parameter(prm, &print_matrices, "Save matrices as txt files", "false", Patterns::Bool());
+
+    add_parameter(prm, &squirmer_change_geometry, "Squirmer change the geometry during the stroke", "false", Patterns::Bool());
+
     // In the solver section, we set all SolverControl parameters. The object
     // will then be fed to the GMRES solver in the solve_system() function.
     prm.enter_subsection("Solver");
@@ -3349,7 +3353,7 @@ namespace BEMStokes
         assemble_monolithic_preconditioner();
       }
     // If we are debugging we may want to take a look into the matrices themselves so we save them in txt.
-    if (false)//(extra_debug_info)
+    if (print_matrices)//(extra_debug_info)
       {
         std::ofstream ofs_monolithic;
         std::string filename_monolithic;
@@ -5685,10 +5689,17 @@ namespace BEMStokes
           if (compute)
             {
               pcout<<"Assembling"<<std::endl;
-              if (galerkin)
-                assemble_stokes_system_galerkin();
+              if (!squirmer_change_geometry && velocity_type == "Squirmer" && i>start_frame)
+                {
+
+                }
               else
-                assemble_stokes_system(true);
+                {
+                  if (galerkin)
+                    assemble_stokes_system_galerkin();
+                  else
+                    assemble_stokes_system(true);
+                }
               // Finally we can solve the system. We need to set the Monolithic resolution strategy to consider walls.
               if (reassemble_preconditoner && solve_directly == false && preconditioner_type=="Direct")
                 {
@@ -5826,8 +5837,11 @@ namespace BEMStokes
         center_of_mass_body(j) = 0.;
       }
     Mass_Matrix = 0.;
-    V_matrix = 0.;
-    K_matrix = 0.;
+    if (velocity_type != "Squirmer" || !squirmer_change_geometry)
+      {
+        V_matrix = 0.;
+        K_matrix = 0.;
+      }
     N_rigid.resize(num_rigid, TrilinosWrappers::MPI::Vector (this_cpu_set,mpi_communicator));
     N_rigid_complete.resize(num_rigid, TrilinosWrappers::MPI::Vector (this_cpu_set,mpi_communicator));
     DN_N_rigid.resize(num_rigid, TrilinosWrappers::MPI::Vector (this_cpu_set,mpi_communicator));

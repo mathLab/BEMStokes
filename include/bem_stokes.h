@@ -436,7 +436,9 @@ namespace BEMStokes
 
     bool apply_iges, apply_iges_to_frame, remove_tria_anisotropies;
 
-    bool extra_debug_info;
+    bool extra_debug_info, print_matrices;
+
+    bool squirmer_change_geometry;
 
     bool use_flagellum_handler;
 
