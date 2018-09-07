@@ -457,7 +457,7 @@ namespace BEMStokes
 
     add_parameter(prm, &print_matrices, "Save matrices as txt files", "false", Patterns::Bool());
 
-    add_parameter(prm, &squirmer_change_geometry, "Squirmer change the geometry during the stroke", "false", Patterns::Bool());
+    add_parameter(prm, &squirmer_change_geometry, "Squirmer change the geometry during the stroke", "true", Patterns::Bool());
 
     // In the solver section, we set all SolverControl parameters. The object
     // will then be fed to the GMRES solver in the solve_system() function.
@@ -5837,7 +5837,7 @@ namespace BEMStokes
         center_of_mass_body(j) = 0.;
       }
     Mass_Matrix = 0.;
-    if (velocity_type != "Squirmer" || !squirmer_change_geometry)
+    if (velocity_type != "Squirmer" || squirmer_change_geometry)
       {
         V_matrix = 0.;
         K_matrix = 0.;
