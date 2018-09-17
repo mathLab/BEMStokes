@@ -5691,6 +5691,28 @@ namespace BEMStokes
               pcout<<"Assembling"<<std::endl;
               if (!squirmer_change_geometry && velocity_type == "Squirmer" && i>start_frame)
                 {
+                  TrilinosWrappers::MPI::Vector tmp_shape_vel(this_cpu_set, mpi_communicator), tmp_shape_vel2(this_cpu_set, mpi_communicator);
+                  tangential_projector_body(shape_velocities, tmp_shape_vel2);
+                  tmp_shape_vel = tmp_shape_vel2;
+                  K_matrix.vmult(tmp_shape_vel2, tmp_shape_vel);
+                  tangential_projector_body(tmp_shape_vel2, tmp_shape_vel);
+                  // tmp_shape_vel = tmp_shape_vel2;
+                  constraints.distribute(tmp_shape_vel);
+                  if (monolithic_bool)
+                    {
+                      for (auto i : this_cpu_set)
+                        {
+                          if (constraints.is_constrained(i))
+                            monolithic_rhs[i] = 0.;
+                          else
+                            {
+                              if (grid_type != "Real")
+                                monolithic_rhs[i] = 0.;
+                              else
+                                monolithic_rhs[i] = tmp_shape_vel[i];
+                            }
+                        }
+                    }
 
                 }
               else
