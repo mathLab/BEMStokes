@@ -457,7 +457,7 @@ namespace BEMStokes
 
     add_parameter(prm, &print_matrices, "Save matrices as txt files", "false", Patterns::Bool());
 
-    add_parameter(prm, &squirmer_change_geometry, "Squirmer change the geometry during the stroke", "false", Patterns::Bool());
+    add_parameter(prm, &squirmer_change_geometry, "Squirmer change the geometry during the stroke", "true", Patterns::Bool());
 
     // In the solver section, we set all SolverControl parameters. The object
     // will then be fed to the GMRES solver in the solve_system() function.
@@ -5691,6 +5691,28 @@ namespace BEMStokes
               pcout<<"Assembling"<<std::endl;
               if (!squirmer_change_geometry && velocity_type == "Squirmer" && i>start_frame)
                 {
+                  TrilinosWrappers::MPI::Vector tmp_shape_vel(this_cpu_set, mpi_communicator), tmp_shape_vel2(this_cpu_set, mpi_communicator);
+                  tangential_projector_body(shape_velocities, tmp_shape_vel2);
+                  tmp_shape_vel = tmp_shape_vel2;
+                  K_matrix.vmult(tmp_shape_vel2, tmp_shape_vel);
+                  tangential_projector_body(tmp_shape_vel2, tmp_shape_vel);
+                  // tmp_shape_vel = tmp_shape_vel2;
+                  constraints.distribute(tmp_shape_vel);
+                  if (monolithic_bool)
+                    {
+                      for (auto i : this_cpu_set)
+                        {
+                          if (constraints.is_constrained(i))
+                            monolithic_rhs[i] = 0.;
+                          else
+                            {
+                              if (grid_type != "Real")
+                                monolithic_rhs[i] = 0.;
+                              else
+                                monolithic_rhs[i] = tmp_shape_vel[i];
+                            }
+                        }
+                    }
 
                 }
               else
@@ -5837,7 +5859,7 @@ namespace BEMStokes
         center_of_mass_body(j) = 0.;
       }
     Mass_Matrix = 0.;
-    if (velocity_type != "Squirmer" || !squirmer_change_geometry)
+    if (velocity_type != "Squirmer" || squirmer_change_geometry)
       {
         V_matrix = 0.;
         K_matrix = 0.;
