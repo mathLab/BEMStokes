@@ -235,7 +235,7 @@ namespace BEMStokes
     add_parameter(prm, &bool_dipl_z, "Consider rigid displacement z to move the swimmer","false",Patterns::Bool());
 
     add_parameter(prm, &monolithic_bool, "Monolithic resolurion strategy","true",Patterns::Bool());
-    add_parameter(prm, &gradual_wall_refinement, "Wall gradual wall refinement","false",Patterns::Bool());
+
     add_parameter(prm, &solve_directly, "Use a direct resolution strategy","true",Patterns::Bool());
 
     add_parameter(prm, &grid_type, "Grid","Real", Patterns::Selection("Real|ImposedForce|Cube|Convergence|ImposedVelocity"));
@@ -303,6 +303,8 @@ namespace BEMStokes
 
     if (dim == 3)
       {
+        add_parameter(prm, &gradual_wall_refinement, "Wall gradual wall refinement","false",Patterns::Bool());
+
         add_parameter(prm, &initial_quaternion[0],"Initial quaternion value q[0]","1",//,0,0,0",
                       Patterns::Double());//Patterns::List(Patterns::Double(),4,4));
         add_parameter(prm, &initial_quaternion[1],"Initial quaternion value q[1]","0",//,0,0,0",
@@ -4475,9 +4477,18 @@ namespace BEMStokes
     pcout<<"Transforming velocities from the force pole to origin O"<<std::endl;
     if (force_pole!="Origin")
       {
-        rigid_velocities[0] += baricenter_rigid_velocities[4] * (0.-point_force_pole[2]) - baricenter_rigid_velocities[5] * (0.-point_force_pole[1]);
-        rigid_velocities[1] += baricenter_rigid_velocities[5] * (0.-point_force_pole[0]) - baricenter_rigid_velocities[3] * (0.-point_force_pole[2]);
-        rigid_velocities[2] += baricenter_rigid_velocities[3] * (0.-point_force_pole[1]) - baricenter_rigid_velocities[4] * (0.-point_force_pole[0]);
+        if (dim == 3)
+          {
+            rigid_velocities[0] += baricenter_rigid_velocities[4] * (0.-point_force_pole[2]) - baricenter_rigid_velocities[5] * (0.-point_force_pole[1]);
+            rigid_velocities[1] += baricenter_rigid_velocities[5] * (0.-point_force_pole[0]) - baricenter_rigid_velocities[3] * (0.-point_force_pole[2]);
+            rigid_velocities[2] += baricenter_rigid_velocities[3] * (0.-point_force_pole[1]) - baricenter_rigid_velocities[4] * (0.-point_force_pole[0]);
+          }
+        else if (dim == 2)
+          {
+            rigid_velocities[0] +=  - baricenter_rigid_velocities[2] * (0.-point_force_pole[1]);
+            rigid_velocities[1] += baricenter_rigid_velocities[2] * (0.-point_force_pole[0]);
+
+          }
       }
     if (this_mpi_process==0)
       {
