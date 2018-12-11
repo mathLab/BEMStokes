@@ -133,6 +133,8 @@ namespace BEMStokes
     wall_spans(8,std::vector<double>(3)),
     initial_quaternion(4),
     mpi_communicator (mpi_commy),
+    imposed_rotation_as_flagellum_shape(false),
+    imposed_traslation_as_flagellum_shape(false),
     n_mpi_processes (Utilities::MPI::n_mpi_processes(mpi_communicator)),
     this_mpi_process (Utilities::MPI::this_mpi_process(mpi_communicator)),
     pcout(std::cout,
@@ -295,6 +297,10 @@ namespace BEMStokes
     add_parameter(prm, &angle_for_imposed_stuff,"Angle to rotate the imposed stuff","0.",
                   Patterns::Double());
 
+
+    add_parameter(prm, &time_step,"Time interval between frames","0.1",
+                  Patterns::Double());
+
     if (dim == 3)
       {
         add_parameter(prm, &initial_quaternion[0],"Initial quaternion value q[0]","1",//,0,0,0",
@@ -330,8 +336,6 @@ namespace BEMStokes
                       Patterns::Bool());
 
         add_parameter(prm, &cylinder_radius,"Cylinder Radius","1.",
-                      Patterns::Double());
-        add_parameter(prm, &time_step,"Time interval between frames","0.1",
                       Patterns::Double());
 
         add_parameter(prm, &cylinder_heigth,"Cylinder Heigth","2.",
