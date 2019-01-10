@@ -27,7 +27,7 @@ int main (int argc, char **argv)
 
   // const unsigned int degree = 1;
   // const unsigned int mapping_degree = 1;
-  double tol=1.07e-3;
+  double tol=1.2e-3;
   //Tsphere =8∗μ∗π∗L3 ∗ω
   double torque=1.;
   double L=1.;

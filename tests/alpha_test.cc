@@ -202,6 +202,7 @@ int main (int argc, char **argv)
         std::cout<<check_1[jdim][idim]<<" ";
       std::cout<<std::endl;
     }
+  // bem_problem_3d_1.get_singular_fe_values(numbers::invalid_unsigned_int);
   std::string fe_name_2 = "FESystem<2,3>[FE_Q<2,3>(2)^3]";
   bem_problem_3d_2.fe_stokes = std::unique_ptr<FiniteElement<dim-1,dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
   bem_problem_3d_2.fe_map =  std::unique_ptr<FiniteElement<dim-1,dim> >(FETools::get_fe_by_name<dim-1,dim>(fe_name_2));
