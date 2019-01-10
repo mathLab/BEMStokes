@@ -13,11 +13,11 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 40000
 The Mass (Surface) error of the entire system is : 3182.1
 Using 0 0 0 as force pole.
-Center of mass position = -2.07814e-15 0 4.18415e-16
+Center of mass position = -1.6625e-15 0 4.18404e-16
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 28.0494
-Check on the V operator Norm (should be zero) pure: 28.0494
+Check on the V operator Norm (should be zero): 28.055
+Check on the V operator Norm (should be zero) pure: 28.055
 Corrected V
 Check on the V operator Norm post (should be one) pure: 0.671233
 building versor matrix
@@ -28,4 +28,4 @@ check with versor vector : 2 l_infty : 1
 monolithic building
 0.0154989 0.00287812
    Iterations needed to solve DN:         0
-Error L2 : 0.0034739 , error Linfty : 0.000990364
+Error L2 : 0.0034646 , error Linfty : 0.00098645

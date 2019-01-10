@@ -24,78 +24,78 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 6.66134e-16 : 3.02708e-15
-FINAL CHECK 1 6.10623e-16 : 2.96479e-15
+FINAL CHECK 0 2.22045e-15 : 3.54928e-15
+FINAL CHECK 1 4.996e-16 : 2.79019e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
-0.0226526 -0.00322867 0.14253
-0.0575006 0.00819554 0.14253
-0.385453 0.0549386 0.14253
-0.0459952 0.00655568 0.14253
+0.0225729 -0.00322088 0.142688
+0.0575793 0.00821587 0.142688
+0.38442 0.054852 0.142688
+0.0460583 0.00657196 0.142688
 OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 1.59578e-15 : 5.3857e-15
-FINAL CHECK 1 9.4369e-16 : 4.83583e-15
+FINAL CHECK 0 1.06512e-15 : 4.44667e-15
+FINAL CHECK 1 1.11022e-15 : 4.36308e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
-0.0098606 -0.00322712 0.327274
-0.019259 0.00630299 0.327274
-0.0532163 -0.0174163 0.327274
+0.00981664 -0.0032181 0.327821
+0.0192742 0.00631849 0.327821
+0.0534717 -0.0175291 0.327821
 OK
-0.522808 -0.171102 0.327274
+0.522881 -0.171411 0.327821
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 1.10719e-15 : 4.33038e-15
-FINAL CHECK 1 9.05526e-16 : 4.13397e-15
+FINAL CHECK 0 1.14241e-15 : 4.63224e-15
+FINAL CHECK 1 1.14145e-15 : 4.39125e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
-0.0241059 0.0081422 0.337767
-0.0184384 0.00622788 0.337767
-0.315809 -0.10667 0.337767
-0.529127 0.178722 0.337767
-0.0123373 -0.00416713 0.337767
+0.0241112 0.00815709 0.338311
+0.0184418 0.00623907 0.338311
+0.31638 -0.107035 0.338311
+0.529193 0.179032 0.338311
+0.0123033 -0.00416235 0.338311
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 9.63476e-16 : 5.41131e-15
-FINAL CHECK 1 9.4369e-16 : 5.29187e-15
+FINAL CHECK 0 2.3731e-15 : 6.30115e-15
+FINAL CHECK 1 1.26288e-15 : 5.69323e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
-0.0404977 0.0555436 1.37152
-0.0127541 -0.0174926 1.37152
-0.0775168 -0.106316 1.37152
-0.0620019 -0.0850371 1.37152
-OK
-Solving system
-preconditioner_type = AMG
-   Iterations needed to solve monolithic:         2
-FINAL CHECK 0 1.14709e-15 : 5.26626e-15
-FINAL CHECK 1 9.81853e-16 : 5.05689e-15
-Transforming velocities from the force pole to origin O
-solved system
-saving
-0.045553 0.00651303 0.142977
-OK
-1.25 0.178722 0.142977
-0.596735 -0.0853193 0.142977
+0.0403129 0.0554685 1.37595
+0.0127991 -0.0176109 1.37595
+0.0775034 -0.106641 1.37595
+0.0619915 -0.0852971 1.37595
 OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 1.33227e-15 : 3.08314e-15
-FINAL CHECK 1 5.82867e-16 : 2.58526e-15
+FINAL CHECK 0 1.16766e-15 : 5.31705e-15
+FINAL CHECK 1 1.13798e-15 : 5.17912e-15
+Transforming velocities from the force pole to origin O
+solved system
+saving
+0.0455576 0.00652497 0.143225
+OK
+1.25 0.179031 0.143225
+0.597742 -0.0856114 0.143225
+OK
+Solving system
+preconditioner_type = AMG
+   Iterations needed to solve monolithic:         2
+FINAL CHECK 0 2.03049e-15 : 3.39465e-15
+FINAL CHECK 1 7.49401e-16 : 2.64353e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
 OK
-1.25007 -0.171102 0.136874
-0.0306868 -0.00420023 0.136874
+1.25007 -0.171411 0.137122
+0.0306178 -0.00419837 0.137122
 OK
 OK

@@ -13,13 +13,13 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 8
 The Mass (Surface) error of the entire system is : 0.36338
 Using 0 0 0 as force pole.
-Center of mass position = -1.95156e-17 1.50704e-17 -5.09575e-18
+Center of mass position = 8.23994e-18 1.1601e-17 3.57787e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.0296104
-Check on the V operator Norm (should be zero) pure: 0.0296104
+Check on the V operator Norm (should be zero): 0.0294664
+Check on the V operator Norm (should be zero) pure: 0.0294664
 Corrected V
-Check on the V operator Norm post (should be one) pure: 0.0501858
+Check on the V operator Norm post (should be one) pure: 0.0510373
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
@@ -38,13 +38,13 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 11.0403
 The Mass (Surface) error of the entire system is : 0.121441
 Using 0 0 0 as force pole.
-Center of mass position = -3.71997e-17 -8.80891e-18 -2.1929e-17
+Center of mass position = 4.04896e-17 1.24719e-17 -9.42759e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.0117581
-Check on the V operator Norm (should be zero) pure: 0.0117581
+Check on the V operator Norm (should be zero): 0.0125199
+Check on the V operator Norm (should be zero) pure: 0.0125199
 Corrected V
-Check on the V operator Norm post (should be one) pure: 0.0125692
+Check on the V operator Norm post (should be one) pure: 0.0131348
 building versor matrix
 correcting K matrix
 check with versor vector : 0 l_infty : 1
@@ -53,6 +53,6 @@ check with versor vector : 2 l_infty : 1
 monolithic building
 0.304121 0.110436
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty         u_L2           u_H1
-    6   24 2.142e-01    - 5.509e-01    - 1.083e+00    -
-   24   78 9.958e-02 1.10 2.156e-01 1.35 4.672e-01 1.21
+cells dofs    u_Linfty         u_L2           u_H1      
+    6   24 2.111e-01    - 5.483e-01    - 1.077e+00    - 
+   24   78 1.002e-01 1.07 2.080e-01 1.40 4.526e-01 1.25 

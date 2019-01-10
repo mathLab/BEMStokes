@@ -9,14 +9,14 @@ Computing the center of mass of our system for the frame 0
 12.6044 12.6044
 The Mass (Surface) of the entire system is : 12.6044
 Using 0 0 0 as force pole.
-Center of mass position = -0.00224 -1.80216e-16 -1.14116e-16
+Center of mass position = -0.00224 -1.80216e-16 -1.1415e-16
    Iterations needed to solve mass matrix:         1
 Analyzing frame = 1 over 120
 10.0786 : 10.0786
 Projecting shape velocities for non isoparametric BEMs
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.00200052
-Check on the V operator Norm (should be zero) pure: 0.00200052
+Check on the V operator Norm (should be zero): 0.00218351
+Check on the V operator Norm (should be zero) pure: 0.00218351
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
@@ -28,11 +28,11 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 8.32982e-14 : 9.81521e-14
-FINAL CHECK 1 5.84058e-15 : 5.1914e-14
+FINAL CHECK 0 8.36351e-14 : 9.78212e-14
+FINAL CHECK 1 5.78704e-15 : 5.07357e-14
 Transforming velocities from the force pole to origin O
 solved system
-ERROR on rigid translation 0 : 0.0840328 , 0.0833333 , 0.00839399
+ERROR on rigid translation 0 : 0.0840328 , 0.0833333 , 0.00839398
 OK rigid translation 1
 OK rigid translation 2
 OK rigid rotation 3

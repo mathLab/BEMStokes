@@ -11,8 +11,8 @@ Using 0 0 0 as force pole.
 Center of mass position = -0.000144065 -0.00129566 -0.000692987
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.00231049
-Check on the V operator Norm (should be zero) pure: 0.00231049
+Check on the V operator Norm (should be zero): 0.00245963
+Check on the V operator Norm (should be zero) pure: 0.00245963
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
@@ -24,8 +24,8 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 1.47882e-13 : 8.69399e-13
-FINAL CHECK 1 9.12118e-14 : 8.56727e-13
+FINAL CHECK 0 1.52323e-13 : 8.70223e-13
+FINAL CHECK 1 9.03999e-14 : 8.56793e-13
 Transforming velocities from the force pole to origin O
 solved system
 OK
@@ -36,8 +36,8 @@ OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 2.02465e-13 : 1.24873e-12
-FINAL CHECK 1 9.73134e-14 : 1.21615e-12
+FINAL CHECK 0 2.04739e-13 : 1.24957e-12
+FINAL CHECK 1 9.76501e-14 : 1.2162e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK
@@ -48,8 +48,8 @@ OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 1.25899e-13 : 1.22277e-12
-FINAL CHECK 1 9.76649e-14 : 1.20991e-12
+FINAL CHECK 0 1.22385e-13 : 1.22198e-12
+FINAL CHECK 1 9.78523e-14 : 1.20991e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK
@@ -60,8 +60,8 @@ OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 2.18374e-13 : 1.3983e-12
-FINAL CHECK 1 2.18374e-13 : 1.39825e-12
+FINAL CHECK 0 2.18026e-13 : 1.39858e-12
+FINAL CHECK 1 2.18013e-13 : 1.39852e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK
@@ -72,8 +72,8 @@ OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 1.82899e-13 : 1.56684e-12
-FINAL CHECK 1 1.82899e-13 : 1.56115e-12
+FINAL CHECK 0 1.83654e-13 : 1.56645e-12
+FINAL CHECK 1 1.83659e-13 : 1.56184e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK
@@ -84,8 +84,8 @@ OK
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 1.84221e-13 : 1.53999e-12
-FINAL CHECK 1 1.84221e-13 : 1.53443e-12
+FINAL CHECK 0 1.85518e-13 : 1.53909e-12
+FINAL CHECK 1 1.85515e-13 : 1.5353e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK

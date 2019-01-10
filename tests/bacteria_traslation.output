@@ -19,8 +19,8 @@ Analyzing frame = 1 over 120
 72.2038 : 72.2038
 Imposing rotational velocity
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.0146348
-Check on the V operator Norm (should be zero) pure: 0.0146348
+Check on the V operator Norm (should be zero): 0.0147559
+Check on the V operator Norm (should be zero) pure: 0.0147559
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
@@ -32,8 +32,8 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         2
-FINAL CHECK 0 2.38976e-14 : 2.40343e-14
-FINAL CHECK 1 4.44089e-16 : 2.41023e-15
+FINAL CHECK 0 2.18991e-14 : 2.21298e-14
+FINAL CHECK 1 5.48173e-16 : 2.48717e-15
 Transforming velocities from the force pole to origin O
 solved system
 saving
@@ -55,8 +55,8 @@ Imposing rotational velocity
 -0.523599
 4.38905 -1.85405
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.0146348
-Check on the V operator Norm (should be zero) pure: 0.0146348
+Check on the V operator Norm (should be zero): 0.0147559
+Check on the V operator Norm (should be zero) pure: 0.0147559
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
@@ -68,8 +68,8 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 8.45504e-13 : 1.33807e-11
-FINAL CHECK 1 8.45518e-13 : 1.33775e-11
+FINAL CHECK 0 8.58658e-13 : 1.35845e-11
+FINAL CHECK 1 8.58642e-13 : 1.35814e-11
 Transforming velocities from the force pole to origin O
 solved system
  OK !

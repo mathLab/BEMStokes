@@ -15,8 +15,8 @@ Using 0 0 0 as force pole.
 Center of mass position = -0.000144065 -0.00129566 -0.000692987
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.00243632
-Check on the V operator Norm (should be zero) pure: 0.00243632
+Check on the V operator Norm (should be zero): 0.00258546
+Check on the V operator Norm (should be zero) pure: 0.00258546
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix

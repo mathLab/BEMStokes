@@ -27,15 +27,15 @@ Using 0 0 0 as force pole.
 Center of mass position = -0.000144065 -0.00129566 -0.000692987
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 5.89359
-Check on the V operator Norm (should be zero) pure: 0.00231049
+Check on the V operator Norm (should be zero): 5.88325
+Check on the V operator Norm (should be zero) pure: 0.00245963
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
 correcting K matrix
-check with versor vector : 0 l_infty : 1.15186e-15
-check with versor vector : 1 l_infty : 1.15785e-15
-check with versor vector : 2 l_infty : 1.46194e-15
+check with versor vector : 0 l_infty : 1.02197e-15
+check with versor vector : 1 l_infty : 1.20818e-15
+check with versor vector : 2 l_infty : 1.43809e-15
 monolithic building
 Solving directly the monolithic system
 Solving using an iterative solver combined with a preconditioner

@@ -15,8 +15,8 @@ Analyzing frame = 1 over 120
 14.1424 : 14.1424
 Projecting shape velocities for non isoparametric BEMs
 Check on the tangential projection (should be zero): 0
-Check on the V operator Norm (should be zero): 0.0020007
-Check on the V operator Norm (should be zero) pure: 0.0020007
+Check on the V operator Norm (should be zero): 0.0021837
+Check on the V operator Norm (should be zero) pure: 0.0021837
 Corrected V
 Check on the V operator Norm post (should be one) pure: 1
 building versor matrix
@@ -28,8 +28,8 @@ monolithic building
 Solving system
 preconditioner_type = AMG
    Iterations needed to solve monolithic:         1
-FINAL CHECK 0 8.04912e-13 : 6.64224e-12
-FINAL CHECK 1 8.04948e-13 : 6.62085e-12
+FINAL CHECK 0 7.79821e-13 : 6.43357e-12
+FINAL CHECK 1 7.7971e-13 : 6.41252e-12
 Transforming velocities from the force pole to origin O
 solved system
 OK rigid translation 0
