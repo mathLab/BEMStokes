@@ -4989,7 +4989,7 @@ namespace BEMStokes
         if (fe_values.size() == 0)
           for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
             fe_values.push_back(new FEValues<dim-1,dim> (*mappingeul, *fe_stokes,
-                                                         get_singular_quadrature(index),
+                                                         get_singular_quadrature(i),
                                                          update_jacobians |
                                                          update_values |
                                                          update_cell_normal_vectors |
