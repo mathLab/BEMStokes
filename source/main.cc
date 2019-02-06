@@ -31,9 +31,9 @@ int main (int argc, char **argv)
 
         }
 
-      std::string pname = "parameters_" + std::to_string(DIMENSION) + ".prm";
-      std::string pname2 = "used_parameters_" + std::to_string(DIMENSION) + ".prm";
-      BEMProblem<DIMENSION> stokes_problem(MPI_COMM_WORLD);
+      std::string pname = "parameters_" + std::to_string(DDDDIMENSION) + ".prm";
+      std::string pname2 = "used_parameters_" + std::to_string(DDDDIMENSION) + ".prm";
+      BEMProblem<DDDDIMENSION> stokes_problem(MPI_COMM_WORLD);
       ParameterAcceptor::initialize(pname, pname2);
       deallog.depth_console (3);
 
