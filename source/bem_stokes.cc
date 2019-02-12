@@ -4918,39 +4918,39 @@ namespace BEMStokes
         return *static_cast<Quadrature<2> *>(NULL);
       }
     else
-    {
-      Assert(index < fe_stokes->dofs_per_cell,
-             ExcIndexRange(0, fe_stokes->dofs_per_cell, index));
+      {
+        Assert(index < fe_stokes->dofs_per_cell,
+               ExcIndexRange(0, fe_stokes->dofs_per_cell, index));
 
 
-      if (quadratures.size() == 0)
-        {
-          if (singular_quadrature_type == "Duffy")
-            for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
-              {
-                // if (fe_stokes->degree>1)
-                //   quadratures.push_back(QIterated<dim-1>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
-                // else
-                quadratures.push_back(QSplit<2> (QDuffy (singular_quadrature_order,1.),fe_stokes->get_unit_support_points()[i]));//,true
-                //  quadratures.push_back(QTelles<dim-1>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
-                //                                   fe_stokes->get_unit_support_points()[i]));
+        if (quadratures.size() == 0)
+          {
+            if (singular_quadrature_type == "Duffy")
+              for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
+                {
+                  // if (fe_stokes->degree>1)
+                  //   quadratures.push_back(QIterated<dim-1>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
+                  // else
+                  quadratures.push_back(QSplit<2> (QDuffy (singular_quadrature_order,1.),fe_stokes->get_unit_support_points()[i]));//,true
+                  //  quadratures.push_back(QTelles<dim-1>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
+                  //                                   fe_stokes->get_unit_support_points()[i]));
 
-              }
-          else if (singular_quadrature_type == "Mixed")
-            for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
-              {
-                if (fe_stokes->degree>1)
-                  quadratures.push_back(QIterated<2>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
-                else
-                  quadratures.push_back(QGaussOneOverR<2>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
-                                                          fe_stokes->get_unit_support_points()[i],true));
+                }
+            else if (singular_quadrature_type == "Mixed")
+              for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
+                {
+                  if (fe_stokes->degree>1)
+                    quadratures.push_back(QIterated<2>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
+                  else
+                    quadratures.push_back(QGaussOneOverR<2>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
+                                                            fe_stokes->get_unit_support_points()[i],true));
 
-              }
-          else if (singular_quadrature_type == "Telles")
-            for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
-              quadratures.push_back(QTelles<2>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
-                                               fe_stokes->get_unit_support_points()[i]));
-        }
+                }
+            else if (singular_quadrature_type == "Telles")
+              for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
+                quadratures.push_back(QTelles<2>(singular_quadrature_order,  //QTelles<dim-1>, QGaussOneOverR<dim-1>
+                                                 fe_stokes->get_unit_support_points()[i]));
+          }
       }
     return quadratures[index];
   }
@@ -4965,21 +4965,21 @@ namespace BEMStokes
         return *static_cast<Quadrature<1> *>(NULL);
       }
     else
-    {
-      Assert(index < fe_stokes->dofs_per_cell,
-             ExcIndexRange(0, fe_stokes->dofs_per_cell, index));
+      {
+        Assert(index < fe_stokes->dofs_per_cell,
+               ExcIndexRange(0, fe_stokes->dofs_per_cell, index));
 
 
-      if (quadratures.size() == 0)
-        for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
-          {
-            if (fe_stokes->degree>1)
-              quadratures.push_back(QIterated<1>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
-            else
-              quadratures.push_back(QTelles<1>(singular_quadrature_order,
-                                               fe_stokes->get_unit_support_points()[i]));
-          }
-        }
+        if (quadratures.size() == 0)
+          for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
+            {
+              if (fe_stokes->degree>1)
+                quadratures.push_back(QIterated<1>(QGauss<1> (singular_quadrature_order),fe_stokes->degree));
+              else
+                quadratures.push_back(QTelles<1>(singular_quadrature_order,
+                                                 fe_stokes->get_unit_support_points()[i]));
+            }
+      }
 
     return quadratures[index];
   }
@@ -4993,11 +4993,11 @@ namespace BEMStokes
     if (index == numbers::invalid_unsigned_int)
       {
         if (fe_values.size())
-        {
-          get_singular_quadrature(index);
-          for (unsigned int i=0; i<fe_values.size(); ++i)
-            delete fe_values[i];
-        }
+          {
+            get_singular_quadrature(index);
+            for (unsigned int i=0; i<fe_values.size(); ++i)
+              delete fe_values[i];
+          }
         fe_values.resize(0);
         return *static_cast<FEValues<dim-1,dim> *>(NULL);
       }
@@ -5009,17 +5009,17 @@ namespace BEMStokes
                ExcIndexRange(0, fe_stokes->dofs_per_cell, index));
 
         if (fe_values.size() == 0)
-        {
-          for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
           {
-            fe_values.push_back(new FEValues<dim-1,dim> (*mappingeul, *fe_stokes,
-                                                         get_singular_quadrature(i),
-                                                         update_jacobians |
-                                                         update_values |
-                                                         update_cell_normal_vectors |
-                                                         update_quadrature_points ));
-                                                       }
-                                                     }
+            for (unsigned int i=0; i<fe_stokes->dofs_per_cell; ++i)
+              {
+                fe_values.push_back(new FEValues<dim-1,dim> (*mappingeul, *fe_stokes,
+                                                             get_singular_quadrature(i),
+                                                             update_jacobians |
+                                                             update_values |
+                                                             update_cell_normal_vectors |
+                                                             update_quadrature_points ));
+              }
+          }
         return *fe_values[index];
       }
   }
