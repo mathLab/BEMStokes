@@ -132,9 +132,9 @@ namespace BEMStokes
     wall_positions(8,Point<2>()),
     wall_spans(8,std::vector<double>(3)),
     initial_quaternion(4),
-    mpi_communicator (mpi_commy),
     imposed_rotation_as_flagellum_shape(false),
     imposed_traslation_as_flagellum_shape(false),
+    mpi_communicator (mpi_commy),
     n_mpi_processes (Utilities::MPI::n_mpi_processes(mpi_communicator)),
     this_mpi_process (Utilities::MPI::this_mpi_process(mpi_communicator)),
     pcout(std::cout,
@@ -196,12 +196,12 @@ namespace BEMStokes
       {
         auto tria_manifold = tria.get_manifold_ids();
         for (unsigned int i = 0; i<tria_manifold.size(); ++i)
-          if (tria_manifold[i]!=numbers::invalid_manifold_id)
-            tria.set_manifold(tria_manifold[i]);
+          if (tria_manifold[i]!=numbers::flat_manifold_id)
+            tria.reset_manifold(tria_manifold[i]);
       }
-    // tria.set_manifold(0);
-    // tria.set_manifold(1);
-    // tria.set_manifold(2);
+    // tria.reset_manifold(0);
+    // tria.reset_manifold(1);
+    // tria.reset_manifold(2);
   }
 
   template <int dim>
@@ -523,7 +523,7 @@ namespace BEMStokes
   }
 
   template <>
-  void BEMProblem<2>::apply_flagellum_iges(Triangulation<1,2> &triangulation, std::string cad_file_name)
+  void BEMProblem<2>::apply_flagellum_iges(Triangulation<1,2> &, std::string )
   {
     AssertThrow(false, ExcImpossibleInDim(2));
   }
@@ -567,7 +567,7 @@ namespace BEMStokes
       }
 
     flagellum_manifold = std::shared_ptr<Manifold<dim-1,dim> >
-                         (dynamic_cast<Manifold<dim-1,dim> * > (new OpenCASCADE::NormalToMeshProjectionBoundary<2,3> (flagellum_surface, tolerance)));
+                         (dynamic_cast<Manifold<dim-1,dim> * > (new OpenCASCADE::NormalToMeshProjectionManifold<2,3> (flagellum_surface, tolerance)));
     triangulation.set_manifold(2,*flagellum_manifold);
 #else
     AssertThrow(false, ExcMessage("You need to define BEM_STOKES_WITH_OCE with cmake to use iges files"));
@@ -665,7 +665,7 @@ namespace BEMStokes
           }
         // tria.refine_global();
 
-        // tria.set_manifold(2);
+        // tria.reset_manifold(2);
         if (grid_type == "ImposedForce" || grid_type == "Convergence" || grid_type == "ImposedVelocity")
           {
             if (build_sphere_in_deal == true)
@@ -682,7 +682,7 @@ namespace BEMStokes
                     GridGenerator::hyper_sphere (tria_2,pippo_2,1. );
                     tria_2.set_all_manifold_ids(2);
                     // tria_2.set_manifold(2, *manifold_2);
-                    // tria.set_manifold(0);//, *manifold);
+                    // tria.reset_manifold(0);//, *manifold);
                     GridGenerator::merge_triangulations(tria_1,tria_2,tria);
                     typename Triangulation<dim-1,dim>::active_cell_iterator
                     cell = tria.begin_active(),
@@ -792,7 +792,7 @@ namespace BEMStokes
         Triangulation<dim-1,dim> triangulation_cyl;
         create_cylindrical_wall(triangulation_cyl, cylinder_wall_type, cylinder_direction, cylinder_point_on_axis,
                                 cylinder_radius,cylinder_heigth, cylinder_manifold_bool);
-        // triangulation_cyl.set_manifold(99);
+        // triangulation_cyl.reset_manifold(99);
         add_cylinder_to_tria(tria,cylinder_manifold_bool);
       }
     else if (cylinder_import_bool)
@@ -802,7 +802,7 @@ namespace BEMStokes
         Triangulation<dim-1,dim> triangulation_cyl;
         import_cylinder(triangulation_cyl, filename, cylinder_wall_type, cylinder_direction, cylinder_point_on_axis,
                         cylinder_manifold_bool, cylinder_flip_normal_bool);
-        // triangulation_cyl.set_manifold(99);
+        // triangulation_cyl.reset_manifold(99);
         add_cylinder_to_tria(tria, cylinder_manifold_bool);
       }
     refine_walls(tria,refine_distance_from_center,wall_threshold,refinement_center,gradual_wall_refinement);
@@ -1061,9 +1061,9 @@ namespace BEMStokes
   }
 
   template<>
-  void BEMProblem<2>::import_cylinder(Triangulation<2-1, 2> &triangulation_wall, const std::string &filename,
-                                      const std::string &wall_type, const Point<2> &direction, const Point<2> &point_on_axis,
-                                      const bool apply_manifold, const bool flip_all)
+  void BEMProblem<2>::import_cylinder(Triangulation<2-1, 2> &, const std::string &,
+                                      const std::string &, const Point<2> &, const Point<2> &,
+                                      const bool , const bool )
   {
     Assert (false, ExcNotImplemented());
   }
@@ -1104,7 +1104,7 @@ namespace BEMStokes
     FE_Q<dim-1,dim> fe_dummy(1);
     QGauss<dim-1> quadrature_dummy(1);
     FEValues<dim-1,dim> fev_dummy(StaticMappingQ1<dim-1, dim>::mapping, fe_dummy, quadrature_dummy,
-                                  update_cell_normal_vectors);
+                                  update_normal_vectors);
 
     typename Triangulation<dim-1,dim>::active_cell_iterator
     cell = triangulation_wall.begin_active(),
@@ -1188,7 +1188,7 @@ namespace BEMStokes
         if (cylinder_manifold)
           triangulation.set_manifold(99, *cylinder_manifold);
         else
-          triangulation.set_manifold(99);
+          triangulation.reset_manifold(99);
       }
   }
 
@@ -1859,7 +1859,7 @@ namespace BEMStokes
   template <int dim>
   void BEMProblem<dim>::compute_constraints_for_single_layer()
   {
-    ConstraintMatrix constraints_single_layer;
+    AffineConstraints<double> constraints_single_layer;
     // compute_normal_vector();
     for (types::global_dof_index i = (dim-1)*dh_stokes.n_dofs()/dim; i<dh_stokes.n_dofs(); ++i)
       {
@@ -2144,12 +2144,12 @@ namespace BEMStokes
       {
         FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
                                         update_values |
-                                        update_cell_normal_vectors |
+                                        update_normal_vectors |
                                         update_quadrature_points |
                                         update_JxW_values);
         FEValues<dim-1,dim> fe_map_v(*mappingeul, *fe_map, quadrature,
                                      update_values |
-                                     update_cell_normal_vectors |
+                                     update_normal_vectors |
                                      update_quadrature_points |
                                      update_JxW_values);
         std::vector<types::global_dof_index> local_dof_indices(fe_stokes->dofs_per_cell);
@@ -2173,7 +2173,7 @@ namespace BEMStokes
                 fe_map_v.reinit(cell_map);
 
                 const std::vector<Point<dim> > q_points = fe_stokes_v.get_quadrature_points();
-                double n_q_points = q_points.size();
+                unsigned int n_q_points = q_points.size();
 
                 cell->get_dof_indices(local_dof_indices);
                 cell_map->get_dof_indices(local_dof_indices_map);
@@ -2356,7 +2356,7 @@ namespace BEMStokes
         frame_map_dh.distribute_dofs(*fe_map);
         DoFRenumbering::component_wise (frame_map_dh);
         // DoFRenumbering::subdomain_wise (frame_map_dh);
-        ConstraintMatrix constr_mapp;
+        AffineConstraints<double> constr_mapp;
         constr_mapp.reinit();
         DoFTools::make_hanging_node_constraints(frame_map_dh,constr_mapp);
         constr_mapp.close();
@@ -2479,7 +2479,7 @@ namespace BEMStokes
             fe_stokes_v.reinit(cell);
 
             const std::vector<Point<dim> > &q_points = fe_stokes_v.get_quadrature_points();
-            double n_q_points = q_points.size();
+            unsigned int n_q_points = q_points.size();
 
             cell->get_dof_indices(local_dof_indices);
             local_mass_matrix = 0;
@@ -2844,7 +2844,7 @@ namespace BEMStokes
     Teuchos::TimeMonitor LocalTimer(*AssembleTime);
     FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
                                     update_values |
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points |
                                     update_JxW_values);
     std::vector<types::global_dof_index> local_dof_indices(fe_stokes->dofs_per_cell);
@@ -3536,12 +3536,12 @@ namespace BEMStokes
 //     Teuchos::TimeMonitor LocalTimer(*AssembleTime);
 //     FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
 //                                     update_values |
-//                                     update_cell_normal_vectors |
+//                                     update_normal_vectors |
 //                                     update_quadrature_points |
 //                                     update_JxW_values);
 //     FEValues<dim-1,dim> fe_stokes_2_v(*mappingeul, *fe_stokes, quadrature_ext,
 //                                     update_values |
-//                                     update_cell_normal_vectors |
+//                                     update_normal_vectors |
 //                                     update_quadrature_points |
 //                                     update_JxW_values);
 //     /*
@@ -3925,7 +3925,7 @@ namespace BEMStokes
 
     FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
                                     update_values |
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points |
                                     update_JxW_values);
     /*
@@ -5016,7 +5016,7 @@ namespace BEMStokes
                                                              get_singular_quadrature(i),
                                                              update_jacobians |
                                                              update_values |
-                                                             update_cell_normal_vectors |
+                                                             update_normal_vectors |
                                                              update_quadrature_points ));
               }
           }
@@ -5378,7 +5378,7 @@ namespace BEMStokes
 
     FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
                                     update_values |
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points |
                                     update_JxW_values);
 
@@ -5463,7 +5463,7 @@ namespace BEMStokes
 
     FEValues<dim-1,dim> fe_stokes_v(*mappingeul, *fe_stokes, quadrature,
                                     update_values |
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points |
                                     update_JxW_values);
 
@@ -5872,8 +5872,8 @@ namespace BEMStokes
           output_save_stokes_results(i);
           reinit_for_new_time((i+delta_frame)%n_frames);
         }
-      // tria.set_manifold(0);
-      // tria.set_manifold(99);
+      // tria.reset_manifold(0);
+      // tria.reset_manifold(99);
 
       // if (extend_solution == true)
       //     compute_exterior_stokes_solution<2> ();

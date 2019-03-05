@@ -564,8 +564,8 @@ namespace BEMStokes
 
     SolverGMRES<TrilinosWrappers::MPI::Vector >::AdditionalData gmres_additional_data;
 
-    ConstraintMatrix     constraints;
-    // ConstraintMatrix     constraints_null;
+    AffineConstraints<double>     constraints;
+    // AffineConstraints<double>     constraints_null;
 
     types::global_dof_index i_single_layer_constraint;
 
