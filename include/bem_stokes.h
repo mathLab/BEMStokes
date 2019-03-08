@@ -429,8 +429,6 @@ namespace BEMStokes
     unsigned int delta_frame;
 
     bool rotation_correction;
-    bool imposed_rotation_as_flagellum_shape;
-    bool imposed_traslation_as_flagellum_shape;
     bool gradual_wall_refinement;
     bool extend_solution;
 
@@ -646,6 +644,9 @@ namespace BEMStokes
     double assemble_scaling;
 
     double refine_distance_from_center;
+
+    bool imposed_rotation_as_flagellum_shape;
+    bool imposed_traslation_as_flagellum_shape;
 
     Vector<double> initial_quaternion;
 

@@ -96,7 +96,7 @@ namespace BEMStokes
     gi.attach_triangulation(tria);
     gi.read_ucd(foo_ifs);
 
-    foo_tria.set_manifold(0);
+    foo_tria.reset_manifold(0);
 
 
   }
