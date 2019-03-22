@@ -41,6 +41,9 @@ int main (int argc, char **argv)
         stokes_problem.composer(start_frame, end_frame);
       else
         stokes_problem.run(start_frame, end_frame);
+
+      stokes_problem.pcout<<"EXECUTION OK"<<std::endl;
+
     }
   catch (std::exception &exc)
     {
