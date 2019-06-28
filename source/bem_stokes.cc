@@ -4254,6 +4254,7 @@ namespace BEMStokes
             pcout<<rigid_force<<" "<<rigid_velocities[i]<<" "<<foo[i]<<std::endl;
           }
         pcout << "   Iterations needed to solve final:         " << solver_control.last_step() << std::endl;
+        baricenter_rigid_velocities.reinit(rigid_velocities);
       }
     else
       {
