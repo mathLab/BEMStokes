@@ -58,7 +58,7 @@ int main (int argc, char **argv)
   BEMProblem<dim> bem_problem_3d;
 
   // bem_problem_2d.read_parameters(SOURCE_DIR "/parameters_test_2d.prm");
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
   // std::cout<<input_grid_base_name<<std::endl;
   bem_problem_3d.create_box_bool=false;
   bem_problem_3d.wall_bool_0=false;

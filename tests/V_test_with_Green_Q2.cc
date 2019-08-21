@@ -96,7 +96,7 @@ int main (int argc, char **argv)
       // std::vector<double>                     eigenvalue_tenss;
       // PETScWrappers::MPI::Vector normal_vector_difference;
       ErrorHandler<1> eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
-      ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_ref_quadrature.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+      deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_ref_quadrature.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
       bem_problem_3d.create_box_bool=false;
       for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
         bem_problem_3d.wall_bool[i]=false;
@@ -120,7 +120,7 @@ int main (int argc, char **argv)
           // ncycles = bem_problem_3d.n_cycles;
           VectorTools::get_position_vector(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
           if (cycle == 0)
-            bem_problem_3d.mappingeul = SP(new MappingFEField<2, 3>(bem_problem_3d.map_dh,bem_problem_3d.euler_vec));
+            bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2, 3> >(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
 
 
           bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);

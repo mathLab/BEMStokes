@@ -34,7 +34,7 @@ int main (int argc, char **argv)
       std::cout<< "Testing for degree = "<<degree<<std::endl;
       BEMProblem<dim> bem_problem_3d;
       ErrorHandler<2> eh("","u,u,u","L2, H1, Linfty; AddUp; AddUp");
-      ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_parameters_12.prm");
+      deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_parameters_12.prm");
       bem_problem_3d.create_box_bool=false;
       bem_problem_3d.wall_bool_0=false;
       bem_problem_3d.wall_bool_1=false;

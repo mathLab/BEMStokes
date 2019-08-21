@@ -18,7 +18,7 @@ int main (int argc, char **argv)
 
   BEMProblem<dim> bem_problem_2d;
 
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_foo.prm");
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_foo.prm");
   bem_problem_2d.convert_bool_parameters();
   // std::cout<<input_grid_base_name<<std::endl;
   bem_problem_2d.create_box_bool=false;

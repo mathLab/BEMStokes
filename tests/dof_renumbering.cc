@@ -144,7 +144,7 @@ int main (int argc, char **argv)
   double tol=1e-8;
   const unsigned int dim = 3;
   BEMProblem<dim> bem_problem_3d_1, bem_problem_3d_2;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d_1.convert_bool_parameters();
   bem_problem_3d_2.convert_bool_parameters();
   bem_problem_3d_1.pcout<<"Minimum Test for the assemble of the double layer and the solid angle alpha"<<std::endl;
@@ -168,7 +168,7 @@ int main (int argc, char **argv)
   bem_problem_3d_1.map_dh.distribute_dofs(*bem_problem_3d_1.fe_stokes);
   bem_problem_3d_1.euler_vec.reinit(bem_problem_3d_1.map_dh.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec);
-  bem_problem_3d_1.mappingeul = SP(new MappingFEField<2, 3>(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec));
+  bem_problem_3d_1.mappingeul = std::make_shared<MappingFEField<2, 3> >(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec);
   FullMatrix<double> V_matrix_3_line_1, K_matrix_3_line_1;
   FullMatrix<double> V_matrix_3_line_3, K_matrix_3_line_3;
   std::vector<Vector<double> > versors_1(3, Vector<double> (bem_problem_3d_1.dh_stokes.n_dofs()));
@@ -244,7 +244,7 @@ int main (int argc, char **argv)
   bem_problem_3d_2.map_dh.renumber_dofs(new_numbers);
   bem_problem_3d_2.euler_vec.reinit(bem_problem_3d_2.map_dh.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec);
-  bem_problem_3d_2.mappingeul = SP(new MappingFEField<2, 3>(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec));
+  bem_problem_3d_2.mappingeul = std::make_shared<MappingFEField<2, 3> >(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec);
   FullMatrix<double> V_matrix_3_line_2, K_matrix_3_line_2;
   std::vector<Vector<double> > versors_2(3, Vector<double> (bem_problem_3d_2.dh_stokes.n_dofs()));
   std::vector<Vector<double> > check_2(3, Vector<double> (3));

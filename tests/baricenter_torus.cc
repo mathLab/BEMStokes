@@ -31,12 +31,10 @@ int main (int argc, char **argv)
   double tol=1e-10;
   unsigned int ncycles = 4;
   unsigned int max_degree = 1;
-  // ParsedFunction<3,3> exact_solution_eig("Exact solution position",
-  //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
   unsigned int degree = 1;
   BEMProblem<3> bem_problem_3d;
 
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
     bem_problem_3d.wall_bool[i]=false;

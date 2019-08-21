@@ -95,7 +95,7 @@ int main (int argc, char **argv)
       // std::vector<double>                     eigenvalue_tenss;
       // PETScWrappers::MPI::Vector normal_vector_difference;
       ErrorHandler<1> eh("Error 2D","u,u","L2, H1, Linfty; AddUp");
-      ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+      deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
       bem_problem_2d.create_box_bool=false;
       for (unsigned int i = 0 ; i<bem_problem_2d.wall_bool.size(); ++i)
         bem_problem_2d.wall_bool[i]=false;
@@ -112,7 +112,7 @@ int main (int argc, char **argv)
       bem_problem_2d.fe_stokes = bem_problem_2d.parsed_fe_stokes();
       bem_problem_2d.fe_map = bem_problem_2d.parsed_fe_mapping();
       bem_problem_2d.extra_debug_info = false;
-      // ParameterAcceptor::initialize("parameters_16.prm", "used_parameters_16.prm");
+      // deal2lkit::ParameterAcceptor::initialize("parameters_16.prm", "used_parameters_16.prm");
       bem_problem_2d.read_domain();
       SphericalManifold<1,2> manifold;
       bem_problem_2d.tria.set_all_manifold_ids(0);
@@ -124,7 +124,7 @@ int main (int argc, char **argv)
           // ncycles = bem_problem_2d.n_cycles;
           VectorTools::get_position_vector(bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
           if (cycle == 0)
-            bem_problem_2d.mappingeul = SP(new MappingFEField<1, 2>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+            bem_problem_2d.mappingeul = std::make_shared<MappingFEField<1, 2> >(bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
 
 
           bem_problem_2d.compute_center_of_mass_and_rigid_modes(0);

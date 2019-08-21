@@ -40,7 +40,7 @@ int main (int argc, char **argv)
 
       std::cout<< "Testing for degree = "<<degree<<std::endl;
       BEMProblem<dim> bem_problem_2d;
-      ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_parameters_14.prm");
+      deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_parameters_14.prm");
       bem_problem_2d.convert_bool_parameters();
       bem_problem_2d.create_box_bool=false;
       bem_problem_2d.wall_bool_0=false;

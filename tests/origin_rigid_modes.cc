@@ -41,7 +41,7 @@ int main (int argc, char **argv)
   ParsedFunction<3> exact_rigid_mode_4("Exact rigid mode 4",3, "z;0;-x");
   ParsedFunction<3> exact_rigid_mode_5("Exact rigid mode 5",3, "-y;x;0");
 
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
     bem_problem_3d.wall_bool[i]=false;

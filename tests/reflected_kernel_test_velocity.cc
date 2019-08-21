@@ -31,7 +31,7 @@ int main (int argc, char **argv)
   double tol=1e-8;
   const unsigned int dim = 3;
   BEMProblem<dim> bem_problem_3d;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   bem_problem_3d.pcout<<"Minimum Test for the preconditioner with interior problem and the monolithic system"<<std::endl;
   bem_problem_3d.pcout<<"We consider the wall to have normal parallel to the i axis"<<std::endl;
