@@ -90,7 +90,7 @@ namespace BEMStokes
   /// In such a case we can compare with the results by Purcell in 1997 are Rodenborm 2013. However we strongly advise to use the import of the grids which have been created already
   /// respecting the geometric constraints.
   template <int dim>
-  class FlagellarGeometryHandler : public ParameterAcceptor
+  class FlagellarGeometryHandler : public deal2lkit::ParameterAcceptor
   {
   public:
 

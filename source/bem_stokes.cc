@@ -1848,7 +1848,7 @@ namespace BEMStokes
 
     dpcout<<fe_map->n_components()<<std::endl;
     if (mappingeul == NULL)
-      mappingeul = SP(new MappingFEField<dim-1,dim>(map_dh, euler_vec));
+      mappingeul = std::make_shared<MappingFEField<dim-1,dim> >(map_dh, euler_vec);
     if (use_flagellum_handler)
       flagellum_handler.set_geometry_cache(map_dh,&map_flagellum_cpu_set,&(*mappingeul));
     //compute_global_components();
@@ -6011,7 +6011,7 @@ namespace BEMStokes
             total_euler_vec.sadd(1.,1.,loc_rigid_puntual_displacements);
             if (i==start_frame)
               {
-                mappingeul = SP(new MappingFEField<dim-1, dim>(map_dh,euler_vec));
+                mappingeul = std::make_shared<MappingFEField<dim-1, dim> >(map_dh,euler_vec);
               }
             pcout<<"Output"<<std::endl;
             // Then we save the results.
