@@ -120,7 +120,7 @@ int main (int argc, char **argv)
   double exact_omega=-2.*numbers::PI/bem_problem_3d.n_frames/bem_problem_3d.time_step;
   bem_problem_3d.compute_euler_vector(bem_problem_3d.euler_vec,0, true);
   bem_problem_3d.create_wall_body_index_sets();
-  bem_problem_3d.mappingeul = SP(new MappingFEField<2, 3> (bem_problem_3d.map_dh,bem_problem_3d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2, 3> > (bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
   bem_problem_3d.compute_euler_vector(bem_problem_3d.next_euler_vec,1, true);
@@ -158,7 +158,7 @@ int main (int argc, char **argv)
           bem_problem_3d.euler_vec[i+d*bem_problem_3d.euler_vec.size()/3]+=translation[d];
         }
     }
-  // bem_problem_3d.mappingeul = SP(new MappingFEField<2, 3> (bem_problem_3d.map_dh,bem_problem_3d.euler_vec));
+  // bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2, 3> > (bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
   bem_problem_3d.compute_euler_vector(bem_problem_3d.next_euler_vec,1, true);
