@@ -27,7 +27,7 @@ void assemble_single_line_stokes_matrices(FullMatrix<double> &V_matrix_3_line, F
   K_matrix_3_line.reinit(3,bemmy.dh_stokes.n_dofs());
   FEValues<3-1,3> fe_stokes_v(*bemmy.mappingeul, *bemmy.fe_stokes, bemmy.quadrature,
                               update_values |
-                              update_cell_normal_vectors |
+                              update_normal_vectors |
                               update_quadrature_points |
                               update_JxW_values);
   std::vector<types::global_dof_index> local_dof_indices(bemmy.fe_stokes->dofs_per_cell);
@@ -77,7 +77,7 @@ void assemble_single_line_stokes_matrices(FullMatrix<double> &V_matrix_3_line, F
             }
 
           const std::vector<Point<3> > &q_points = internal_fe_v->get_quadrature_points();
-          const std::vector<Tensor<1, 3> > &normals  = internal_fe_v->get_all_normal_vectors();
+          const std::vector<Tensor<1, 3> > &normals  = internal_fe_v->get_normal_vectors();
 
           unsigned int n_q_points = q_points.size();
           for (unsigned int q=0; q<n_q_points; ++q)
@@ -254,8 +254,8 @@ int main (int argc, char **argv)
     }
 
 
-  bem_problem_3d_1.tria.set_manifold(0);
-  bem_problem_3d_2.tria.set_manifold(0);
+  bem_problem_3d_1.tria.reset_manifold(0);
+  bem_problem_3d_2.tria.reset_manifold(0);
 
   return 0;
 }

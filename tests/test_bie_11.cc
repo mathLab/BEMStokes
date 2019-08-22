@@ -99,7 +99,7 @@ int main (int argc, char **argv)
 
               dataout.write_vtu(file);
 
-              bem_problem_2d.tria.set_manifold(0);
+              bem_problem_2d.tria.reset_manifold(0);
             }
         }
       eh.output_table(std::cout,0);

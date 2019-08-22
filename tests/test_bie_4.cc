@@ -132,6 +132,6 @@ int main (int argc, char **argv)
         }
 
     }
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
   return 0;
 }

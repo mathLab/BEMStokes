@@ -88,7 +88,7 @@ int main (int argc, char **argv)
           cell = dh.begin_active(),
           endc = dh.end();
           FEValues<dim-1,dim> fee_v(*bem_problem_2d.mappingeul, fee, fee.get_unit_support_points(),
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points );
 
 
@@ -98,7 +98,7 @@ int main (int argc, char **argv)
               cell->get_dof_indices(local_dof_indices);
               const std::vector<Point<dim> > &q_points = fee_v.get_quadrature_points();
 
-              const std::vector<Tensor<1, dim> > &normals  = fee_v.get_all_normal_vectors();
+              const std::vector<Tensor<1, dim> > &normals  = fee_v.get_normal_vectors();
 
               unsigned int n_q_points = q_points.size();
 
@@ -151,7 +151,7 @@ int main (int argc, char **argv)
 
               dataoutdim.write_vtu(filedim);
 
-              bem_problem_2d.tria.set_manifold(0);
+              bem_problem_2d.tria.reset_manifold(0);
 
 
             }

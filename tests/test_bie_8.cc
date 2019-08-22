@@ -89,6 +89,6 @@ int main (int argc, char **argv)
   GridOut grid_out;
   grid_out.write_vtk (bem_problem_3d.tria, out);
   std::cout << "Grid written to grid-dim.vtk" << std::endl;
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
   return 0;
 }

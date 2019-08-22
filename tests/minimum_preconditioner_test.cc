@@ -204,7 +204,7 @@ int main (int argc, char **argv)
         std::cout<<"ERROR, index i : "<<i<<" : "<<foo<<" , instead of : "<<0<<std::endl;
     }
 
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
 
   return 0;
 }

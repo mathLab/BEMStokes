@@ -84,8 +84,8 @@ int main (int argc, char **argv)
   DoFTools::write_gnuplot_dof_support_point_info (output_2, my_map_2);
 
 
-  bem_problem_3d_1.tria.set_manifold(0);
-  bem_problem_3d_2.tria.set_manifold(0);
+  bem_problem_3d_1.tria.reset_manifold(0);
+  bem_problem_3d_2.tria.reset_manifold(0);
 
   return 0;
 }

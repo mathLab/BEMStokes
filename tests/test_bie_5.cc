@@ -71,6 +71,6 @@ int main (int argc, char **argv)
       std::cout<<"ux = "<<eval_vel(2*0+0)<<std::endl;
       std::cout<<"uy = "<<eval_vel(2*0+1)<<std::endl;
     }
-  bem_problem_2d.tria.set_manifold(0);
+  bem_problem_2d.tria.reset_manifold(0);
   return 0;
 }

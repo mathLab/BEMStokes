@@ -106,7 +106,7 @@ int main (int argc, char **argv)
       bem_problem_3d.read_domain();
       SphericalManifold<2,3> manifold;
       bem_problem_3d.tria.set_all_manifold_ids(0);
-      bem_problem_3d.tria.set_manifold(0);
+      bem_problem_3d.tria.reset_manifold(0);
       for (unsigned int cycle=0; cycle<ncycles; ++cycle)
         {
           bem_problem_3d.pcout<<"Cycle : "<<cycle<<" "<<ncycles<<std::endl;
@@ -191,7 +191,7 @@ int main (int argc, char **argv)
             }
 
         }
-      bem_problem_3d.tria.set_manifold(0);
+      bem_problem_3d.tria.reset_manifold(0);
 
     }
 
