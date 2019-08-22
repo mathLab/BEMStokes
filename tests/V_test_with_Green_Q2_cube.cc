@@ -91,7 +91,9 @@ int main (int argc, char **argv)
       // std::vector<Vector<double> > M_mult_eigenfunctions;
       // std::vector<double>                     eigenvalue_tenss;
       // PETScWrappers::MPI::Vector normal_vector_difference;
-      ErrorHandler<1> eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
+      // ErrorHandler<1> eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
+      ParsedConvergenceTable  eh({"u","u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
+
       deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_ref_quadrature.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
       bem_problem_3d.create_box_bool=false;
       for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)

@@ -13,7 +13,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 12.3522
 The Mass (Surface) error of the entire system is : 0.0170433
 Using 0 0 0 as force pole.
-Center of mass position = -1.41931e-17 -1.13602e-17 -2.35564e-17
+Center of mass position = 5.65265e-18 -1.80836e-17 2.25799e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000839366
@@ -38,7 +38,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 12.5506
 The Mass (Surface) error of the entire system is : 0.00125342
 Using 0 0 0 as force pole.
-Center of mass position = 1.77886e-17 1.8599e-17 8.35788e-19
+Center of mass position = 2.14481e-17 2.84837e-17 1.56251e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 5.6066e-05
@@ -53,6 +53,6 @@ check with versor vector : 2 l_infty : 1
 monolithic building
 0.588454 0.13926
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty         u_L2           u_H1
-    6   78 7.485e-02    - 1.555e-01    - 4.371e-01    -
-   24  294 7.350e-02 0.03 6.574e-02 1.24 4.173e-01 0.07
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+    6   78 9.259e-02    - 7.485e-02    - 2.541e-01    - 
+   24  294 3.835e-02 1.33 7.350e-02 0.03 2.467e-01 0.04 

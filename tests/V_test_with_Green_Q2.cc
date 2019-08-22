@@ -79,7 +79,7 @@ int main (int argc, char **argv)
   unsigned int ncycles = 2;
   unsigned int max_degree = 1;
   std::cout<<"Test that the BEM is able to recover the Fundamental Solution"<<std::endl;
-  ParsedFunction<3> exact_solution_trace("PIPPO",3,"0 ; 0 ; 0");
+  // ParsedFunction<3> exact_solution_trace("PIPPO",3,"0 ; 0 ; 0");
   // ParsedFunction<3,3> exact_solution_eig("Exact solution position",
   //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
 
@@ -95,7 +95,9 @@ int main (int argc, char **argv)
       // std::vector<Vector<double> > M_mult_eigenfunctions;
       // std::vector<double>                     eigenvalue_tenss;
       // PETScWrappers::MPI::Vector normal_vector_difference;
-      ErrorHandler<1> eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
+      // ErrorHandler<1> eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
+      ParsedConvergenceTable  eh({"u","u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
+
       deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_ref_quadrature.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
       bem_problem_3d.create_box_bool=false;
       for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
