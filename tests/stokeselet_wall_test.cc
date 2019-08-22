@@ -226,7 +226,7 @@ int main (int argc, char **argv)
   bem_problem_3d.body_cpu_set.set_size(bem_problem_3d.dh_stokes.n_dofs());
   bem_problem_3d.body_cpu_set.add_range(0,bem_problem_3d.dh_stokes.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
-  bem_problem_3d.mappingeul = SP(new MappingQ<3-1,3>(degree));//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingQ<2,3> > (degree);//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
 
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();

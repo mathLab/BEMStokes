@@ -8,6 +8,18 @@
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
+
+
+void set_function_expression( ParameterAcceptorProxy<dealii::Functions::ParsedFunction<2>> &pf, const std::string &expression)
+{
+  pf.declare_parameters_call_back.connect(
+    [expression]() -> void {
+        dealii::ParameterAcceptor::prm.set("Function expression",
+                                   expression);
+      });
+
+}
+
 int main (int argc, char **argv)
 {
   using namespace dealii;
@@ -22,13 +34,18 @@ int main (int argc, char **argv)
   const unsigned int dim = 2;
 
   std::cout<<"Test on the Geometry in 3D. We test the convergence of the euler vector"<<std::endl;
-  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_id("Exact solution identity",dim,"x ; y");
-  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_pos("Exact solution position",dim,
-                                         "x / (x*x + y*y)^0.5 ; y / (x*x + y*y)^0.5");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_id("Exact solution identity",dim);//
+  std::string f1("x ; y");
+  set_function_expression(exact_solution_id, f1);
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_pos("Exact solution position",dim);
+  std::string f2("x / (x*x + y*y)^0.5 ; y / (x*x + y*y)^0.5");
+  set_function_expression(exact_solution_pos, f2);
   for (unsigned int degree=1; degree<=max_degree; degree++)
     {
       std::cout<< "Testing for degree = "<<degree<<std::endl;
-      ErrorHandler<2> eh("","u,u","L2, H1, Linfty; AddUp");
+      // ErrorHandler<2> eh("","u,u","L2, H1, Linfty; AddUp");
+      ParsedConvergenceTable  eh1({"u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
+      ParsedConvergenceTable  eh2({"u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
 
       ParsedFiniteElement<dim-1,dim> fe_builder23("ParsedFiniteElement<1,2>",
                                                   "FESystem[FE_Q("+Utilities::int_to_string(degree)+")^2]",
@@ -74,8 +91,8 @@ int main (int argc, char **argv)
           //               bem_problem_2d.euler_vec[i*dim+2]*bem_problem_2d.euler_vec[i*dim+2],0.5);
           // }
           // std::cout<<type(bem_problem_2d.map_dh)<<std::endl;
-          eh.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, bem_problem_2d.euler_vec, exact_solution_id,0);
-          eh.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, bem_problem_2d.euler_vec, exact_solution_pos,1);
+          eh1.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, bem_problem_2d.euler_vec, exact_solution_id);
+          eh2.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, bem_problem_2d.euler_vec, exact_solution_pos);
 
           if (cycle != ncycles-1)
             bem_problem_2d.tria.refine_global(1);
@@ -102,8 +119,9 @@ int main (int argc, char **argv)
               bem_problem_2d.tria.reset_manifold(0);
             }
         }
-      eh.output_table(std::cout);
-      eh.output_table(std::cout,1);
+      eh1.output_table(std::cout);
+      eh2.output_table(std::cout);
+      // eh.output_table(std::cout,1);
     }
 
   return 0;

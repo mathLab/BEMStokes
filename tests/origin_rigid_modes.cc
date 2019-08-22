@@ -17,6 +17,15 @@
 
 using namespace deal2lkit;
 
+void set_function_expression( ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> &pf, const std::string &expression)
+{
+  pf.declare_parameters_call_back.connect(
+    [expression]() -> void {
+        dealii::ParameterAcceptor::prm.set("Function expression",
+                                   expression);
+      });
+
+}
 
 
 int main (int argc, char **argv)
@@ -34,12 +43,27 @@ int main (int argc, char **argv)
   //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
   unsigned int degree = 1;
   BEMProblem<3> bem_problem_3d;
-  ParsedFunction<3> exact_rigid_mode_0("Exact rigid mode 0", 3,"1;0;0");
-  ParsedFunction<3> exact_rigid_mode_1("Exact rigid mode 1", 3,"0;1;0");
-  ParsedFunction<3> exact_rigid_mode_2("Exact rigid mode 2",3, "0;0;1");
-  ParsedFunction<3> exact_rigid_mode_3("Exact rigid mode 3", 3,"0;-z;y");
-  ParsedFunction<3> exact_rigid_mode_4("Exact rigid mode 4",3, "z;0;-x");
-  ParsedFunction<3> exact_rigid_mode_5("Exact rigid mode 5",3, "-y;x;0");
+  // unsigned int dim = 3;
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_0("Exact rigid mode 0", 3);//, "Function expression",3);//"1;0;0");//("Exact rigid mode 0", 3,"1;0;0");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_1("Exact rigid mode 1", 3);//,"0;1;0");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_2("Exact rigid mode 2", 3);//, "0;0;1");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_3("Exact rigid mode 3", 3);//,"0;-z;y");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_4("Exact rigid mode 4", 3);//, "z;0;-x");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<3>> exact_rigid_mode_5("Exact rigid mode 5", 3);//, "-y;x;0");
+
+  std::string f0("1;0;0");
+  std::string f1("0;1;0");
+  std::string f2("0;0;1");
+  std::string f3("0;-z;y");
+  std::string f4("z;0;-x");
+  std::string f5("-y;x;0");
+  
+  set_function_expression(exact_rigid_mode_0, f0);
+  set_function_expression(exact_rigid_mode_1, f1);
+  set_function_expression(exact_rigid_mode_2, f2);
+  set_function_expression(exact_rigid_mode_3, f3);
+  set_function_expression(exact_rigid_mode_4, f4);
+  set_function_expression(exact_rigid_mode_5, f5);
 
   deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();

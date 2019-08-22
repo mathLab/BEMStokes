@@ -23,13 +23,13 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.25738
 The Mass (Surface) error of the entire system is : 0.502054
 Using 0 0 as force pole.
-Center of mass position = 5.4066e-17 2.16238e-17
+Center of mass position = 4.93683e-17 -1.99604e-17
    Iterations needed to solve mass matrix:         1
 Convergence of the plain deal.II normal
-cells dofs    u_Linfty         u_L2           u_H1
-   10  160 3.060e-01    - 6.446e-01    - 3.634e+00    -
-   20  320 1.548e-01 0.98 3.217e-01 1.00 3.567e+00 0.03
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   10  160 4.558e-01    - 3.060e-01    - 2.569e+00    - 
+   20  320 2.275e-01 2.01 1.548e-01 1.97 2.522e+00 0.05 
 Convergence of the deal.II normal with L2 projection
-cells dofs    u_Linfty         u_L2           u_H1
-   10   20 4.290e-02    - 1.252e-01    - 6.647e-01    -
-   20   40 1.082e-02 1.99 3.178e-02 1.98 3.242e-01 1.04
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   10   20 8.854e-02    - 4.290e-02    - 4.700e-01    - 
+   20   40 2.247e-02 3.96 1.082e-02 3.97 2.293e-01 2.07 

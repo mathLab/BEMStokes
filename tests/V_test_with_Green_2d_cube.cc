@@ -78,7 +78,7 @@ int main (int argc, char **argv)
   unsigned int ncycles = 4;
   unsigned int max_degree = 1;
   std::cout<<"Test that the BEM is able to recover the Fundamental Solution"<<std::endl;
-  // ParsedFunction<2> exact_solution_trace("PIPPO",2,"0 ; 0");
+  // ParameterAcceptorProxy<dealii::Functions::ParsedFunction<2>> exact_solution_trace("PIPPO",2,"0 ; 0");
   // ParsedFunction<3,3> exact_solution_eig("Exact solution position",
   //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
 
