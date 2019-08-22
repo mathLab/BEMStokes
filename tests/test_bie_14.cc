@@ -7,8 +7,8 @@
 
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 int main (int argc, char **argv)
@@ -24,8 +24,8 @@ int main (int argc, char **argv)
   unsigned int max_degree = 1;
   const unsigned int dim=3;
   std::cout<<"Test on the Geometry in 3D. We test the convergence of the normal vector"<<std::endl;
-  ParsedFunction<dim> exact_solution_id("Exact solution identity",3,"x ; y ; z");
-  ParsedFunction<dim> exact_solution_pos("Exact solution position",3,
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_id("Exact solution identity",3,"x ; y ; z");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_pos("Exact solution position",3,
                                          "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z /(x*x + y*y + z*z)^0.5");
 
   for (unsigned int degree=1; degree<=max_degree; degree++)

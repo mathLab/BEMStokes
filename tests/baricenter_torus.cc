@@ -4,8 +4,8 @@
 #include <deal.II/grid/grid_generator.h>
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
