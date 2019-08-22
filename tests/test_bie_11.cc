@@ -66,7 +66,7 @@ int main (int argc, char **argv)
           bem_problem_2d.reinit();
           bem_problem_2d.compute_euler_vector(bem_problem_2d.euler_vec,0);
           if (cycle == 0)
-            bem_problem_2d.mappingeul = SP(new MappingFEField<dim-1, dim>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+            bem_problem_2d.mappingeul = std::make_shared<MappingFEField<dim-1, dim> > (bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
           // for(unsigned int i=0; i< bem_problem_2d.euler_vec.size()/dim; ++i)
           // {
           //   double foo = std::pow(bem_problem_2d.euler_vec[i*dim+0]*bem_problem_2d.euler_vec[i*dim+0]+
@@ -102,7 +102,7 @@ int main (int argc, char **argv)
               bem_problem_2d.tria.reset_manifold(0);
             }
         }
-      eh.output_table(std::cout,0);
+      eh.output_table(std::cout);
       eh.output_table(std::cout,1);
     }
 

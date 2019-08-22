@@ -92,7 +92,9 @@ int main (int argc, char **argv)
       // PETScWrappers::MPI::Vector normal_vector_difference;
 
       ParsedConvergenceTable  eh({"u","u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
-
+      deal2lkit::ParameterAcceptor.prm.enter_subsection("Error 3D");
+      eh.add_parameters(deal2lkit::ParameterAcceptor.prm);
+      deal2lkit::ParameterAcceptor.prm.leave_subsection("Error 3D");
       // ParsedConvergenceTable eh("Error 3D","u,u,u","L2, H1, Linfty; AddUp; AddUp");
       deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
       bem_problem_3d.create_box_bool=false;
@@ -189,7 +191,7 @@ int main (int argc, char **argv)
               file_name2 = "G_trace_0_" + Utilities::int_to_string(dim) + "d.bin";
               std::ofstream velocities (file_name2.c_str());
               t0.block_write(velocities);
-              eh.output_table(std::cout,0);
+              eh.output_table(std::cout);
 
             }
 

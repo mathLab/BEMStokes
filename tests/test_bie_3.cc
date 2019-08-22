@@ -49,7 +49,7 @@ int main (int argc, char **argv)
   bem_problem_2d.read_domain();
   bem_problem_2d.reinit();
   bem_problem_2d.compute_euler_vector(bem_problem_2d.euler_vec,0);
-  bem_problem_2d.mappingeul = SP(new MappingFEField<1,2>(bem_problem_2d.map_dh, bem_problem_2d.euler_vec));
+  bem_problem_2d.mappingeul = std::make_shared<MappingFEField<1,2> > (bem_problem_2d.map_dh, bem_problem_2d.euler_vec);
   bem_problem_2d.compute_euler_vector(bem_problem_2d.next_euler_vec,1);
 
   for (auto i : bem_problem_2d.shape_velocities.locally_owned_elements())

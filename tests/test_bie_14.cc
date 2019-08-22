@@ -79,7 +79,7 @@ int main (int argc, char **argv)
           //   if (bem_problem_3d.euler_vec(i) == 0)
           //     std::cout<<"non sense at i :"<<i<<std::endl;
           if (cycle == 0)
-            bem_problem_3d.mappingeul = SP(new MappingFEField<dim-1, dim>(bem_problem_3d.map_dh,bem_problem_3d.euler_vec));
+            bem_problem_3d.mappingeul = std::make_shared<MappingFEField<dim-1, dim> > (bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
 
           std::vector<types::global_dof_index> local_dof_indices(fee.dofs_per_cell);
           typename DoFHandler<dim-1,dim>::active_cell_iterator
@@ -155,7 +155,7 @@ int main (int argc, char **argv)
             }
         }
       std::cout<<"Convergence of the plain deal.II normal"<<std::endl;
-      eh.output_table(std::cout,0);
+      eh.output_table(std::cout);
       std::cout<<"Convergence of the deal.II normal with L2 projection"<<std::endl;
       eh.output_table(std::cout,1);
 

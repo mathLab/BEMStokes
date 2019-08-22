@@ -192,7 +192,7 @@ int main (int argc, char **argv)
               file_name2 = "G_trace_0_" + Utilities::int_to_string(dim) + "d.bin";
               std::ofstream velocities (file_name2.c_str());
               t0.block_write(velocities);
-              eh.output_table(std::cout,0);
+              eh.output_table(std::cout);
 
             }
 

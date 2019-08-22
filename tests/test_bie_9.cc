@@ -46,7 +46,7 @@ int main (int argc, char **argv)
   TrilinosWrappers::MPI::Vector V_x_normals(bem_problem_2d.normal_vector.locally_owned_elements(),bem_problem_2d.normal_vector.get_mpi_communicator());
   TrilinosWrappers::MPI::Vector foo(bem_problem_2d.normal_vector.locally_owned_elements(),bem_problem_2d.normal_vector.get_mpi_communicator());
   bem_problem_2d.compute_euler_vector(bem_problem_2d.euler_vec,0);
-  bem_problem_2d.mappingeul = SP(new MappingFEField<dim-1,dim>(bem_problem_2d.map_dh, bem_problem_2d.euler_vec));
+  bem_problem_2d.mappingeul = std::make_shared<MappingFEField<dim-1, dim> > (bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
   bem_problem_2d.compute_euler_vector(bem_problem_2d.next_euler_vec,1);
   bem_problem_2d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_2d.compute_normal_vector();
