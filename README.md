@@ -1,3 +1,11 @@
+
+<p align="center">
+  <a>
+    <img alt="BlackNUFFT" src="./docs/logo/BEMStokesLogo2bis.png" width="200" />
+  </a>
+</p>
+
+
 # BEMStokes: Parallel BEM Solver 
 
 <!--[![Build Status](https://travis-ci.org/mathLab/pi-BEM.svg?branch=master)](https://travis-ci.org/mathLab/pi-BEM)-->
