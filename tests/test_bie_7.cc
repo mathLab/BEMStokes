@@ -21,7 +21,7 @@ int main (int argc, char **argv)
   Vector<double> eval_vel(dim);
   BEMProblem<dim> bem_problem_2d;
 
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_foo.prm");
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_foo.prm");
   // std::cout<<input_grid_base_name<<std::endl;
   bem_problem_2d.convert_bool_parameters();
   bem_problem_2d.create_box_bool=false;
@@ -50,7 +50,7 @@ int main (int argc, char **argv)
   bem_problem_2d.reinit();
   bem_problem_2d.compute_euler_vector(bem_problem_2d.euler_vec,0);
   bem_problem_2d.compute_center_of_mass_and_rigid_modes(0);
-  bem_problem_2d.mappingeul = SP(new MappingFEField<dim-1,dim>(bem_problem_2d.map_dh, bem_problem_2d.euler_vec));
+  bem_problem_2d.mappingeul = std::make_shared<MappingFEField<dim-1, dim> > (bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
   bem_problem_2d.compute_euler_vector(bem_problem_2d.next_euler_vec,1);
   Vector<double> dummy_vel(bem_problem_2d.dh_stokes.n_dofs());
   Vector<double> dummy_force(bem_problem_2d.dh_stokes.n_dofs());
@@ -88,6 +88,6 @@ int main (int argc, char **argv)
   GridOut grid_out;
   grid_out.write_vtk (bem_problem_2d.tria, out);
   std::cout << "Grid written to grid-dim.vtk" << std::endl;
-  bem_problem_2d.tria.set_manifold(0);
+  bem_problem_2d.tria.reset_manifold(0);
   return 0;
 }

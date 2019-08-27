@@ -18,7 +18,7 @@ int main (int argc, char **argv)
 
   BEMProblem<dim> bem_problem_3d;
 
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
   // std::cout<<input_grid_base_name<<std::endl;
   bem_problem_3d.create_box_bool=false;
   bem_problem_3d.wall_bool_0=false;
@@ -45,7 +45,7 @@ int main (int argc, char **argv)
   TrilinosWrappers::MPI::Vector V_x_normals(bem_problem_3d.normal_vector.locally_owned_elements(),bem_problem_3d.normal_vector.get_mpi_communicator());
   TrilinosWrappers::MPI::Vector foo(bem_problem_3d.normal_vector.locally_owned_elements(),bem_problem_3d.normal_vector.get_mpi_communicator());
   bem_problem_3d.compute_euler_vector(bem_problem_3d.euler_vec,0);
-  bem_problem_3d.mappingeul = SP(new MappingFEField<2,3>(bem_problem_3d.map_dh, bem_problem_3d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2,3> > (bem_problem_3d.map_dh, bem_problem_3d.euler_vec);
   bem_problem_3d.compute_euler_vector(bem_problem_3d.next_euler_vec,1);
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
@@ -86,6 +86,6 @@ int main (int argc, char **argv)
   GridOut grid_out;
   grid_out.write_vtk (bem_problem_3d.tria, out);
   std::cout << "Grid written to grid-3.vtk" << std::endl;
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
   return 0;
 }

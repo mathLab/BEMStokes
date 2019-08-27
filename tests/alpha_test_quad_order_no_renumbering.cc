@@ -5,8 +5,8 @@
 
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
@@ -31,21 +31,21 @@ void assemble_single_line_stokes_matrices(FullMatrix<double> &V_matrix_3_line, F
 
   if (use_external_quadrature)
     {
-      fe_stokes_v = SP(new FEValues<3-1,3> (*bemmy.mappingeul, *bemmy.fe_stokes, my_quad,
+      fe_stokes_v = std::make_shared<FEValues<3-1,3> > (*bemmy.mappingeul, *bemmy.fe_stokes, my_quad,
                                             update_values |
-                                            update_cell_normal_vectors |
+                                            update_normal_vectors |
                                             update_quadrature_points |
-                                            update_JxW_values));
+                                            update_JxW_values);
 
     }
   else
     {
 
-      fe_stokes_v = SP(new FEValues<3-1,3> (*bemmy.mappingeul, *bemmy.fe_stokes, bemmy.quadrature,
+      fe_stokes_v = std::make_shared<FEValues<3-1,3> > (*bemmy.mappingeul, *bemmy.fe_stokes, bemmy.quadrature,
                                             update_values |
-                                            update_cell_normal_vectors |
+                                            update_normal_vectors |
                                             update_quadrature_points |
-                                            update_JxW_values));
+                                            update_JxW_values);
     }
   std::vector<types::global_dof_index> local_dof_indices(bemmy.fe_stokes->dofs_per_cell);
   FullMatrix<double>    local_single_layer(3, bemmy.fe_stokes->dofs_per_cell);
@@ -95,7 +95,7 @@ void assemble_single_line_stokes_matrices(FullMatrix<double> &V_matrix_3_line, F
             }
 
           const std::vector<Point<3> > &q_points = internal_fe_v->get_quadrature_points();
-          const std::vector<Tensor<1, 3> > &normals  = internal_fe_v->get_all_normal_vectors();
+          const std::vector<Tensor<1, 3> > &normals  = internal_fe_v->get_normal_vectors();
 
           unsigned int n_q_points = q_points.size();
           for (unsigned int q=0; q<n_q_points; ++q)
@@ -164,7 +164,7 @@ int main (int argc, char **argv)
   double tol=1e-8;
   const unsigned int dim = 3;
   BEMProblem<dim> bem_problem_3d_1, bem_problem_3d_2;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d_1.convert_bool_parameters();
   bem_problem_3d_2.convert_bool_parameters();
   bem_problem_3d_1.pcout<<"Minimum Test for the assemble of the double layer without reordering, it just saves V K matrices without reordering"<<std::endl;
@@ -189,7 +189,7 @@ int main (int argc, char **argv)
   bem_problem_3d_1.map_dh.distribute_dofs(*bem_problem_3d_1.fe_stokes);
   bem_problem_3d_1.euler_vec.reinit(bem_problem_3d_1.map_dh.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec);
-  bem_problem_3d_1.mappingeul = SP(new MappingFEField<2, 3>(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec));
+  bem_problem_3d_1.mappingeul = std::make_shared<MappingFEField<2, 3> >(bem_problem_3d_1.map_dh,bem_problem_3d_1.euler_vec);
   FullMatrix<double> V_matrix_3_line_1, K_matrix_3_line_1;
   std::vector<Vector<double> > versors_1(3, Vector<double> (bem_problem_3d_1.dh_stokes.n_dofs()));
   std::vector<Vector<double> > check_1(3, Vector<double> (3));
@@ -232,7 +232,7 @@ int main (int argc, char **argv)
   bem_problem_3d_2.map_dh.distribute_dofs(*bem_problem_3d_2.fe_stokes);
   bem_problem_3d_2.euler_vec.reinit(bem_problem_3d_2.map_dh.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec);
-  bem_problem_3d_2.mappingeul = SP(new MappingFEField<2, 3>(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec));
+  bem_problem_3d_2.mappingeul = std::make_shared<MappingFEField<2, 3> >(bem_problem_3d_2.map_dh,bem_problem_3d_2.euler_vec);
   FullMatrix<double> V_matrix_3_line_2, K_matrix_3_line_2;
   std::vector<Vector<double> > versors_2(3, Vector<double> (bem_problem_3d_2.dh_stokes.n_dofs()));
   std::vector<Vector<double> > check_2(3, Vector<double> (3));
@@ -304,8 +304,8 @@ int main (int argc, char **argv)
 
 
 
-  bem_problem_3d_1.tria.set_manifold(0);
-  bem_problem_3d_2.tria.set_manifold(0);
+  bem_problem_3d_1.tria.reset_manifold(0);
+  bem_problem_3d_2.tria.reset_manifold(0);
 
   return 0;
 }

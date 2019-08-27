@@ -13,7 +13,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 8
 The Mass (Surface) error of the entire system is : 0.36338
 Using 0 0 0 as force pole.
-Center of mass position = 1.13435e-17 -1.67238e-17 -1.04422e-17
+Center of mass position = 5.29768e-17 2.05727e-17 3.92142e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.0287614
@@ -38,7 +38,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 8
 The Mass (Surface) error of the entire system is : 0.36338
 Using 0 0 0 as force pole.
-Center of mass position = -2.73507e-18 1.70135e-17 -1.38998e-17
+Center of mass position = 1.28774e-17 1.24463e-17 -2.75963e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.0128202
@@ -63,7 +63,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 8
 The Mass (Surface) error of the entire system is : 0.36338
 Using 0 0 0 as force pole.
-Center of mass position = -1.00977e-16 -9.94156e-17 -9.98023e-17
+Center of mass position = -4.64655e-17 -8.03946e-17 -3.38218e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.00687195
@@ -78,7 +78,7 @@ check with versor vector : 2 l_infty : 1
 monolithic building
 1.65762 0.285967
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty          u_L2            u_H1
-    6   78 1.495e-01     - 3.834e-01     - 9.906e-01     -
-   24  294 5.022e-01 -1.75 4.960e-01 -0.37 2.588e+00 -1.39
-   96 1158 4.526e-01  0.15 2.319e-01  1.10 2.579e+00  0.01
+cells dofs    u_L2_norm     u_Linfty_norm     u_H1_norm    
+    6   78 2.230e-01     - 1.495e-01     - 5.721e-01     - 
+   24  294 3.301e-01 -0.59 5.022e-01 -1.83 1.585e+00 -1.54 
+   96 1158 1.366e-01  1.29 4.526e-01  0.15 1.517e+00  0.06 

@@ -3,8 +3,8 @@
 #include <deal.II/grid/grid_out.h>
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
@@ -35,7 +35,7 @@ int main (int argc, char **argv)
   //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
   unsigned int degree = 1;
   BEMProblem<3> bem_problem_3d;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   bem_problem_3d.create_box_bool=false;
   for (unsigned int i = 0 ; i<bem_problem_3d.wall_bool.size(); ++i)
@@ -57,7 +57,7 @@ int main (int argc, char **argv)
   bem_problem_3d.reinit();
   VectorTools::get_position_vector(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
   bem_problem_3d.create_wall_body_index_sets();
-  bem_problem_3d.mappingeul = SP(new MappingFEField<2, 3> (bem_problem_3d.map_dh,bem_problem_3d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2, 3> > (bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
   bool correction_on_V = true;

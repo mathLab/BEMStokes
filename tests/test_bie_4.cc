@@ -58,7 +58,7 @@ int main (int argc, char **argv)
   BEMProblem<dim> bem_problem_3d;
 
   // bem_problem_2d.read_parameters(SOURCE_DIR "/parameters_test_2d.prm");
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm", "used_foo.prm");
   // std::cout<<input_grid_base_name<<std::endl;
   bem_problem_3d.create_box_bool=false;
   bem_problem_3d.wall_bool_0=false;
@@ -80,7 +80,7 @@ int main (int argc, char **argv)
   bem_problem_3d.read_domain();
   bem_problem_3d.reinit();
   bem_problem_3d.compute_euler_vector(bem_problem_3d.euler_vec,0);
-  bem_problem_3d.mappingeul = SP(new MappingFEField<2,3>(bem_problem_3d.map_dh, bem_problem_3d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingFEField<2,3> > (bem_problem_3d.map_dh, bem_problem_3d.euler_vec);
   bem_problem_3d.compute_euler_vector(bem_problem_3d.next_euler_vec,1);
 
   for (auto i : bem_problem_3d.shape_velocities.locally_owned_elements())
@@ -132,6 +132,6 @@ int main (int argc, char **argv)
         }
 
     }
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
   return 0;
 }

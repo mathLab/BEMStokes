@@ -3,8 +3,8 @@
 #include <deal.II/grid/grid_out.h>
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
@@ -83,7 +83,7 @@ int main (int argc, char **argv)
   double tol=1e-8;
   const unsigned int dim = 3;
   BEMProblem<dim> bem_problem_3d;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   bem_problem_3d.pcout<<"Minimum Test for the preconditioner with exterior problem and the monolithic system"<<std::endl;
   bem_problem_3d.use_internal_alpha=false;
@@ -101,7 +101,7 @@ int main (int argc, char **argv)
 
   bem_problem_3d.reinit();
   VectorTools::get_position_vector(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
-  bem_problem_3d.mappingeul = SP(new MappingQ<dim-1,dim>(1));//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingQ<dim-1,dim> >(1);//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
 
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
@@ -165,7 +165,7 @@ int main (int argc, char **argv)
         std::cout<<"ERROR, index i : "<<i<<" : "<<foo<<" , instead of : "<<0<<std::endl;
     }
 
-  bem_problem_3d.tria.set_manifold(0);
+  bem_problem_3d.tria.reset_manifold(0);
 
   return 0;
 }

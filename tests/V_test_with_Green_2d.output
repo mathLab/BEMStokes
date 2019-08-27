@@ -36,7 +36,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.25738
 The Mass (Surface) error of the entire system is : 0.502054
 Using 0 0 as force pole.
-Center of mass position = 8.48536e-17 -2.21783e-18
+Center of mass position = 4.93683e-17 -1.99604e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 0.000440127
@@ -60,7 +60,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.27673
 The Mass (Surface) error of the entire system is : 0.500514
 Using 0 0 as force pole.
-Center of mass position = -4.96631e-17 -1.68588e-17
+Center of mass position = 7.43564e-18 3.1783e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 5.31868e-05
@@ -84,7 +84,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.28157
 The Mass (Surface) error of the entire system is : 0.500129
 Using 0 0 as force pole.
-Center of mass position = -1.94598e-16 9.11331e-18
+Center of mass position = 5.02298e-17 -2.15405e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 5.53052e-06
@@ -98,8 +98,8 @@ check with versor vector : 1 l_infty : 1
 monolithic building
 0.548755 0.115056
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty         u_L2           u_H1      
-   10   20 5.906e-02    - 1.141e-01    - 2.007e-01    - 
-   20   40 2.261e-02 1.39 4.244e-02 1.43 9.584e-02 1.07 
-   40   80 8.153e-03 1.47 1.125e-02 1.92 4.499e-02 1.09 
-   80  160 2.115e-03 1.95 2.921e-03 1.95 1.193e-02 1.92 
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   10   20 8.072e-02    - 5.906e-02    - 1.420e-01    - 
+   20   40 3.001e-02 2.85 2.261e-02 2.77 6.799e-02 2.13 
+   40   80 7.957e-03 3.83 8.153e-03 2.94 3.182e-02 2.19 
+   80  160 2.066e-03 3.89 2.115e-03 3.89 8.434e-03 3.83 

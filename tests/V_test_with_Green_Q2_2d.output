@@ -12,7 +12,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.2822
 The Mass (Surface) error of the entire system is : 0.500079
 Using 0 0 as force pole.
-Center of mass position = 3.2642e-17 1.38067e-17
+Center of mass position = -5.62729e-17 1.38067e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 7.84297e-05
@@ -36,7 +36,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.28312
 The Mass (Surface) error of the entire system is : 0.500005
 Using 0 0 as force pole.
-Center of mass position = -4.46712e-17 1.65656e-18
+Center of mass position = -1.56608e-16 5.52185e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 3.79241e-05
@@ -60,7 +60,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.28318
 The Mass (Surface) error of the entire system is : 0.5
 Using 0 0 as force pole.
-Center of mass position = 3.99079e-17 -9.17999e-18
+Center of mass position = 2.02064e-16 6.55714e-18
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 1.88281e-05
@@ -84,7 +84,7 @@ Computing the center of mass of our system for the frame 0
 The Mass (Surface) of the entire system is : 6.28319
 The Mass (Surface) error of the entire system is : 0.5
 Using 0 0 as force pole.
-Center of mass position = 1.20569e-16 4.48646e-18
+Center of mass position = -2.3961e-16 1.27001e-17
    Iterations needed to solve mass matrix:         1
 Check on the tangential projection (should be zero): 0
 Check on the V operator Norm (should be zero): 9.39893e-06
@@ -98,8 +98,8 @@ check with versor vector : 1 l_infty : 1
 monolithic building
 0.776057 0.115056
    Iterations needed to solve DN:         0
-cells dofs    u_Linfty         u_L2           u_H1
-   10   40 4.222e-02    - 5.006e-02    - 1.643e-01    -
-   20   80 9.939e-03 2.09 1.023e-02 2.29 8.312e-02 0.98
-   40  160 2.394e-03 2.05 2.386e-03 2.10 4.302e-02 0.95
-   80  320 5.720e-04 2.07 5.723e-04 2.06 2.055e-02 1.07
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   10   40 3.614e-02    - 4.222e-02    - 1.254e-01    - 
+   20   80 7.387e-03 4.58 9.939e-03 4.17 6.024e-02 2.12 
+   40  160 1.727e-03 4.19 2.394e-03 4.11 3.137e-02 1.88 
+   80  320 4.152e-04 4.11 5.720e-04 4.13 1.499e-02 2.13 

@@ -3,8 +3,8 @@
 #include <deal.II/grid/grid_out.h>
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
 #include <deal.II/fe/mapping_fe_field.h>
@@ -81,7 +81,7 @@ int main (int argc, char **argv)
   //         "x / (x*x + y*y + z*z)^0.5 ; y / (x*x + y*y + z*z)^0.5 ; z / (x*x + y*y + z*z)^0.5");
   unsigned int degree = 1;
   BEMProblem<3> bem_problem_3d;
-  ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
+  deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box.prm","used.prm");//("foo.prm","foo1.prm");//SOURCE_DIR "/parameters_test_3d_boundary.prm"
   bem_problem_3d.convert_bool_parameters();
   bem_problem_3d.pcout<<"Minimum Test for the preconditioner with interior problem and the monolithic system"<<std::endl;
   bem_problem_3d.pcout<<"We consider the wall to have normal parallel to the i axis"<<std::endl;
@@ -226,7 +226,7 @@ int main (int argc, char **argv)
   bem_problem_3d.body_cpu_set.set_size(bem_problem_3d.dh_stokes.n_dofs());
   bem_problem_3d.body_cpu_set.add_range(0,bem_problem_3d.dh_stokes.n_dofs());
   VectorTools::get_position_vector(bem_problem_3d.map_dh,bem_problem_3d.euler_vec);
-  bem_problem_3d.mappingeul = SP(new MappingQ<3-1,3>(degree));//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+  bem_problem_3d.mappingeul = std::make_shared<MappingQ<2,3> > (degree);//SP(new MappingFEField<2, 3>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
 
   bem_problem_3d.compute_center_of_mass_and_rigid_modes(0);
   bem_problem_3d.compute_normal_vector();
@@ -300,7 +300,7 @@ int main (int argc, char **argv)
   // file_name2 = "G_trace_0_" + Utilities::int_to_string(3) + "d.bin";
   // std::ofstream velocities (file_name2.c_str());
   // t0.block_write(velocities);
-  // eh.output_table(std::cout,0);
+  // eh.output_table(std::cout);
 
 
   return 0;

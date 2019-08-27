@@ -104,7 +104,7 @@ namespace BEMStokes
   // different modules. The same applies to boundary element methods, and we
   // won't comment too much on them, except on the differences.
   template <int dim>
-  class BEMProblem : public ParameterAcceptor
+  class BEMProblem : public deal2lkit::ParameterAcceptor
   {
   public:
 

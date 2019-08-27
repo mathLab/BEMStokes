@@ -65,3 +65,10 @@ void impose_G_as_trace_1(const Point<my_dim> &source, BEMStokes::BEMProblem<my_d
   G_trace_1.compress(VectorOperation::insert);
 
 }
+
+template <class T>
+inline shared_ptr<T>
+SP(T *t)
+{
+  return shared_ptr<T>(t);
+}

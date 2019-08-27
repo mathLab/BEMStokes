@@ -19,14 +19,14 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 11.3137 : 11.3137
-cells dofs   u_Linfty        u_L2           u_H1
-   32   64 0.000e+00   - 0.000e+00   - 1.082e-08     -
-   64  128 0.000e+00 nan 0.000e+00 nan 1.102e-08 -0.03
-  128  256 0.000e+00 nan 0.000e+00 nan 1.133e-08 -0.04
-cells dofs    u_Linfty         u_L2           u_H1
-   32   64 4.249e-03    - 1.245e-02    - 2.016e-01    -
-   64  128 1.065e-03 2.00 3.117e-03 2.00 1.005e-01 1.00
-  128  256 2.663e-04 2.00 7.797e-04 2.00 5.024e-02 1.00
+cells dofs   u_L2_norm   u_Linfty_norm    u_H1_norm    
+   32   64 0.000e+00   - 0.000e+00   - 7.649e-09     - 
+   64  128 0.000e+00 nan 0.000e+00 nan 7.789e-09 -0.05 
+  128  256 0.000e+00 nan 0.000e+00 nan 8.014e-09 -0.08 
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   32   64 8.805e-03    - 4.249e-03    - 1.426e-01    - 
+   64  128 2.204e-03 4.00 1.065e-03 3.99 7.110e-02 2.01 
+  128  256 5.513e-04 4.00 2.663e-04 4.00 3.553e-02 2.00 
 Testing for degree = 2
 Testing for degree = 2
 built and set the Spherical Manifold
@@ -47,14 +47,14 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 16 : 16
-cells dofs   u_Linfty        u_L2           u_H1
-   32  128 0.000e+00   - 0.000e+00   - 1.105e-08     -
-   64  256 0.000e+00 nan 0.000e+00 nan 1.131e-08 -0.03
-  128  512 0.000e+00 nan 0.000e+00 nan 1.118e-08  0.02
-cells dofs    u_Linfty         u_L2           u_H1
-   32  128 2.851e-06    - 6.551e-06    - 2.709e-04    -
-   64  256 1.785e-07 4.00 4.099e-07 4.00 3.391e-05 3.00
-  128  512 1.116e-08 4.00 2.562e-08 4.00 4.240e-06 3.00
+cells dofs   u_L2_norm   u_Linfty_norm    u_H1_norm    
+   32  128 0.000e+00   - 0.000e+00   - 7.811e-09     - 
+   64  256 0.000e+00 nan 0.000e+00 nan 7.996e-09 -0.07 
+  128  512 0.000e+00 nan 0.000e+00 nan 7.904e-09  0.03 
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   32  128 4.633e-06    - 2.851e-06    - 1.916e-04    - 
+   64  256 2.898e-07 8.00 1.785e-07 8.00 2.398e-05 6.00 
+  128  512 1.812e-08 8.00 1.116e-08 8.00 2.997e-06 6.00 
 Testing for degree = 3
 Testing for degree = 3
 built and set the Spherical Manifold
@@ -75,11 +75,11 @@ re-ordering vector
 re-initializing sparsity patterns and matrices
 Fixed euler vector with exact norm of support points
 19.5959 : 19.5959
-cells dofs   u_Linfty        u_L2           u_H1
-   32  192 0.000e+00   - 0.000e+00   - 1.118e-08     -
-   64  384 0.000e+00 nan 0.000e+00 nan 1.124e-08 -0.01
-  128  768 0.000e+00 nan 0.000e+00 nan 1.121e-08  0.00
-cells dofs    u_Linfty         u_L2           u_H1
-   32  192 6.199e-07    - 1.747e-06    - 8.440e-05    -
-   64  384 3.885e-08 4.00 1.093e-07 4.00 1.056e-05 3.00
-  128  768 2.430e-09 4.00 6.833e-09 4.00 1.320e-06 3.00
+cells dofs   u_L2_norm   u_Linfty_norm    u_H1_norm    
+   32  192 0.000e+00   - 0.000e+00   - 7.907e-09     - 
+   64  384 0.000e+00 nan 0.000e+00 nan 7.948e-09 -0.01 
+  128  768 0.000e+00 nan 0.000e+00 nan 7.928e-09  0.01 
+cells dofs   u_L2_norm    u_Linfty_norm    u_H1_norm    
+   32  192 1.235e-06    - 6.199e-07    - 5.968e-05    - 
+   64  384 7.729e-08 8.00 3.885e-08 7.99 7.468e-06 6.00 
+  128  768 4.832e-09 8.00 2.430e-09 8.00 9.329e-07 6.00 

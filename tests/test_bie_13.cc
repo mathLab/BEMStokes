@@ -8,10 +8,22 @@
 
 #include <iostream>
 #include <fstream>
-#include <deal2lkit/error_handler.h>
-#include <deal2lkit/parsed_function.h>
+#include <deal.II/base/parsed_convergence_table.h>
+#include <deal.II/base/parsed_function.h>
 #include <deal2lkit/parameter_acceptor.h>
 #include <deal2lkit/utilities.h>
+
+
+void set_function_expression( ParameterAcceptorProxy<dealii::Functions::ParsedFunction<2>> &pf, const std::string &expression)
+{
+  pf.declare_parameters_call_back.connect(
+    [expression]() -> void {
+        dealii::ParameterAcceptor::prm.set("Function expression",
+                                   expression);
+      });
+
+}
+
 int main (int argc, char **argv)
 {
   using namespace dealii;
@@ -25,14 +37,18 @@ int main (int argc, char **argv)
   unsigned int max_degree = 1;
   const unsigned int dim=2;
   std::cout<<"Test on the Geometry in 3D. We test the convergence of the normal vector"<<std::endl;
-  ParsedFunction<dim> exact_solution_id("Exact solution identity",dim,"x ; y");
-  ParsedFunction<dim> exact_solution_pos("Exact solution position",dim,
-                                         "x / (x*x + y*y)^0.5 ; y / (x*x + y*y)^0.5");
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_id("Exact solution identity",dim);
+  std::string f1("x ; y");
+  set_function_expression(exact_solution_id, f1);
+  ParameterAcceptorProxy<dealii::Functions::ParsedFunction<dim>> exact_solution_pos("Exact solution position",dim);
+  std::string f2("x / (x*x + y*y)^0.5 ; y / (x*x + y*y)^0.5");
+  set_function_expression(exact_solution_pos, f2);
 
   for (unsigned int degree=1; degree<=max_degree; degree++)
     {
       std::cout<< "Testing for degree = "<<degree<<std::endl;
-      ErrorHandler<2> eh("","u,u","L2, H1, Linfty; AddUp");
+      ParsedConvergenceTable  eh1({"u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
+      ParsedConvergenceTable  eh2({"u","u"}, {{VectorTools::L2_norm, VectorTools::H1_norm, VectorTools::Linfty_norm}});
 
       ParsedFiniteElement<dim-1,dim> fe_builder23("ParsedFiniteElement<1,2>",
                                                   "FESystem[FE_Q("+Utilities::int_to_string(degree)+")^2]",
@@ -40,7 +56,7 @@ int main (int argc, char **argv)
 
       std::cout<< "Testing for degree = "<<degree<<std::endl;
       BEMProblem<dim> bem_problem_2d;
-      ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_parameters_14.prm");
+      deal2lkit::ParameterAcceptor::initialize(SOURCE_DIR "/parameters_test_alpha_box_2d.prm", "used_parameters_14.prm");
       bem_problem_2d.convert_bool_parameters();
       bem_problem_2d.create_box_bool=false;
       bem_problem_2d.wall_bool_0=false;
@@ -81,14 +97,14 @@ int main (int argc, char **argv)
           //   if (bem_problem_2d.euler_vec(i) == 0)
           //     std::cout<<"non sense at i :"<<i<<std::endl;
           if (cycle == 0)
-            bem_problem_2d.mappingeul = SP(new MappingFEField<dim-1, dim>(bem_problem_2d.map_dh,bem_problem_2d.euler_vec));
+            bem_problem_2d.mappingeul = std::make_shared<MappingFEField<dim-1, dim> > (bem_problem_2d.map_dh,bem_problem_2d.euler_vec);
 
           std::vector<types::global_dof_index> local_dof_indices(fee.dofs_per_cell);
           typename DoFHandler<dim-1,dim>::active_cell_iterator
           cell = dh.begin_active(),
           endc = dh.end();
           FEValues<dim-1,dim> fee_v(*bem_problem_2d.mappingeul, fee, fee.get_unit_support_points(),
-                                    update_cell_normal_vectors |
+                                    update_normal_vectors |
                                     update_quadrature_points );
 
 
@@ -98,7 +114,7 @@ int main (int argc, char **argv)
               cell->get_dof_indices(local_dof_indices);
               const std::vector<Point<dim> > &q_points = fee_v.get_quadrature_points();
 
-              const std::vector<Tensor<1, dim> > &normals  = fee_v.get_all_normal_vectors();
+              const std::vector<Tensor<1, dim> > &normals  = fee_v.get_normal_vectors();
 
               unsigned int n_q_points = q_points.size();
 
@@ -115,8 +131,8 @@ int main (int argc, char **argv)
           Vector<double> normal_foo(bem_problem_2d.normal_vector);
           normal_foo.sadd(1.,0.,normal_foo);
           normal_vector.sadd(-1.,0.,normal_vector);
-          eh.error_from_exact(*bem_problem_2d.mappingeul, dh, normal_vector, exact_solution_pos,0);
-          eh.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, normal_foo, exact_solution_pos,1);
+          eh1.error_from_exact(*bem_problem_2d.mappingeul, dh, normal_vector, exact_solution_pos);
+          eh2.error_from_exact(*bem_problem_2d.mappingeul, bem_problem_2d.map_dh, normal_foo, exact_solution_pos);
 
           if (cycle != ncycles-1)
             bem_problem_2d.tria.refine_global(1);
@@ -151,15 +167,15 @@ int main (int argc, char **argv)
 
               dataoutdim.write_vtu(filedim);
 
-              bem_problem_2d.tria.set_manifold(0);
+              bem_problem_2d.tria.reset_manifold(0);
 
 
             }
         }
       std::cout<<"Convergence of the plain deal.II normal"<<std::endl;
-      eh.output_table(std::cout,0);
+      eh1.output_table(std::cout);
       std::cout<<"Convergence of the deal.II normal with L2 projection"<<std::endl;
-      eh.output_table(std::cout,1);
+      eh2.output_table(std::cout);
 
 
     }
