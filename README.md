@@ -39,6 +39,11 @@ We have subdivided the code in main classes to handle the many different aspects
 - FreeSurfaceStokesKernel. A stokes kernel for free surface interfaces
 - StokesKernel. container for the Stokes fundamental solutions.
 
+
+## Install Procedure using spack
+To install from scratch all the needed library you can look to the automatic installation procedure using [spack](https://github.com/dealii/dealii/wiki/deal.II-in-Spack) developed by the deal.II authors.
+
+
 ## Install Procedure using CANDI
 To install from scratch all the needed library you can look to the automatic installation procedure provided by [CANDI](https://github.com/koecher/candi) developed Uwe Köcher.
 
@@ -108,8 +113,7 @@ Follow the detailed [instruction](https://https://github.com/mathLab/deal2lkit) 
 
 Then you can clone the repository and compile it
 
-	git clone https://gitlab.com/Giuliani/BEMStokes.git
-	cd BEMStokes
+	git clone https://github.com/mathLab/BEMStokes.git	cd BEMStokes
 	mkdir build
 	cd build
 	cmake ../
