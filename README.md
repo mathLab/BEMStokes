@@ -135,11 +135,11 @@ information on how to create tests and add categories of tests.
 
 If you want you can run a preliminary execution in the build library typing
 	
-	mpirun -np 1 bem_fma_2d
+	mpirun -np 1 bem_stokes_2d
 	
 this will automatically generate the parameter file for the bi-dimensional run while 
 
-	mpirun -np 1 bem_fma_3d
+	mpirun -np 1 bem_stokes_3d
 	
 will create a proper parameter file for a 3 dimensional simulation.
 
